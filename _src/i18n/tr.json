@@ -1,0 +1,247 @@
+{
+ "lang": "tr",
+ "locale": "tr_TR",
+ "dir": "ltr",
+ "flag": "tr",
+ "code": "TR",
+ "name": "Türkçe",
+ "title": "Sence: Sen Sor, Karar Bizde · Kararsız kalınca herkes oylasın",
+ "meta_desc": "Sence'de takma adınla soru sor, topluluk oylasın. A mı B mi, evet mi hayır mı, kaç puan? Fotoğraflı ya da yazılı sor, kalabalığın ne dediğini saniyeler içinde gör. Yakında App Store ve Google Play'de.",
+ "og_title": "Sence: Sen Sor, Karar Bizde",
+ "og_desc": "Kararsız mısın? Sor, herkes oylasın. Takma adla, oylar gizli. Yakında App Store ve Google Play'de.",
+ "skip": "İçeriğe geç",
+ "nav_how": "Nasıl çalışır",
+ "nav_faq": "SSS",
+ "nav_support": "Destek",
+ "aria_theme": "Açık / koyu tema",
+ "aria_lang": "Dil / Language",
+ "aria_home": "Sence ana sayfa",
+ "pill": "iPhone, iPad ve Android · Çok yakında",
+ "h1_a": "Sen sor,",
+ "h1_b": "karar bizde.",
+ "lead": "Kararsız kaldığın her şeyi sor, topluluk tek hareketle “bence” desin. A mı B mi, evet mi hayır mı, kaç puan? Kalabalığın ne dediğini saniyeler içinde gör.",
+ "checks": [
+  "Ücretsiz",
+  "Takma adla",
+  "Oylar gizli",
+  "Şifresiz"
+ ],
+ "store_soon": "App Store'da yakında",
+ "store_soon_small": "Çok yakında",
+ "see_how": "Nasıl çalışır?",
+ "demo_note": "Örnek soru · sayılar temsili",
+ "demo_hint": "Şeritte kaydır, bırakınca oy",
+ "demo_again": "Bir daha",
+ "demo_cancel": "Vazgeçtin, oy verilmedi",
+ "yes": "Evet",
+ "no": "Hayır",
+ "avg": "ort.",
+ "you": "Sen",
+ "bence": "bence",
+ "comments": "yorum",
+ "resences": "resence",
+ "q_hero": "Bu ayakkabıyı alayım mı?",
+ "q_yesno": "Bu akşam sinemaya gidilir mi?",
+ "q_choice": "Bugün nerede çalışsam?",
+ "q_rate": "Yeni çalışma köşem kaç puan?",
+ "opt_a": "Kütüphane",
+ "opt_b": "Evde",
+ "a11y_strip_yesno": "Oy şeridi: Hayır ya da Evet",
+ "a11y_strip_choice": "Oy şeridi: seçenekler",
+ "a11y_strip_rate": "Puan şeridi, 0 ile 10 arası",
+ "a11y_result": "Sonuç",
+ "a11y_photo": "Sorunun fotoğrafı",
+ "tabs": {
+  "agenda": "Gündem",
+  "square": "Meydan",
+  "decisions": "Kararlarım",
+  "me": "Ben",
+  "ask": "Sence?"
+ },
+ "shapes_h2": "Üç şekilde sor",
+ "shapes_p": "Her soru tek kart. Cevap hep aynı yerden, kartın altındaki şeritten verilir. Hadi dene.",
+ "shape_yesno": "Evet/Hayır",
+ "shape_yesno_p": "Tek soru, iki cevap. Şeritte sola kaydır hayır, sağa kaydır evet.",
+ "shape_choice": "Seçtir",
+ "shape_choice_p": "2 ile 4 seçenek; her biri fotoğraf ya da kısa yazı. Hangisi, kalabalık seçsin.",
+ "shape_rate": "Puanlat",
+ "shape_rate_p": "0'dan 10'a puan. Sonuç kalabalığın puan dağılımı olarak çıkar, ortalamasıyla.",
+ "how_h2": "Nasıl çalışır?",
+ "how_p": "Sormak bir dakika, cevap almak birkaç saniye.",
+ "how": [
+  {
+   "t": "Sor",
+   "p": "Fotoğraf ekle, sorunu en fazla 99 karakterle yaz. Kategori seç, süreyi belirle: 10 dakika, 1 ile 24 saat arası ya da süresiz."
+  },
+  {
+   "t": "Herkes “bence” desin",
+   "p": "Soru Gündem'e ve takipçilerinin Meydan'ına düşer. Herkes tek hareketle oy verir; kimin ne dediği görünmez, yalnız sayılar."
+  },
+  {
+   "t": "Kararını ver",
+   "p": "Süre dolunca sonuç kilitlenir, sana haber veririz. İstersen sonunda hangisini seçtiğini de söylersin."
+  }
+ ],
+ "inside_h2": "Uygulamada seni neler bekliyor",
+ "inside_p": "Beş sekme, tek kart düzeni. Yukarı kaydır, sıradaki soru.",
+ "inside": [
+  {
+   "i": "agenda",
+   "t": "Gündem",
+   "p": "Herkesin soruları, ilgi alanlarına göre sıralı. Uygulama burada açılır."
+  },
+  {
+   "i": "square",
+   "t": "Meydan",
+   "p": "Takip ettiklerinin soruları ve Resence'leri. Bitince sana önerilenler gelir."
+  },
+  {
+   "i": "decisions",
+   "t": "Kararlarım",
+   "p": "Bence dediğin bütün sorular, sonuçlarıyla birlikte."
+  },
+  {
+   "i": "resence",
+   "t": "Resence",
+   "p": "Beğendiğin bir soruyu kendi takipçilerine yeniden sor."
+  },
+  {
+   "i": "comment",
+   "t": "Yorumlar",
+   "p": "Herkese açık yorumlar ve yanıtlar. Soran isterse yorumları kapatır."
+  },
+  {
+   "i": "bell",
+   "t": "Bildirimler",
+   "p": "Sonuç çıkınca, yorum gelince, biri sorunu resencelediğinde haberin olur."
+  },
+  {
+   "i": "share",
+   "t": "Paylaş",
+   "p": "Soruyu ya da sonucu hazır bir Story görseliyle arkadaşlarına sor."
+  },
+  {
+   "i": "theme",
+   "t": "Açık ve koyu",
+   "p": "Cam gibi berrak açık tema ya da gece için dumanlı koyu tema."
+  }
+ ],
+ "trust_h2": "Rahatça sor",
+ "trust_p": "Sence'de kimse seni yargılamak için orada değil. Sadece sorunu cevaplıyor.",
+ "trust": [
+  {
+   "i": "mask",
+   "t": "Takma adla",
+   "p": "Gerçek adın, telefon numaran ya da şifren istenmez. Takma adını seç, başla."
+  },
+  {
+   "i": "lock",
+   "t": "Oylar gizli",
+   "p": "Kimin hangi cevabı verdiği kimseye gösterilmez. Soran bile yalnız sayıları görür."
+  },
+  {
+   "i": "photo",
+   "t": "Fotoğraflar denetlenir",
+   "p": "Her fotoğraf yayına girmeden denetlenir. Konum bilgisi daha telefondayken silinir."
+  },
+  {
+   "i": "shield",
+   "t": "Şikâyet ve engelleme",
+   "p": "Rahatsız eden soruyu şikâyet et, kişiyi tek dokunuşla engelle. İstersen hesabını gizli yap."
+  },
+  {
+   "i": "age",
+   "t": "18 yaş ve üstü",
+   "p": "Sence yetişkinler için bir topluluk. Kaba ifadeler gönderilmeden önce yakalanır."
+  },
+  {
+   "i": "key",
+   "t": "Hesabın senin",
+   "p": "Telefon değişse de kaybolmasın diye Apple ya da Google hesabına bağla. Hesabını uygulamadan silebilirsin."
+  }
+ ],
+ "faq_h2": "Sıkça sorulan sorular",
+ "faq": [
+  {
+   "q": "Sence nedir?",
+   "a": "Kararsız kaldığın konularda takma adla soru sorup topluluğa oylattığın bir uygulama. Üç soru şekli var: Evet/Hayır, Seçtir (2–4 seçenek) ve Puanlat (0–10). Oy vermeye “bence” diyoruz."
+  },
+  {
+   "q": "Ücretli mi?",
+   "a": "Hayır. Sence'yi indirmek ve kullanmak ücretsiz."
+  },
+  {
+   "q": "Kimin neye oy verdiğini biri görebilir mi?",
+   "a": "Hayır. Oy verenlerin kimliği hiçbir yerde gösterilmez. Herkes, soruyu soran da dahil, yalnız yüzdeleri ve oy sayısını görür."
+  },
+  {
+   "q": "Neden şifre yok?",
+   "a": "Hesabın telefonunda açılır, yalnız bir takma ad seçersin. Telefon değişince hesabın kaybolmasın diye Ayarlar'dan Apple ya da Google hesabına bağlayabilirsin; yeni telefonda “Zaten hesabım var” ile dönersin."
+  },
+  {
+   "q": "Sorum ne kadar açık kalır?",
+   "a": "Sen seçersin: 10 dakika, 1, 6, 12 ya da 24 saat. İstersen süresiz de açabilirsin. Süre dolunca sonuç kilitlenir ve sana haber gelir."
+  },
+  {
+   "q": "Hangi cihazlarda çalışır?",
+   "a": "Sence çok yakında iPhone ve iPad için App Store'da (iOS 17.6 ve üstü), Android için Google Play'de olacak."
+  },
+  {
+   "q": "Hangi dillerde kullanabilirim?",
+   "a": "Şimdilik Türkçe ve İngilizce. Yeni diller yolda."
+  }
+ ],
+ "cta_h2": "Kararsız mısın? Herkes oylasın.",
+ "cta_p": "Sence çok yakında App Store'da ve Google Play'de. Çıktığı gün bu sayfadan indirebileceksin.",
+ "footer_about": "Sence, AnberTech'in uygulamasıdır.",
+ "footer_motto": "Sade uygulamalar. Net işler.",
+ "footer_more": "Diğer uygulamalarımız",
+ "rights": "© 2026 AnberTech",
+ "support_slug": "destek/",
+ "support_title": "Sence Destek · Yardım ve iletişim",
+ "support_desc": "Sence için yardım: hesabını geri alma, hesap silme, şikâyet ve engelleme, takma ad, bildirimler. Sorunu destek.anbertech@gmail.com adresine yaz.",
+ "support_h1": "Destek",
+ "support_lead": "Bir sorun mu var, bir önerin mi? Bize yaz, en kısa sürede dönelim.",
+ "support_mail_btn": "E-posta gönder",
+ "support_mail_subject": "Sence destek",
+ "support_h2": "Sık sorulanlar",
+ "support_faq": [
+  {
+   "q": "Yeni telefona geçtim, hesabımı nasıl geri alırım?",
+   "a": "Hesabını daha önce Apple ya da Google hesabına bağladıysan, karşılama ekranında “Zaten hesabım var”a dokun ve aynı hesapla gir. Bağlamadıysan eski hesaba ulaşmak mümkün olmaz; bu yüzden Ayarlar → Hesap'tan bağlamanı öneririz."
+  },
+  {
+   "q": "Hesabımı nasıl silerim?",
+   "a": "Ayarlar → Hesap → Hesabı sil. İki adımda onaylarsın. Takma adın, soruların, yorumların ve takiplerin kalıcı olarak silinir; verdiğin oylar kimliğin olmadan sayılarda kalır. Takma adın 30 gün sonra başkası tarafından alınabilir."
+  },
+  {
+   "q": "Bir soruyu ya da kişiyi nasıl şikâyet ederim?",
+   "a": "Kartın sağ üstündeki “…” menüsünden “Soruyu şikâyet et”i seç. Bir kişiyi şikâyet etmek ya da engellemek için profilindeki “…” menüsünü kullan. Yoruma basılı tutarak da şikâyet edebilirsin."
+  },
+  {
+   "q": "Engellediğim kişiyi nasıl geri açarım?",
+   "a": "Ayarlar → Engellenenler listesinden kişinin engelini kaldırabilirsin. Engellediğin kişiye bildirim gitmez."
+  },
+  {
+   "q": "Takma adımı değiştirebilir miyim?",
+   "a": "Evet. Ayarlar → Bilgilerim → Takma ad. Takma adını 30 günde bir değiştirebilirsin."
+  },
+  {
+   "q": "Bildirimler gelmiyor.",
+   "a": "iPhone Ayarları → Bildirimler → Sence'de bildirimlerin açık olduğundan emin ol. Hangi bildirimleri alacağını uygulamada Ayarlar → Bildirimler'den seçebilirsin."
+  }
+ ],
+ "support_legal": "Hukuki başvurular ve içerik kaldırma talepleri için de aynı adrese yazabilirsin. Lütfen ilgili sorunun ya da profilin bağlantısını ekle.",
+ "back_home": "Sence ana sayfa",
+ "dur_chips": [
+  "10 dk",
+  "1 sa",
+  "6 sa",
+  "12 sa",
+  "24 sa",
+  "∞"
+ ],
+ "closing_ask": "Hangisini seçtin? Dokun",
+ "closing_picked": "@sen Evet dedi",
+ "nick": "@kararsizceylan"
+}

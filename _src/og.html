@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Paylaşım görseli kaynağı (1200×630). Kullanım: og.html?l=tr  ya da  ?l=en ; README'deki komutla assets/img/og-<dil>.jpg üretilir. -->
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Geist;font-weight:600;src:url(../assets/fonts/geist-semibold.woff)}
+@font-face{font-family:Geist;font-weight:700;src:url(../assets/fonts/geist-bold.woff)}
+@font-face{font-family:Geist;font-weight:800;src:url(../assets/fonts/geist-extrabold.woff)}
+@font-face{font-family:GM;font-weight:600;src:url(../assets/fonts/geist-mono-semibold.woff)}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;overflow:hidden;background:#F4F5F8;font-family:Geist;color:#121316;position:relative}
+.l{position:absolute;border-radius:50%;filter:blur(90px);opacity:.6}
+.l1{width:560px;height:560px;left:-180px;top:-220px;background:#67E8F9}
+.l2{width:520px;height:520px;right:-120px;top:120px;background:#A5B4FC}
+.l3{width:520px;height:520px;left:340px;bottom:-360px;background:#E9D5FF}
+.copy{position:absolute;left:76px;top:86px;width:600px}
+.brand{display:flex;align-items:center;gap:8px;font-size:46px;font-weight:800;letter-spacing:-.05em}
+.brand svg{height:46px}
+h1{font-size:92px;line-height:.98;font-weight:800;letter-spacing:-.045em;margin-top:44px}
+h1 em{font-style:normal;background:linear-gradient(115deg,#06B6D4,#6366F1 52%,#A78BFA);-webkit-background-clip:text;color:transparent}
+.soon{display:inline-flex;align-items:center;gap:10px;margin-top:40px;padding:12px 20px;border-radius:18px;color:#fff;font-weight:700;font-size:22px;
+  background:linear-gradient(115deg,#0E7490,#4338CA 52%,#6D28D9)}
+.soon svg{width:20px;height:24px}
+.card{position:absolute;right:70px;top:58px;width:380px;padding:9px;border-radius:32px;background:rgba(255,255,255,.66);border:1px solid #fff;
+  box-shadow:0 30px 70px -24px rgba(40,44,110,.35);transform:rotate(3deg)}
+.panel{padding:13px;border-radius:25px;border:1px solid rgba(18,19,22,.08)}
+.h{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px}
+.ava{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#FBBF24,#F472B6,#FB7185);position:relative}
+.ava:before,.ava:after{content:"";position:absolute;top:13px;width:4px;height:8px;border-radius:3px;background:#121316}
+.ava:before{left:10px}.ava:after{right:10px}
+.ph{margin-top:12px;aspect-ratio:1;border-radius:22px;overflow:hidden;height:300px;width:100%}
+.ph img{width:100%;height:100%;object-fit:cover}
+.q{font-size:21px;font-weight:600;margin:12px 4px 2px;letter-spacing:-.015em}
+.strip{display:flex;gap:4px;height:62px;margin-top:9px;padding:4px;border-radius:20px;background:rgba(18,19,22,.06)}
+.strip span{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:16px;color:#fff;font-weight:700;font-size:19px}
+.no{flex:38;background:#E62E4D;opacity:.75}.yes{flex:62;background:#00C48C}
+.strip b{font-family:GM;font-weight:600}
+</style></head><body>
+<i class="l l1"></i><i class="l l2"></i><i class="l l3"></i>
+<div class="copy">
+  <div class="brand">sence<svg viewBox="283 202 458 617"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06B6D4"/><stop offset=".5" stop-color="#6366F1"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs><g transform="translate(265.76 215.04) scale(0.81807)"><path fill="#121316" d="M212 232Q212 315 234.0 357.5Q256 400 310 425Q346 442 363.5 455.0Q381 468 387.0 482.5Q393 497 393 517Q393 549 372.0 569.0Q351 589 311 589Q223 589 212 493L34 501Q40 566 73.5 617.0Q107 668 166.5 697.0Q226 726 311 726Q397 726 454.0 698.5Q511 671 539.5 623.5Q568 576 568 517Q568 473 556.0 443.5Q544 414 517.0 391.0Q490 368 445 343Q409 323 395.0 300.5Q381 278 381 232Z"/></g><circle cx="507.09" cy="283.35" r="70.97" fill="url(#g)"/></svg></div>
+  <h1 id="h1"></h1>
+  <div class="soon"><span id="soon"></span></div>
+</div>
+<div class="card"><div class="panel">
+  <div class="h"><span class="ava"></span><span id="nick"></span></div>
+  <div class="ph"><img src="../assets/img/ayakkabi_a.webp"></div>
+  <div class="q" id="q"></div>
+</div>
+<div class="strip"><span class="no"><span id="no"></span> <b id="pn"></b></span><span class="yes">✓ <span id="yes"></span> <b id="py"></b></span></div></div>
+<script>
+var en = new URLSearchParams(location.search).get("l") === "en";
+var T = en ? {h1:"Can't decide?<br><em>We can.</em>",soon:"Coming soon to the App Store and Google Play",nick:"@undecidedfox",q:"Should I buy these sneakers?",no:"No",yes:"Yes",pn:"38%",py:"62%"}
+           : {h1:"Sen sor,<br><em>karar bizde.</em>",soon:"Yakında App Store ve Google Play'de",nick:"@kararsizceylan",q:"Bu ayakkabıyı alayım mı?",no:"Hayır",yes:"Evet",pn:"%38",py:"%62"};
+for (var k in T) document.getElementById(k).innerHTML = T[k];
+</script>
+</body></html>

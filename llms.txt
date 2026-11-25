@@ -1,0 +1,32 @@
+# Sence
+
+> Sence ("what do you think?" in Turkish) is a mobile app by AnberTech for decisions you can't make alone: you ask a question under a nickname and the community votes. Store name: "Sence: Can't Decide? We Can." (Turkish: "Sence: Sen Sor, Karar Bizde"). Status: coming soon to the App Store for iPhone and iPad (iOS 17.6+) and to Google Play for Android. Languages: Turkish and English. Free. Adults only (18+).
+
+## What it does
+
+- Three question types: Yes/No (slide left for no, right for yes), Pick (2–4 options, each a photo or short text) and Rate (0–10, the result shows the crowd's score distribution and average).
+- A question has up to 99 characters, an optional photo, a category and a time limit (10 minutes, 1, 6, 12 or 24 hours, or no limit). When time is up the result locks and the asker is notified.
+- Tabs: Trending (everyone's questions, personalised), Square (people you follow and their Resences), Decisions (questions you voted on), Me (profile), Ask.
+- Social: follow, private accounts, Resence (re-ask someone's question to your followers), public comments the asker can turn off, notifications, Story sharing.
+- Privacy and safety: nickname only, no passwords (optional Apple/Google account linking), voters are never shown (only counts), photos are checked before going live and location data is stripped on the device, report and block, in-app account deletion.
+
+## Pages
+
+- [Sence (English)](https://anbertech.github.io/Sence/en/)
+- [Sence (Türkçe)](https://anbertech.github.io/Sence/)
+- [Support](https://anbertech.github.io/Sence/en/support/) · [Destek](https://anbertech.github.io/Sence/destek/)
+
+## FAQ
+
+- What is Sence? An app where you ask about things you can't decide on, under a nickname, and the crowd votes. There are three kinds of questions: Yes/No, Pick (2–4 options) and Rate (0–10). “Sence” is Turkish for “what do you think?”.
+- Does it cost anything? No. Sence is free to download and use.
+- Can anyone see who voted for what? No. Voters are never shown anywhere. Everyone, including the person asking, sees only percentages and the number of votes.
+- Why are there no passwords? Your account is created on your phone; you just pick a nickname. So you don't lose it when you switch phones, link it to Apple or Google in Settings, then use “I already have an account” on the new phone.
+- How long does my question stay open? You choose: 10 minutes, 1, 6, 12 or 24 hours, or no limit at all. When time is up the result locks and you get a notification.
+- Which devices does it run on? Sence is coming very soon to the App Store for iPhone and iPad (iOS 17.6 or later) and to Google Play for Android.
+- Which languages are supported? English and Turkish for now. More languages are on the way.
+
+## Contact
+
+- destek.anbertech@gmail.com
+- Developer: AnberTech (https://anbertech.github.io/)
