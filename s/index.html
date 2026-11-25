@@ -33,7 +33,18 @@
   const tr = (navigator.language || "en").toLowerCase().startsWith("tr");
   const el = (tag, cls, text) => { const x = document.createElement(tag); if (cls) x.className = cls; if (text != null) x.textContent = text; return x; };
   if (/^[A-Za-z0-9]{10,40}$/.test(id)) {
-    document.getElementById("ac").href = "sence://soru/" + id;
+    // Uygulama yalnız iPhone/iPad'de var: başka cihazda "Uygulamada aç" yerine sitenin ana sayfası (geçersiz adres
+    // uyarısı çıkmasın; 2026-11-25). iPhone'da bağlantı zaten doğrudan uygulamayı açar (universal link); bu düğme
+    // yedek: uygulama yoksa 1,5 sn sonra ana sayfaya gider.
+    const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const ac = document.getElementById("ac");
+    if (ios) {
+      ac.href = "sence://soru/" + id;
+      ac.addEventListener("click", () => setTimeout(() => { if (!document.hidden) location.href = "../"; }, 1500));
+    } else {
+      ac.textContent = tr ? "Yakında App Store'da" : "Coming soon to the App Store";
+      ac.removeAttribute("data-tr"); ac.removeAttribute("data-en");
+    }
     fetch(API + "?id=" + id).then((r) => r.ok ? r.json() : null).then((q) => {
       if (!q) return;
       const k = document.getElementById("kart");
