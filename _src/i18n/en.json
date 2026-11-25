@@ -1,247 +1,251 @@
 {
- "lang": "en",
- "locale": "en_US",
- "dir": "ltr",
- "flag": "en",
- "code": "EN",
- "name": "English",
- "title": "Sence: Can't Decide? We Can. · Ask it, the crowd votes",
- "meta_desc": "On Sence you ask under a nickname and the crowd votes. This or that, yes or no, how many points? Ask with a photo or just text and see what everyone thinks in seconds. Coming soon to the App Store and Google Play.",
- "og_title": "Sence: Can't Decide? We Can.",
- "og_desc": "Stuck on a choice? Ask it, the crowd votes. Nickname only, votes stay private. Coming soon to the App Store and Google Play.",
- "skip": "Skip to content",
- "nav_how": "How it works",
- "nav_faq": "FAQ",
- "nav_support": "Support",
- "aria_theme": "Light / dark theme",
- "aria_lang": "Language / Dil",
- "aria_home": "Sence home",
- "pill": "iPhone, iPad and Android · Coming soon",
- "h1_a": "Can't decide?",
- "h1_b": "We can.",
- "lead": "Ask about anything you're stuck on and let the crowd vote with a single swipe. This or that, yes or no, how many points? See what everyone thinks in seconds.",
- "checks": [
-  "Free",
-  "Nickname only",
-  "Private votes",
-  "No passwords"
- ],
- "store_soon": "Coming soon to the App Store",
- "store_soon_small": "Coming soon",
- "see_how": "How does it work?",
- "demo_note": "Sample question · numbers are illustrative",
- "demo_hint": "Slide on the bar, release to vote",
- "demo_again": "Again",
- "demo_cancel": "Cancelled, no vote",
- "yes": "Yes",
- "no": "No",
- "avg": "avg",
- "you": "You",
- "bence": "votes",
- "comments": "comments",
- "resences": "resences",
- "q_hero": "Should I buy these sneakers?",
- "q_yesno": "Movie night tonight?",
- "q_choice": "Where should I study today?",
- "q_rate": "Rate my new desk setup?",
- "opt_a": "Library",
- "opt_b": "At home",
- "a11y_strip_yesno": "Voting bar: No or Yes",
- "a11y_strip_choice": "Voting bar: options",
- "a11y_strip_rate": "Rating bar, 0 to 10",
- "a11y_result": "Result",
- "a11y_photo": "Question photo",
- "tabs": {
-  "agenda": "Trending",
-  "square": "Square",
-  "decisions": "Decisions",
-  "me": "Me",
-  "ask": "Ask"
- },
- "shapes_h2": "Three ways to ask",
- "shapes_p": "Every question is one card. You always answer in the same place: the bar under the card. Try it.",
- "shape_yesno": "Yes/No",
- "shape_yesno_p": "One question, two answers. Slide left for no, right for yes.",
- "shape_choice": "Pick",
- "shape_choice_p": "2 to 4 options, each a photo or a few words. Let the crowd pick one.",
- "shape_rate": "Rate",
- "shape_rate_p": "A score from 0 to 10. The result shows how the crowd's scores spread, with the average.",
- "how_h2": "How it works",
- "how_p": "A minute to ask, seconds to get answers.",
- "how": [
-  {
-   "t": "Ask",
-   "p": "Add a photo and write your question in up to 99 characters. Pick a category and a time limit: 10 minutes, 1 to 24 hours, or no limit."
+  "lang": "en",
+  "locale": "en_US",
+  "dir": "ltr",
+  "flag": "en",
+  "code": "EN",
+  "name": "English",
+  "title": "Sence: Can't Decide? We Can. · Ask it, the crowd votes",
+  "meta_desc": "On Sence you ask under a nickname and the crowd votes. This or that, yes or no, how many points? Ask with a photo or just text and see what everyone thinks in seconds. Coming soon to the App Store and Google Play.",
+  "og_title": "Sence: Can't Decide? We Can.",
+  "og_desc": "Stuck on a choice? Ask it, the crowd votes. Nickname only, votes stay private. Coming soon to the App Store and Google Play.",
+  "skip": "Skip to content",
+  "nav_how": "How it works",
+  "nav_faq": "FAQ",
+  "nav_support": "Support",
+  "aria_theme": "Light / dark theme",
+  "aria_lang": "Language / Dil",
+  "aria_home": "Sence home",
+  "pill": "iPhone, iPad and Android · Coming soon",
+  "h1_a": "Can't decide?",
+  "h1_b": "We can.",
+  "lead": "Ask about anything you're stuck on and let the crowd vote with a single swipe. This or that, yes or no, how many points? See what everyone thinks in seconds.",
+  "checks": [
+    "Free",
+    "Nickname only",
+    "Private votes",
+    "No passwords"
+  ],
+  "store_soon": "Coming soon to the App Store",
+  "store_soon_small": "Coming soon",
+  "see_how": "How does it work?",
+  "demo_note": "Sample question · numbers are illustrative",
+  "demo_hint": "Slide on the bar, release to vote",
+  "demo_again": "Again",
+  "demo_cancel": "Cancelled, no vote",
+  "yes": "Yes",
+  "no": "No",
+  "avg": "avg",
+  "you": "You",
+  "bence": "votes",
+  "comments": "comments",
+  "resences": "resences",
+  "q_hero": "Should I buy these sneakers?",
+  "q_yesno": "Movie night tonight?",
+  "q_choice": "Where should I study today?",
+  "q_rate": "Rate my new desk setup?",
+  "opt_a": "Library",
+  "opt_b": "At home",
+  "a11y_strip_yesno": "Voting bar: No or Yes",
+  "a11y_strip_choice": "Voting bar: options",
+  "a11y_strip_rate": "Rating bar, 0 to 10",
+  "a11y_result": "Result",
+  "a11y_photo": "Question photo",
+  "tabs": {
+    "agenda": "Trending",
+    "square": "Square",
+    "decisions": "Decisions",
+    "me": "Me",
+    "ask": "Ask"
   },
-  {
-   "t": "The crowd votes",
-   "p": "Your question lands in Trending and in your followers' Square. Everyone votes with one swipe. Nobody sees who voted for what, only the numbers."
-  },
-  {
-   "t": "Make your call",
-   "p": "When time is up the result locks and we let you know. If you like, tell everyone what you picked in the end."
-  }
- ],
- "inside_h2": "What's inside",
- "inside_p": "Five tabs, one card at a time. Swipe up for the next question.",
- "inside": [
-  {
-   "i": "agenda",
-   "t": "Trending",
-   "p": "Everyone's questions, ranked for what you're into. The app opens here."
-  },
-  {
-   "i": "square",
-   "t": "Square",
-   "p": "Questions and Resences from people you follow, then suggestions when you're all caught up."
-  },
-  {
-   "i": "decisions",
-   "t": "Decisions",
-   "p": "Every question you've voted on, with how it turned out."
-  },
-  {
-   "i": "resence",
-   "t": "Resence",
-   "p": "Like a question? Ask it again to your own followers."
-  },
-  {
-   "i": "comment",
-   "t": "Comments",
-   "p": "Public comments and replies. The person asking can turn them off."
-  },
-  {
-   "i": "bell",
-   "t": "Notifications",
-   "p": "Hear when a result is in, when someone comments, or when your question gets resenced."
-  },
-  {
-   "i": "share",
-   "t": "Share",
-   "p": "Send a question or its result to friends as a ready-made Story."
-  },
-  {
-   "i": "theme",
-   "t": "Light and dark",
-   "p": "A crystal-clear light theme, or a smoky dark one for late nights."
-  }
- ],
- "trust_h2": "Ask freely",
- "trust_p": "Nobody on Sence is there to judge you. They're just answering your question.",
- "trust": [
-  {
-   "i": "mask",
-   "t": "Nickname only",
-   "p": "No real name, phone number or password. Pick a nickname and you're in."
-  },
-  {
-   "i": "lock",
-   "t": "Private votes",
-   "p": "Nobody is shown who voted for what. Even the person asking only sees numbers."
-  },
-  {
-   "i": "photo",
-   "t": "Checked photos",
-   "p": "Every photo is checked before it goes live. Location data is removed while it's still on your phone."
-  },
-  {
-   "i": "shield",
-   "t": "Report and block",
-   "p": "Report a question that bothers you and block someone with one tap. You can also make your account private."
-  },
-  {
-   "i": "age",
-   "t": "18+ only",
-   "p": "Sence is a community for adults. Rude language is caught before it's posted."
-  },
-  {
-   "i": "key",
-   "t": "Your account, kept",
-   "p": "Link Apple or Google so a new phone doesn't mean a lost account. You can delete your account in the app."
-  }
- ],
- "faq_h2": "Frequently asked questions",
- "faq": [
-  {
-   "q": "What is Sence?",
-   "a": "An app where you ask about things you can't decide on, under a nickname, and the crowd votes. There are three kinds of questions: Yes/No, Pick (2–4 options) and Rate (0–10). “Sence” is Turkish for “what do you think?”."
-  },
-  {
-   "q": "Does it cost anything?",
-   "a": "No. Sence is free to download and use."
-  },
-  {
-   "q": "Can anyone see who voted for what?",
-   "a": "No. Voters are never shown anywhere. Everyone, including the person asking, sees only percentages and the number of votes."
-  },
-  {
-   "q": "Why are there no passwords?",
-   "a": "Your account is created on your phone; you just pick a nickname. So you don't lose it when you switch phones, link it to Apple or Google in Settings, then use “I already have an account” on the new phone."
-  },
-  {
-   "q": "How long does my question stay open?",
-   "a": "You choose: 10 minutes, 1, 6, 12 or 24 hours, or no limit at all. When time is up the result locks and you get a notification."
-  },
-  {
-   "q": "Which devices does it run on?",
-   "a": "Sence is coming very soon to the App Store for iPhone and iPad (iOS 17.6 or later) and to Google Play for Android."
-  },
-  {
-   "q": "Which languages are supported?",
-   "a": "English and Turkish for now. More languages are on the way."
-  }
- ],
- "cta_h2": "Stuck on a choice? Let the crowd vote.",
- "cta_p": "Sence is coming to the App Store and Google Play very soon. You'll be able to download it from this page on launch day.",
- "footer_about": "Sence is an app by AnberTech.",
- "footer_motto": "Simple apps. Clear jobs.",
- "footer_more": "More of our apps",
- "rights": "© 2026 AnberTech",
- "support_slug": "en/support/",
- "support_title": "Sence Support · Help and contact",
- "support_desc": "Help with Sence: getting your account back, deleting your account, reporting and blocking, nicknames and notifications. Write to destek.anbertech@gmail.com.",
- "support_h1": "Support",
- "support_lead": "Something not working, or an idea to share? Write to us and we'll get back to you soon.",
- "support_mail_btn": "Send an email",
- "support_mail_subject": "Sence support",
- "support_h2": "Common questions",
- "support_faq": [
-  {
-   "q": "I got a new phone. How do I get my account back?",
-   "a": "If you linked your account to Apple or Google, tap “I already have an account” on the welcome screen and sign in with the same one. Without a link the old account can't be recovered, so we recommend linking it in Settings → Account."
-  },
-  {
-   "q": "How do I delete my account?",
-   "a": "Settings → Account → Delete account, then confirm in two steps. Your nickname, questions, comments and follows are deleted for good; your votes stay in the counts, without your identity. Your nickname becomes available to others after 30 days."
-  },
-  {
-   "q": "How do I report a question or a person?",
-   "a": "Open the “…” menu at the top right of the card and choose Report question. To report or block a person, use the “…” menu on their profile. You can also press and hold a comment to report it."
-  },
-  {
-   "q": "How do I unblock someone?",
-   "a": "Go to Settings → Blocked accounts and tap Unblock. The person isn't notified when you block them."
-  },
-  {
-   "q": "Can I change my nickname?",
-   "a": "Yes: Settings → My info → Nickname. You can change it once every 30 days."
-  },
-  {
-   "q": "I'm not getting notifications.",
-   "a": "Make sure notifications are on in iPhone Settings → Notifications → Sence. In the app, choose which ones you want under Settings → Notifications."
-  }
- ],
- "support_legal": "Legal requests and content removal requests can go to the same address. Please include a link to the question or profile in question.",
- "back_home": "Sence home",
- "dur_chips": [
-  "10 min",
-  "1 hr",
-  "6 hr",
-  "12 hr",
-  "24 hr",
-  "∞"
- ],
- "closing_ask": "What did you pick? Tap",
- "closing_picked": "@you picked Yes",
- "nick": "@undecidedfox"
+  "shapes_h2": "Three ways to ask",
+  "shapes_p": "Every question is one card. You always answer in the same place: the bar under the card. Try it.",
+  "shape_yesno": "Yes/No",
+  "shape_yesno_p": "One question, two answers. Slide left for no, right for yes.",
+  "shape_choice": "Pick",
+  "shape_choice_p": "2 to 4 options, each a photo or a few words. Let the crowd pick one.",
+  "shape_rate": "Rate",
+  "shape_rate_p": "A score from 0 to 10. The result shows how the crowd's scores spread, with the average.",
+  "how_h2": "How it works",
+  "how_p": "A minute to ask, seconds to get answers.",
+  "how": [
+    {
+      "t": "Ask",
+      "p": "Add a photo and write your question in up to 99 characters. Pick a category and a time limit: 10 minutes, 1 to 24 hours, or no limit."
+    },
+    {
+      "t": "The crowd votes",
+      "p": "Your question lands in Trending and in your followers' Square. Everyone votes with one swipe. Nobody sees who voted for what, only the numbers."
+    },
+    {
+      "t": "Make your call",
+      "p": "When time is up the result locks and we let you know. If you like, tell everyone what you picked in the end."
+    }
+  ],
+  "inside_h2": "What's inside",
+  "inside_p": "Five tabs, one card at a time. Swipe up for the next question.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Trending",
+      "p": "Everyone's questions, ranked for what you're into. The app opens here."
+    },
+    {
+      "i": "square",
+      "t": "Square",
+      "p": "Questions and Resences from people you follow, then suggestions when you're all caught up."
+    },
+    {
+      "i": "decisions",
+      "t": "Decisions",
+      "p": "Every question you've voted on, with how it turned out."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Like a question? Ask it again to your own followers."
+    },
+    {
+      "i": "comment",
+      "t": "Comments",
+      "p": "Public comments and replies. The person asking can turn them off."
+    },
+    {
+      "i": "bell",
+      "t": "Notifications",
+      "p": "Hear when a result is in, when someone comments, or when your question gets resenced."
+    },
+    {
+      "i": "share",
+      "t": "Share",
+      "p": "Send a question or its result to friends as a ready-made Story."
+    },
+    {
+      "i": "theme",
+      "t": "Light and dark",
+      "p": "A crystal-clear light theme, or a smoky dark one for late nights."
+    }
+  ],
+  "trust_h2": "Ask freely",
+  "trust_p": "Nobody on Sence is there to judge you. They're just answering your question.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Nickname only",
+      "p": "No real name, phone number or password. Pick a nickname and you're in."
+    },
+    {
+      "i": "lock",
+      "t": "Private votes",
+      "p": "Nobody is shown who voted for what. Even the person asking only sees numbers."
+    },
+    {
+      "i": "photo",
+      "t": "Checked photos",
+      "p": "Every photo is checked before it goes live. Location data is removed while it's still on your phone."
+    },
+    {
+      "i": "shield",
+      "t": "Report and block",
+      "p": "Report a question that bothers you and block someone with one tap. You can also make your account private."
+    },
+    {
+      "i": "age",
+      "t": "18+ only",
+      "p": "Sence is a community for adults. Rude language is caught before it's posted."
+    },
+    {
+      "i": "key",
+      "t": "Your account, kept",
+      "p": "Link Apple or Google so a new phone doesn't mean a lost account. You can delete your account in the app."
+    }
+  ],
+  "faq_h2": "Frequently asked questions",
+  "faq": [
+    {
+      "q": "What is Sence?",
+      "a": "An app where you ask about things you can't decide on, under a nickname, and the crowd votes. There are three kinds of questions: Yes/No, Pick (2–4 options) and Rate (0–10). “Sence” is Turkish for “what do you think?”."
+    },
+    {
+      "q": "Does it cost anything?",
+      "a": "No. Sence is free to download and use."
+    },
+    {
+      "q": "Can anyone see who voted for what?",
+      "a": "No. Voters are never shown anywhere. Everyone, including the person asking, sees only percentages and the number of votes."
+    },
+    {
+      "q": "Why are there no passwords?",
+      "a": "Your account is created on your phone; you just pick a nickname. So you don't lose it when you switch phones, link it to Apple or Google in Settings, then use “I already have an account” on the new phone."
+    },
+    {
+      "q": "How long does my question stay open?",
+      "a": "You choose: 10 minutes, 1, 6, 12 or 24 hours, or no limit at all. When time is up the result locks and you get a notification."
+    },
+    {
+      "q": "Which devices does it run on?",
+      "a": "Sence is coming very soon to the App Store for iPhone and iPad (iOS 17.6 or later) and to Google Play for Android."
+    },
+    {
+      "q": "Which languages are supported?",
+      "a": "English and Turkish for now. More languages are on the way."
+    }
+  ],
+  "cta_h2": "Stuck on a choice? Let the crowd vote.",
+  "cta_p": "Sence is coming to the App Store and Google Play very soon. You'll be able to download it from this page on launch day.",
+  "footer_about": "Sence is an app by AnberTech.",
+  "footer_motto": "Simple apps. Clear jobs.",
+  "footer_more": "More of our apps",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "en/support/",
+  "support_title": "Sence Support · Help and contact",
+  "support_desc": "Help with Sence: getting your account back, deleting your account, reporting and blocking, nicknames and notifications. Write to destek.anbertech@gmail.com.",
+  "support_h1": "Support",
+  "support_lead": "Something not working, or an idea to share? Write to us and we'll get back to you soon.",
+  "support_mail_btn": "Send an email",
+  "support_mail_subject": "Sence support",
+  "support_h2": "Common questions",
+  "support_faq": [
+    {
+      "q": "I got a new phone. How do I get my account back?",
+      "a": "If you linked your account to Apple or Google, tap “I already have an account” on the welcome screen and sign in with the same one. Without a link the old account can't be recovered, so we recommend linking it in Settings → Account."
+    },
+    {
+      "q": "How do I delete my account?",
+      "a": "Settings → Account → Delete account, then confirm in two steps. Your nickname, questions, comments and follows are deleted for good; your votes stay in the counts, without your identity. Your nickname becomes available to others after 30 days."
+    },
+    {
+      "q": "How do I report a question or a person?",
+      "a": "Open the “…” menu at the top right of the card and choose Report question. To report or block a person, use the “…” menu on their profile. You can also press and hold a comment to report it."
+    },
+    {
+      "q": "How do I unblock someone?",
+      "a": "Go to Settings → Blocked accounts and tap Unblock. The person isn't notified when you block them."
+    },
+    {
+      "q": "Can I change my nickname?",
+      "a": "Yes: Settings → My info → Nickname. You can change it once every 30 days."
+    },
+    {
+      "q": "I'm not getting notifications.",
+      "a": "Make sure notifications are on in iPhone Settings → Notifications → Sence. In the app, choose which ones you want under Settings → Notifications."
+    }
+  ],
+  "support_legal": "Legal requests and content removal requests can go to the same address. Please include a link to the question or profile in question.",
+  "back_home": "Sence home",
+  "dur_chips": [
+    "10 min",
+    "1 hr",
+    "6 hr",
+    "12 hr",
+    "24 hr",
+    "∞"
+  ],
+  "closing_ask": "What did you pick? Tap",
+  "closing_picked": "@you picked Yes",
+  "nick": "@undecidedfox",
+  "legal_terms": "Terms of Use",
+  "legal_privacy": "Privacy Policy",
+  "legal_terms_desc": "Sence Terms of Use: age limit, rules, reporting and account deletion.",
+  "legal_privacy_desc": "Sence Privacy Policy: what data we process, why, and your rights."
 }

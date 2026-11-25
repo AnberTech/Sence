@@ -20,4 +20,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
   </url>
+  <url><loc>https://anbertech.github.io/Sence/kosullar/</loc><lastmod>2026-11-25</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/kosullar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/terms/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/en/terms/</loc><lastmod>2026-11-25</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/kosullar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/terms/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/gizlilik/</loc><lastmod>2026-11-25</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/gizlilik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/privacy/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/en/privacy/</loc><lastmod>2026-11-25</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/gizlilik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/privacy/" />
+  </url>
 </urlset>

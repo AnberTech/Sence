@@ -21,7 +21,7 @@ PATH = {'tr': '', 'en': 'en/'}
 APP_STORE = None                          # yayına çıkınca: 'https://apps.apple.com/app/id…' (rozetler kendiliğinden bağlanır)
 APP_ID = None                             # yayına çıkınca: '67…' (Safari akıllı uygulama şeridi)
 PLAY = None                               # yayına çıkınca: 'https://play.google.com/store/apps/details?id=…'
-VER = '2'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
+VER = '3'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
 TODAY = datetime.date.today().isoformat()
 P = ['']                                  # o an üretilen sayfanın köke göre öneki (kart görselleri için)
 
@@ -218,11 +218,24 @@ def prefix(rel):
     return '../' * rel.count('/')
 
 
+# Hukuki sayfalar (2026-11-25): metinler _src/legal/<tür>_<dil>.md, sayfalar `legal()` ile üretilir.
+LEGAL = {'terms': {'tr': 'kosullar/', 'en': 'en/terms/'}, 'privacy': {'tr': 'gizlilik/', 'en': 'en/privacy/'}}
+LEGAL_SRC = {'terms': 'kosullar', 'privacy': 'gizlilik'}
+
+
+def slug(x, page):
+    if page == 'home':
+        return PATH[x]
+    if page == 'support':
+        return T[x]['support_slug']
+    return LEGAL[page][x]
+
+
 def lang_switch(l, page):
-    """page: 'home' | 'support'"""
+    """page: 'home' | 'support' | 'terms' | 'privacy'"""
     out = []
     for x in LANGS:
-        href = BASE + (PATH[x] if page == 'home' else T[x]['support_slug'])
+        href = BASE + slug(x, page)
         cur = ' aria-current="page"' if x == l else ''
         out.append(f'<a href="{href}" hreflang="{x}" lang="{x}"{cur}>{T[x]["code"]}</a>')
     return f'<nav class="langs" aria-label="{e(T[l]["aria_lang"])}">{"".join(out)}</nav>'
@@ -231,9 +244,9 @@ def lang_switch(l, page):
 def alternates(page):
     rows = []
     for x in LANGS:
-        href = BASE + (PATH[x] if page == 'home' else T[x]['support_slug'])
+        href = BASE + slug(x, page)
         rows.append(f'<link rel="alternate" hreflang="{x}" href="{href}">')
-    xd = BASE + (PATH['en'] if page == 'home' else T['en']['support_slug'])
+    xd = BASE + slug('en', page)
     rows.append(f'<link rel="alternate" hreflang="x-default" href="{xd}">')
     return '\n'.join(rows)
 
@@ -434,6 +447,7 @@ def support(l):
 <h2>{e(t["support_h2"])}</h2>
 <div class="faq">{faq}</div>
 <p class="legal">{e(t["support_legal"])}</p>
+<p class="legal"><a href="{prefix(rel)}{LEGAL["terms"][l]}">{e(t["legal_terms"])}</a> · <a href="{prefix(rel)}{LEGAL["privacy"][l]}">{e(t["legal_privacy"])}</a></p>
 <p><a class="back" href="{prefix(rel)}{PATH[l]}">← {e(t["back_home"])}</a></p>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "FAQPage", "inLanguage": l, "mainEntity": [
@@ -441,14 +455,72 @@ def support(l):
     write(rel + 'index.html', page(l, rel, t['support_title'], t['support_desc'], body, ld, 'support'))
 
 
+def md(text):
+    """Hukuki metinler için küçük Markdown çevirici: # / ## başlık, paragraf, - liste, | tablo |, **kalın**, [bağlantı](adres)."""
+    import re
+
+    def inline(x):
+        x = e(x)
+        x = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', x)
+        x = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2">\1</a>', x)
+        x = re.sub(r'(?<!href=")(https://[^\s<]+)', r'<a href="\1">\1</a>', x)
+        return x
+    out, para, lst, tbl = [], [], [], []
+
+    def flush():
+        if para:
+            out.append('<p>' + '<br>'.join(inline(x) for x in para) + '</p>')
+            para.clear()
+        if lst:
+            out.append('<ul>' + ''.join(f'<li>{inline(x)}</li>' for x in lst) + '</ul>')
+            lst.clear()
+        if tbl:
+            rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tbl if not re.match(r'^\|\s*-', r)]
+            head = ''.join(f'<th>{inline(c)}</th>' for c in rows[0])
+            body = ''.join('<tr>' + ''.join(f'<td>{inline(c)}</td>' for c in r) + '</tr>' for r in rows[1:])
+            out.append(f'<div class="tbl"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
+            tbl.clear()
+    for line in text.splitlines():
+        if line.startswith('# '):
+            flush(); out.append(f'<h1>{inline(line[2:])}</h1>')
+        elif line.startswith('## '):
+            flush(); out.append(f'<h2>{inline(line[3:])}</h2>')
+        elif line.startswith('- '):
+            if para or tbl: flush()
+            lst.append(line[2:])
+        elif line.startswith('|'):
+            if para or lst: flush()
+            tbl.append(line)
+        elif not line.strip():
+            flush()
+        else:
+            if lst or tbl: flush()
+            para.append(line)
+    flush()
+    return '\n'.join(out)
+
+
+def legal(l, kind):
+    t = T[l]
+    rel = LEGAL[kind][l]
+    text = read(os.path.join(SRC, 'legal', f'{LEGAL_SRC[kind]}_{l}.md'))
+    title = text.splitlines()[0].lstrip('# ').strip()
+    body = f'''<section class="page"><div class="wrap narrow doc">
+{md(text)}
+<p><a class="back" href="{prefix(rel)}{PATH[l]}">← {e(t["back_home"])}</a></p>
+</div></section>'''
+    ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "WebPage", "name": title, "inLanguage": l, "url": BASE + rel}]}
+    write(rel + 'index.html', page(l, rel, f'{title} · Sence', t[f'legal_{kind}_desc'], body, ld, kind))
+
+
 def sitemap():
     rows = []
-    for kind in ('home', 'support'):
-        alts = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{x}" href="{BASE + (PATH[x] if kind == "home" else T[x]["support_slug"])}" />' for x in LANGS)
-        alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE + (PATH["en"] if kind == "home" else T["en"]["support_slug"])}" />'
+    for kind in ('home', 'support', 'terms', 'privacy'):
+        alts = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{x}" href="{BASE + slug(x, kind)}" />' for x in LANGS)
+        alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE + slug("en", kind)}" />'
         for l in LANGS:
-            loc = BASE + (PATH[l] if kind == 'home' else T[l]['support_slug'])
-            pr = '1.0' if kind == 'home' else '0.5'
+            loc = BASE + slug(l, kind)
+            pr = '1.0' if kind == 'home' else ('0.5' if kind == 'support' else '0.3')
             rows.append(f'  <url><loc>{loc}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority>{alts}\n  </url>')
     write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
           'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + '\n'.join(rows) + '\n</urlset>\n')
@@ -474,6 +546,7 @@ def llms():
 - [Sence (English)]({BASE}en/)
 - [Sence (Türkçe)]({BASE})
 - [Support]({BASE}{en["support_slug"]}) · [Destek]({BASE}{tr["support_slug"]})
+- [Terms of Use]({BASE}{LEGAL["terms"]["en"]}) · [Privacy Policy]({BASE}{LEGAL["privacy"]["en"]})
 
 ## FAQ
 
@@ -492,6 +565,8 @@ if __name__ == '__main__':
     for l in LANGS:
         home(l)
         support(l)
+        legal(l, 'terms')
+        legal(l, 'privacy')
     sitemap()
     llms()
-    print('tamam:', ', '.join(PATH[l] or '/' for l in LANGS), '+ destek, sitemap.xml, llms.txt')
+    print('tamam:', ', '.join(PATH[l] or '/' for l in LANGS), '+ destek, koşullar, gizlilik, sitemap.xml, llms.txt')

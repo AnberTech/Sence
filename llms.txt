@@ -15,6 +15,7 @@
 - [Sence (English)](https://anbertech.github.io/Sence/en/)
 - [Sence (Türkçe)](https://anbertech.github.io/Sence/)
 - [Support](https://anbertech.github.io/Sence/en/support/) · [Destek](https://anbertech.github.io/Sence/destek/)
+- [Terms of Use](https://anbertech.github.io/Sence/en/terms/) · [Privacy Policy](https://anbertech.github.io/Sence/en/privacy/)
 
 ## FAQ
 

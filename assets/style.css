@@ -356,3 +356,20 @@ p{margin:0}
   *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .js .rv{opacity:1;transform:none}
 }
+
+/* Hukuki metinler (2026-11-25): /kosullar/, /gizlilik/, /en/terms/, /en/privacy/ */
+.doc h1{font-size:clamp(28px,5vw,38px);letter-spacing:-.02em;margin-bottom:6px}
+.doc h2{font-size:19px;margin:30px 0 8px}
+.doc p,.doc li{font-size:15.5px;line-height:1.6;color:var(--ink2)}
+.doc p{margin:10px 0}
+.doc b{color:var(--ink)}
+.doc ul{margin:8px 0 8px 20px;display:grid;gap:6px}
+.doc a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.doc .tbl{overflow-x:auto;margin:12px 0;border:1px solid var(--cizgi);border-radius:14px}
+.doc table{border-collapse:collapse;width:100%;font-size:14px;table-layout:fixed}
+.doc th,.doc td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--cizgi);color:var(--ink2);line-height:1.5}
+.doc th{color:var(--ink);font-weight:700;background:color-mix(in srgb,var(--ink) 4%,transparent)}
+.doc tr:last-child td{border-bottom:0}
+.doc{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.doc .tbl{max-width:100%}
+@media (max-width:600px){.doc th,.doc td{padding:8px;font-size:12.5px}}
