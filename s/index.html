@@ -12,7 +12,7 @@
 <link rel="icon" href="../assets/ikon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/sence.css">
+<link rel="stylesheet" href="../assets/sence.css?v=2">
 </head>
 <body>
 <!-- Paylaşılan soru (2026-11-25): uygulamadaki Paylaş bağlantısı buraya gelir (?id=<soru kimliği>).
@@ -21,13 +21,46 @@
 <img class="logo" src="../assets/isaret.svg" alt="">
 <h1 data-tr="Bir soru seni bekliyor" data-en="A question is waiting for you">Bir soru seni bekliyor</h1>
 <p data-tr="Bu soruya sen ne dersin? Sence'de aç, oyunu ver." data-en="What would you say? Open it in Sence and vote.">Bu soruya sen ne dersin? Sence'de aç, oyunu ver.</p>
+<div id="kart" class="kart" hidden></div>
 <a id="ac" class="buton" href="../" data-tr="Uygulamada aç" data-en="Open in the app">Uygulamada aç</a>
 <a class="ikincil" href="../" data-tr="Sence nedir?" data-en="What is Sence?">Sence nedir?</a>
-<footer>© anberTech 2026</footer>
+<footer>© 2026 AnberTech</footer>
 <script src="../assets/dil.js"></script>
 <script>
+  // Sorunun önizlemesi (sonuç asla gösterilmez). Şimdilik TEST sunucusu; yayında senceapp-4ba46 olacak.
+  const API = "https://europe-west1-senceapptest.cloudfunctions.net/publicPoll";
   const id = new URLSearchParams(location.search).get("id") || "";
-  if (/^[A-Za-z0-9]{10,40}$/.test(id)) document.getElementById("ac").href = "sence://soru/" + id;
+  const tr = (navigator.language || "en").toLowerCase().startsWith("tr");
+  const el = (tag, cls, text) => { const x = document.createElement(tag); if (cls) x.className = cls; if (text != null) x.textContent = text; return x; };
+  if (/^[A-Za-z0-9]{10,40}$/.test(id)) {
+    document.getElementById("ac").href = "sence://soru/" + id;
+    fetch(API + "?id=" + id).then((r) => r.ok ? r.json() : null).then((q) => {
+      if (!q) return;
+      const k = document.getElementById("kart");
+      const ust = el("div", "kim", "@" + q.username);
+      ust.append(el("span", "rozet", q.ended ? (tr ? "Bitti" : "Ended") : (q.noLimit ? "∞" : (tr ? "Açık" : "Open"))));
+      k.append(ust);
+      if (q.shape === "choice") {
+        k.append(el("div", "metin", q.text));
+        const g = el("div", "izgara");
+        q.options.forEach((o, i) => {
+          const c = el("div", null, o.photo ? null : o.text);
+          c.prepend(el("b", null, "ABCD"[i]));
+          if (o.photo) { const im = el("img"); im.src = o.photo; im.alt = o.text || ""; c.append(im); }
+          g.append(c);
+        });
+        k.append(g);
+      } else {
+        if (q.photo) { const im = el("img", "foto"); im.src = q.photo; im.alt = ""; k.append(im, el("div", "metin", q.text)); }
+        else k.append(el("div", "kutu", q.text));
+        const s = el("div", "serit");
+        if (q.shape === "yesNo") s.append(el("span", null, tr ? "Hayır" : "No"), el("span", null, tr ? "Evet" : "Yes"));
+        else s.append(el("span", null, "0 — 10"));
+        k.append(s);
+      }
+      k.hidden = false;
+    }).catch(() => {});
+  }
 </script>
 </body>
 </html>

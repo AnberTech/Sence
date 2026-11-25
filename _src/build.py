@@ -21,7 +21,7 @@ PATH = {'tr': '', 'en': 'en/'}
 APP_STORE = None                          # yayına çıkınca: 'https://apps.apple.com/app/id…' (rozetler kendiliğinden bağlanır)
 APP_ID = None                             # yayına çıkınca: '67…' (Safari akıllı uygulama şeridi)
 PLAY = None                               # yayına çıkınca: 'https://play.google.com/store/apps/details?id=…'
-VER = '1'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
+VER = '2'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
 TODAY = datetime.date.today().isoformat()
 P = ['']                                  # o an üretilen sayfanın köke göre öneki (kart görselleri için)
 
@@ -308,8 +308,7 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
 {body}
 </main>
 <footer class="foot"><div class="wrap">
-<div class="f1">{logo(t, p + PATH[l], "brand small")}<p>{e(t["footer_about"])}<br><span class="motto">{e(t["footer_motto"])}</span></p></div>
-<nav class="f2"><a href="{p}{t["support_slug"]}">{e(t["nav_support"])}</a><a href="mailto:{EMAIL}">{EMAIL}</a><a href="{HOME}{"" if l == "tr" else "en/"}">{e(t["footer_more"])} ↗</a></nav>
+<div class="f1">{logo(t, p + PATH[l], "brand small")}</div>
 <p class="f3">{e(t["rights"])}</p>
 </div></footer>
 <script src="{p}assets/sence-zipla.js?v={VER}"></script>

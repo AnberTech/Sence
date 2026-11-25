@@ -291,15 +291,15 @@ p{margin:0}
 .cta p{color:var(--ink2);font-size:17px;margin:14px auto 28px;max-width:30em}
 
 /* alt bilgi */
-.foot{padding:56px 0 40px;margin-top:56px;border-top:1px solid var(--cizgi)}
-.foot .wrap{display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:start}
+.foot{padding:26px 0 30px;margin-top:48px;border-top:1px solid var(--cizgi)}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px}
 .f1{display:flex;gap:16px;align-items:center}
 .f1 p{font-size:14px;color:var(--ink2)}
 .motto{font-weight:600;color:var(--ink)}
 .f2{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:14.5px;justify-content:flex-end}
 .f2 a{text-decoration:none;color:var(--ink2)}
 .f2 a:hover{color:var(--ink)}
-.f3{grid-column:1/-1;font-size:13px;color:var(--ink3)}
+.f3{font-size:13px;color:var(--ink3)}
 
 /* destek sayfası */
 .page{padding:48px 0 20px}
@@ -346,7 +346,6 @@ p{margin:0}
   .barshow .tb{min-width:0;flex:1;font-size:10.5px}
   .sec{padding:56px 0 12px}
   .phone{width:330px}
-  .foot .wrap{grid-template-columns:1fr}
   .f2{justify-content:flex-start}
   .mailcard{flex-wrap:wrap}
   .mailcard .btn{width:100%}
