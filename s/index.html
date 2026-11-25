@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sence: bir soru seni bekliyor</title>
+<meta name="description" content="Bu soruya sen ne dersin? Sence'de oyla.">
+<meta property="og:title" content="Sence: bir soru seni bekliyor">
+<meta property="og:description" content="Bu soruya sen ne dersin? Sence'de oyla.">
+<meta property="og:image" content="https://anbertech.github.io/Sence/assets/ikon.png">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../assets/ikon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/sence.css">
+</head>
+<body>
+<!-- Paylaşılan soru (2026-11-25): uygulamadaki Paylaş bağlantısı buraya gelir (?id=<soru kimliği>).
+     "Uygulamada aç" sence://soru/<kimlik> açar; uygulama o soruyu gösterir. -->
+<div class="isik"></div>
+<img class="logo" src="../assets/isaret.svg" alt="">
+<h1 data-tr="Bir soru seni bekliyor" data-en="A question is waiting for you">Bir soru seni bekliyor</h1>
+<p data-tr="Bu soruya sen ne dersin? Sence'de aç, oyunu ver." data-en="What would you say? Open it in Sence and vote.">Bu soruya sen ne dersin? Sence'de aç, oyunu ver.</p>
+<a id="ac" class="buton" href="../" data-tr="Uygulamada aç" data-en="Open in the app">Uygulamada aç</a>
+<a class="ikincil" href="../" data-tr="Sence nedir?" data-en="What is Sence?">Sence nedir?</a>
+<footer>© anberTech 2026</footer>
+<script src="../assets/dil.js"></script>
+<script>
+  const id = new URLSearchParams(location.search).get("id") || "";
+  if (/^[A-Za-z0-9]{10,40}$/.test(id)) document.getElementById("ac").href = "sence://soru/" + id;
+</script>
+</body>
+</html>
