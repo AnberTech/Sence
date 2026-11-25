@@ -24,7 +24,7 @@ This policy explains which personal data we process when you use Sence, why, who
 | **Profile:** username, avatar, follower/following counts (public) | To present you on Sence | Art. 6(1)(b) · 5/2-c |
 | **Age range** (required) | To enforce the 18+ age limit | Art. 6(1)(b) · 5/2-c |
 | **Interests** (optional) | To rank the Trending feed by your interests | Art. 6(1)(b) · 5/2-c |
-| **Gender, star sign** (optional) | Stored as profile information; currently not used for ranking or any other purpose. You can remove them any time in Settings → My info. | Provided at your choice; if we start using them, we will update this policy and ask for consent where required |
+| **Gender, star sign** (optional) | A light factor in the Trending ranking: questions from the opposite gender and a compatible star sign are shown slightly earlier (your interests always matter more). Never shown to other users. Choose "Prefer not to say" in Settings → My info at any time and they are not used at all. | Art. 6(1)(b) · 5/2-c |
 | **Content:** questions, options, photos, comments, Resences | To publish what you share | Art. 6(1)(b) · 5/2-c |
 | **Social:** follows, follow requests, blocks, reports | Following, private accounts, blocking and reporting; enforcing the rules | Art. 6(1)(b), (f) · 5/2-c, f |
 | **Votes:** what you voted on which question | To prevent voting twice, show "My decisions", send result notifications when a question closes | Art. 6(1)(b) · 5/2-c |
@@ -93,7 +93,7 @@ Not deleted: anonymous vote totals on others' questions (so their results don't 
 
 ## 11. Automated processing
 
-The Trending feed is ranked automatically using your interests and the state of each question; it only affects what you see first and has no legal or similarly significant effect on you. Question and comment text passes an automatic profanity filter, and photos pass automatic image checks. If content was not published because of an automatic check, you can ask for human review by emailing us.
+The Trending feed is ranked automatically using your interests, your gender and star sign (if given) and the state of each question; it only affects what you see first and has no legal or similarly significant effect on you. Question and comment text passes an automatic profanity filter, and photos pass automatic image checks. If content was not published because of an automatic check, you can ask for human review by emailing us.
 
 ## 12. Security
 

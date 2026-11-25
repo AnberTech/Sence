@@ -24,7 +24,7 @@ Bu metin, Sence'yi kullanırken hangi kişisel verilerini neden işlediğimizi, 
 | **Profil:** takma ad, avatar, takipçi/takip sayıları (herkese açık) | Sence'de seni tanıtmak | m.5/2-c · m.6(1)(b) |
 | **Yaş aralığı** (zorunlu) | 18 yaş sınırını uygulamak | m.5/2-c · m.6(1)(b) |
 | **İlgi alanları** (isteğe bağlı) | Gündem'i ilgi alanlarına göre sıralamak | m.5/2-c · m.6(1)(b) |
-| **Cinsiyet, burç** (isteğe bağlı) | Profil bilgisi olarak saklanır; şu an sıralamada ya da başka bir amaçla kullanılmaz. Ayarlar → Bilgilerim'den istediğin zaman silebilirsin. | Senin isteğinle verdiğin bilgi; kullanılmaya başlanırsa bu metin güncellenir ve gerekiyorsa izin istenir |
+| **Cinsiyet, burç** (isteğe bağlı) | Gündem sıralamasında hafif bir etken: karşı cinsten ve uyumlu burçtan kişilerin soruları biraz öne çıkar (ilgi alanların her zaman daha belirleyicidir). Diğer kullanıcılara gösterilmez. Ayarlar → Bilgilerim'den istediğin zaman "Belirtmek istemiyorum" seçebilirsin; o zaman hiç kullanılmaz. | m.5/2-c · m.6(1)(b) |
 | **İçerik:** sorular, seçenekler, fotoğraflar, yorumlar, Resence'ler | Paylaşımlarını yayınlamak | m.5/2-c · m.6(1)(b) |
 | **Sosyal:** takipler, takip istekleri, engellemeler, şikâyetler | Takip, gizli hesap, engelleme ve şikâyet işlevleri; kuralları uygulamak | m.5/2-c, m.5/2-f · m.6(1)(b), (f) |
 | **Oylar:** hangi soruya ne oy verdiğin | Aynı soruya ikinci kez oy verilmesini önlemek, "Kararlarım" listesi, soru kapanınca sonuç bildirimi | m.5/2-c · m.6(1)(b) |
@@ -93,7 +93,7 @@ Silinmeyenler: başkalarının sorularındaki kimliksiz toplam oy sayıları (so
 
 ## 11. Otomatik işlemler
 
-Gündem sıralaması ilgi alanlarına ve soruların durumuna göre otomatik yapılır; yalnızca neyi önce göreceğini etkiler, senin hakkında hukuki ya da benzeri önemli bir sonuç doğurmaz. Soru ve yorum metinleri otomatik küfür filtresinden, fotoğraflar otomatik görsel denetimden geçer. Otomatik denetim yüzünden yayınlanmayan bir içerik için bir kişinin incelemesini isteyebilirsin: destek adresimize yaz.
+Gündem sıralaması ilgi alanlarına, (verdiysen) cinsiyet ve burç bilgine ve soruların durumuna göre otomatik yapılır; yalnızca neyi önce göreceğini etkiler, senin hakkında hukuki ya da benzeri önemli bir sonuç doğurmaz. Soru ve yorum metinleri otomatik küfür filtresinden, fotoğraflar otomatik görsel denetimden geçer. Otomatik denetim yüzünden yayınlanmayan bir içerik için bir kişinin incelemesini isteyebilirsin: destek adresimize yaz.
 
 ## 12. Güvenlik
 
