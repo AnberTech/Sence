@@ -24,7 +24,7 @@ LEGAL_LANGS = ('tr', 'en')                 # hukuki metinler yalnız TR/EN; diğ
 APP_STORE = None                          # yayına çıkınca: 'https://apps.apple.com/app/id…' (rozetler kendiliğinden bağlanır)
 APP_ID = None                             # yayına çıkınca: '67…' (Safari akıllı uygulama şeridi)
 PLAY = None                               # yayına çıkınca: 'https://play.google.com/store/apps/details?id=…'
-VER = '4'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
+VER = '5'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
 TODAY = datetime.date.today().isoformat()
 P = ['']                                  # o an üretilen sayfanın köke göre öneki (kart görselleri için)
 
