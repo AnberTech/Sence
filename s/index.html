@@ -27,8 +27,11 @@
 <footer>© 2026 AnberTech</footer>
 <script src="../assets/dil.js"></script>
 <script>
-  // Sorunun önizlemesi (sonuç asla gösterilmez). Şimdilik TEST sunucusu; yayında senceapp-4ba46 olacak.
-  const API = "https://europe-west1-senceapptest.cloudfunctions.net/publicPoll";
+  // Sorunun önizlemesi (sonuç asla gösterilmez). Önce yayın sunucusu; bulunamazsa TEST (geliştirme sürümünden
+  // paylaşılan sorular; 2026-11-26). Yayından sonra TEST yedeği kaldırılabilir.
+  const API = "https://europe-west1-senceapp-4ba46.cloudfunctions.net/publicPoll";
+  const API_TEST = "https://europe-west1-senceapptest.cloudfunctions.net/publicPoll";
+  const getir = (u) => fetch(u + "?id=" + id).then((r) => r.ok ? r.json() : null).catch(() => null);
   const id = new URLSearchParams(location.search).get("id") || "";
   const tr = (navigator.language || "en").toLowerCase().startsWith("tr");
   const el = (tag, cls, text) => { const x = document.createElement(tag); if (cls) x.className = cls; if (text != null) x.textContent = text; return x; };
@@ -45,7 +48,7 @@
       ac.textContent = tr ? "Yakında App Store'da" : "Coming soon to the App Store";
       ac.removeAttribute("data-tr"); ac.removeAttribute("data-en");
     }
-    fetch(API + "?id=" + id).then((r) => r.ok ? r.json() : null).then((q) => {
+    getir(API).then((q) => q || getir(API_TEST)).then((q) => {
       if (!q) return;
       const k = document.getElementById("kart");
       const ust = el("div", "kim", "@" + q.username);
