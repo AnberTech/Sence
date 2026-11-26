@@ -8,7 +8,7 @@
   "use strict";
   var hero = document.querySelector(".hero"), cv = hero && hero.querySelector("canvas.crowd");
   if (!cv || !cv.getContext) return;
-  var card = hero.querySelector(".hero-card"), phone = hero.querySelector(".phone"), copy = hero.querySelector(".copy");
+  var card = hero.querySelector(".hero-card"), phone = hero.querySelector(".deck"), copy = hero.querySelector(".copy");
   var doc = document.documentElement, ctx = cv.getContext("2d");
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var YOU = (document.body.dataset.you || "Sen");
@@ -80,7 +80,7 @@
     var c = copy.getBoundingClientRect(), p = phone.getBoundingClientRect();
     // yazının kapladığı gerçek alan: satır satır (başlık, paragraf, düğmeler)
     var parts = [].map.call(copy.children, function (el) { return rel(el.getBoundingClientRect(), h); });
-    var note = hero.querySelector(".device .note"); if (note) parts.push(rel(note.getBoundingClientRect(), h));
+    [".stage .note", ".stage .dock"].forEach(function (q) { var el = hero.querySelector(q); if (el) parts.push(rel(el.getBoundingClientRect(), h)); });
     rects = { hero: h, copy: rel(c, h), parts: parts, phone: rel(p, h), narrow: h.width < 900 };
   }
   function hitsText(x, y, r) {
@@ -92,7 +92,7 @@
     return false;
   }
   function allowed(x, y, r, side) {
-    var P = rects.phone, inset = Math.min(r * 0.9, 22);
+    var P = rects.phone, inset = -Math.min(r * 0.4, 8);
     if (y < 86 + r * 0.3 || y > H - r * 0.2 || x < -r * 0.3 || x > W + r * 0.3) return false;
     if (x > P.l + inset && x < P.r - inset && y > P.t + inset && y < P.b - inset) return false;   // telefonun arkası: görünmez
     if (hitsText(x, y, r)) return false;
@@ -119,7 +119,7 @@
   }
   function radius() {
     var n = rects.narrow, u = Math.pow(Math.random(), 1.7);
-    return n ? 8 + u * 12 : 9 + u * 21;
+    return n ? 7 + u * 8 : 8 + u * 12;
   }
   function spot(r, side, list, skip, strict) {
     for (var k = 0; k < 600; k++) {
@@ -140,8 +140,8 @@
     dpr = Math.min(2, window.devicePixelRatio || 1);
     W = nw; H = nh;
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
-    var target = rects.narrow ? Math.round(W * H / 10000) : Math.round(W * H / 21000);
-    target = Math.max(14, Math.min(rects.narrow ? 40 : 70, target));
+    var target = rects.narrow ? Math.round(W * H / 22000) : Math.round(W * H / 42000);
+    target = Math.max(10, Math.min(rects.narrow ? 18 : 32, target));
     var old = faces; faces = [];
     for (var tries = 0; faces.length < target && tries < target * 6; tries++) {
       var r = radius(), s = spot(r, null, faces);
@@ -187,7 +187,7 @@
       // senin yüzün: oy verdiğin dilimden çıkıp kendi tarafına katılır
       var h = hero.getBoundingClientRect(), sl = card.querySelectorAll(".strip .sl")[d.mine].getBoundingClientRect();
       var sx = (sl.left + sl.right) / 2 - h.left, sy = (sl.top + sl.bottom) / 2 - h.top;
-      var r = rects.narrow ? 17 : 24, s = spot(r, d.mine, faces, null, true) || spot(r, d.mine, [], null, true) || spot(r, d.mine, []) || [sx, sy];
+      var r = rects.narrow ? 15 : 19, s = spot(r, d.mine, faces, null, true) || spot(r, d.mine, [], null, true) || spot(r, d.mine, []) || [sx, sy];
       you = { pal: 0, r: r, x: sx, y: sy, vx: 0, vy: 0, tx: s[0], ty: s[1], hx: s[0], hy: s[1], ph1: 1, ph2: 2, amp: 2, sp: 0.5, ex: 0, ey: 0,
               blink: 3, side: d.mine, ring: 0, hop: now() + 0.9, px: 0, py: 0, born: reduce ? -9 : now(), you: true, out: 0 };
       if (reduce) { you.x = you.tx; you.y = you.ty; you.ring = 1; }

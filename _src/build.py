@@ -204,9 +204,23 @@ def card_choice(t):
 def card_rate(t):
     return (f'<article class="qcard" {demo_attrs(t, "rate", {"c": [0, 0, 1, 2, 3, 6, 11, 19, 25, 15, 8]})}>'
             f'<div class="panel">{head(t, "@kosedeki", 5, "15820")}'
-            f'<figure class="photo"><img src="{P[0]}assets/img/calisma.webp" alt="{e(t["a11y_photo"])}" width="720" height="720" loading="lazy"></figure>'
+            f'<figure class="photo"><img src="{P[0]}assets/img/ayakkabi_b.webp" alt="{e(t["a11y_photo"])}" width="720" height="720" loading="lazy"></figure>'
             f'<p class="qtext">{e(t["q_rate"])}</p>{social(t, 6, 0, 90)}</div>'
             f'{strip_rate(t)}<button type="button" class="again" hidden>{ic("again")}<span>{e(t["demo_again"])}</span></button></article>')
+
+
+def card_peek(t, kind):
+    """Girişteki destede öndeki kartın arkasında duran, dokunulmayan kartlar (yalnız görüntü)."""
+    if kind == 'choice':
+        media = (f'<div class="tiles"><figure><img src="{P[0]}assets/img/kutuphane.webp" alt="" width="720" height="720" loading="lazy"><b>A</b></figure>'
+                 f'<figure><img src="{P[0]}assets/img/calisma.webp" alt="" width="720" height="720" loading="lazy"><b>B</b></figure></div>')
+        q, nick, pal = t['q_choice'], '@masakurdu', 6
+    else:
+        media = f'<figure class="photo"><img src="{P[0]}assets/img/ayakkabi_b.webp" alt="" width="720" height="720" loading="lazy"></figure>'
+        q, nick, pal = t['q_rate'], '@kosedeki', 5
+    return (f'<div class="qcard peek peek-{kind}" aria-hidden="true" inert><div class="panel">'
+            f'<header class="qhead">{avatar(pal)}<b>{e(nick)}</b><span class="more">{ic("dots")}</span></header>'
+            f'<div class="qmeta"></div>{media}<p class="qtext">{e(q)}</p></div><div class="strip"></div></div>')
 
 
 def tabbar(t, active='agenda'):
@@ -238,14 +252,21 @@ def page_langs(page):
     return LEGAL_LANGS if page in ('terms', 'privacy') else LANGS
 
 
-def lang_switch(l, page):
-    """page: 'home' | 'support' | 'terms' | 'privacy'. 16 dil: açılır liste (details), JS gerekmez."""
+FLAG_EXT = {'es': 'png'}                  # bayraklar ana siteyle aynı (anbertech.github.io/assets/img/flags)
+
+
+def flag(x, p):
+    return f'<img src="{p}assets/img/flags/{x}.{FLAG_EXT.get(x, "svg")}" alt="" width="20" height="14" decoding="async">'
+
+
+def lang_switch(l, page, p=''):
+    """page: 'home' | 'support' | 'terms' | 'privacy'. 16 dil, bayraklı açılır liste (details), JS gerekmez."""
     out = []
     for x in page_langs(page):
         href = BASE + slug(x, page)
         cur = ' aria-current="page"' if x == l else ''
-        out.append(f'<a href="{href}" hreflang="{x}" lang="{x}"{cur}><b>{T[x]["code"]}</b> {e(T[x]["name"])}</a>')
-    return (f'<details class="langs"><summary aria-label="{e(T[l]["aria_lang"])}">{T[l]["code"]}</summary>'
+        out.append(f'<a href="{href}" hreflang="{x}" lang="{x}"{cur}>{flag(x, p)}<span dir="{T[x]["dir"]}">{e(T[x]["name"])}</span></a>')
+    return (f'<details class="langs"><summary aria-label="{e(T[l]["aria_lang"])}">{flag(l, p)}<span>{T[l]["code"]}</span></summary>'
             f'<nav class="langmenu" aria-label="{e(T[l]["aria_lang"])}">{"".join(out)}</nav></details>')
 
 
@@ -323,16 +344,16 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
 </head>
 <body data-avg="{e(t["avg"])}" data-you="{e(t["you"])}">
 <a class="skip" href="#main">{e(t["skip"])}</a>
-<div class="amb" aria-hidden="true"><i></i><i></i><i></i></div>
-<header class="top"><div class="wrap bar">
+<div class="zemin" aria-hidden="true"></div>
+<header class="top"><div class="wrap bar glass">
 {logo(t, p + PATH[l])}
 <nav class="nav"><a href="{p}{PATH[l]}#nasil">{e(t["nav_how"])}</a><a href="{p}{PATH[l]}#sss">{e(t["nav_faq"])}</a><a href="{sup}">{e(t["nav_support"])}</a></nav>
-<div class="tools">{lang_switch(l, page_kind)}<button type="button" class="themebtn" aria-label="{e(t["aria_theme"])}">{ic("sun", "ic sun")}{ic("moon", "ic moon")}</button></div>
+<div class="tools">{lang_switch(l, page_kind, p)}<button type="button" class="themebtn" aria-label="{e(t["aria_theme"])}">{ic("sun", "ic sun")}{ic("moon", "ic moon")}</button></div>
 </div></header>
 <main id="main">
 {body}
 </main>
-<footer class="foot"><div class="wrap">
+<footer class="foot"><div class="wrap glass fwrap">
 <div class="fmain">
 <div class="fbrand">{logo(t, p + PATH[l], "brand big")}<p>{e(t["footer_about"])}</p><p class="motto">{e(t["footer_motto"])}</p></div>
 <nav class="flinks"><a href="{sup}">{e(t["nav_support"])}</a><a href="{terms}">{e(t["legal_terms"])}</a><a href="{priv}">{e(t["legal_privacy"])}</a><a href="{HOME}">{e(t["footer_more"])}</a><a href="mailto:{EMAIL}">{EMAIL}</a></nav>
@@ -385,13 +406,13 @@ def home(l):
     P[0] = prefix(rel)
     checks = ''.join(f'<li>{ic("check")}{e(c)}</li>' for c in t['checks'])
     how = ''.join(
-        f'<li class="step rv"><span class="node" aria-hidden="true"><b>{i + 1}</b></span><div class="sbody"><h3>{e(s["t"])}</h3><p>{e(s["p"])}</p></div>{step_visual(t, i)}</li>'
+        f'<li class="step glass"><span class="node" aria-hidden="true"><b>{i + 1}</b></span><div class="sbody"><h3>{e(s["t"])}</h3><p>{e(s["p"])}</p></div>{step_visual(t, i)}</li>'
         for i, s in enumerate(t['how']))
-    inside = ''.join(f'<li class="feat rv"><span class="fi">{ic(x["i"])}</span><div><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></div></li>' for x in t['inside'])
-    trust = ''.join(f'<li class="tr rv"><span class="fi">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['trust'])
-    faq = ''.join(f'<details class="qa"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['faq'])
+    inside = ''.join(f'<li class="tile glass"><span class="fi">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['inside'])
+    trust = ''.join(f'<li class="tile glass"><span class="fi">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['trust'])
+    faq = ''.join(f'<details class="qa glass"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['faq'])
     shapes = ''.join(
-        f'<figure class="shape rv s-{k}">{card}<figcaption><span class="sic">{shape_icon(k)}</span><div><h3>{e(t["shape_" + k])}</h3><p>{e(t["shape_" + k + "_p"])}</p></div></figcaption></figure>'
+        f'<figure class="shape s-{k}">{card}<figcaption><span class="sic">{shape_icon(k)}</span><div><h3>{e(t["shape_" + k])}</h3><p>{e(t["shape_" + k + "_p"])}</p></div></figcaption></figure>'
         for k, card in (('yesno', card_yesno(t)), ('choice', card_choice(t)), ('rate', card_rate(t))))
     body = f'''<section class="hero">
 <canvas class="crowd" aria-hidden="true"></canvas>
@@ -403,44 +424,42 @@ def home(l):
 <div class="ctas">{store_button(t)}<a class="ghostbtn" href="#nasil">{e(t["see_how"])}</a></div>
 <ul class="checks">{checks}</ul>
 </div>
-<div class="device">
-<div class="phone"><div class="screen">
-<div class="amb in" aria-hidden="true"><i></i><i></i><i></i></div>
-{card_hero(t)}
-{tabbar(t)}
-</div></div>
+<div class="stage">
+<div class="deck">{card_peek(t, "choice")}{card_peek(t, "rate")}{card_hero(t)}</div>
+<div class="dock">{tabbar(t)}</div>
 <p class="note">{e(t["demo_note"])}</p>
 </div>
 </div></section>
 
 <section class="sec shapes-sec" id="sekiller"><div class="wrap">
-<header class="sh rv"><h2>{e(t["shapes_h2"])}</h2><p>{e(t["shapes_p"])}</p></header>
+<header class="sh"><h2>{e(t["shapes_h2"])}</h2><p>{e(t["shapes_p"])}</p></header>
 <div class="shapes">{shapes}</div>
 <p class="note">{e(t["demo_note"])}</p>
 </div></section>
 
 <section class="sec how-sec" id="nasil"><div class="wrap">
-<header class="sh rv"><h2>{e(t["how_h2"])}</h2><p>{e(t["how_p"])}</p></header>
-<ol class="steps rv">{how}</ol>
+<header class="sh"><h2>{e(t["how_h2"])}</h2><p>{e(t["how_p"])}</p></header>
+<ol class="steps">{how}</ol>
 </div></section>
 
-<section class="sec inside-sec" id="icinde"><div class="wrap split">
-<header class="sh rv"><h2>{e(t["inside_h2"])}</h2><p>{e(t["inside_p"])}</p><div class="dock">{tabbar(t)}</div></header>
-<ul class="feats">{inside}</ul>
+<section class="sec inside-sec" id="icinde"><div class="wrap">
+<header class="sh"><h2>{e(t["inside_h2"])}</h2><p>{e(t["inside_p"])}</p></header>
+<div class="dockrow">{tabbar(t)}</div>
+<ul class="grid4">{inside}</ul>
 </div></section>
 
-<section class="band" id="guven"><div class="bandbg" aria-hidden="true">{mark("mark giant")}</div><div class="wrap">
-<header class="sh rv"><h2>{e(t["trust_h2"])}</h2><p>{e(t["trust_p"])}</p></header>
-<ul class="trusts">{trust}</ul>
+<section class="sec trust-sec" id="guven"><div class="wrap">
+<header class="sh"><h2>{e(t["trust_h2"])}</h2><p>{e(t["trust_p"])}</p></header>
+<ul class="grid3">{trust}</ul>
 </div></section>
 
 <section class="sec faq-sec" id="sss"><div class="wrap split">
-<header class="sh rv"><h2>{e(t["faq_h2"])}</h2><p><a class="lnk" href="{P[0]}{t["support_slug"]}">{e(t["nav_support"])}</a></p></header>
+<header class="sh"><h2>{e(t["faq_h2"])}</h2><p><a class="lnk" href="{P[0]}{t["support_slug"]}">{e(t["nav_support"])}</a></p></header>
 <div class="faq">{faq}</div>
 </div></section>
 
 <section class="finale"><div class="wrap">
-<div class="cta rv"><div class="zipla" data-zipla></div><h2>{e(t["cta_h2"])}</h2><p>{e(t["cta_p"])}</p><div class="stores">{store_button(t, "big")}</div></div>
+<div class="cta glass"><div class="zipla" data-zipla></div><h2>{e(t["cta_h2"])}</h2><p>{e(t["cta_p"])}</p><div class="stores">{store_button(t, "big")}</div></div>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [
         org_ld(),
@@ -487,11 +506,11 @@ def support(l):
     rel = t['support_slug']
     from urllib.parse import quote
     mail = f'mailto:{EMAIL}?subject={quote(t["support_mail_subject"])}'
-    faq = ''.join(f'<details class="qa"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['support_faq'])
+    faq = ''.join(f'<details class="qa glass"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['support_faq'])
     body = f'''<section class="page"><div class="wrap narrow">
 <h1>{e(t["support_h1"])}</h1>
 <p class="lead">{e(t["support_lead"])}</p>
-<div class="mailcard"><span class="ti">{ic("mail")}</span><div><b>{EMAIL}</b></div><a class="btn" href="{mail}" data-goatcounter-click="sence/{l}/destek-mail">{e(t["support_mail_btn"])}</a></div>
+<div class="mailcard glass"><span class="ti">{ic("mail")}</span><div><b>{EMAIL}</b></div><a class="btn" href="{mail}" data-goatcounter-click="sence/{l}/destek-mail">{e(t["support_mail_btn"])}</a></div>
 <h2>{e(t["support_h2"])}</h2>
 <div class="faq">{faq}</div>
 <p class="legal">{e(t["support_legal"])}</p>
@@ -553,8 +572,9 @@ def legal(l, kind):
     rel = LEGAL[kind][l]
     text = read(os.path.join(SRC, 'legal', f'{LEGAL_SRC[kind]}_{l}.md'))
     title = text.splitlines()[0].lstrip('# ').strip()
-    body = f'''<section class="page"><div class="wrap narrow doc">
+    body = f'''<section class="page"><div class="wrap narrow"><article class="doc glass">
 {md(text)}
+</article>
 <p><a class="back" href="{prefix(rel)}{PATH[l]}">{e(t["back_home"])}</a></p>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "WebPage", "name": title, "inLanguage": l, "url": BASE + rel}]}

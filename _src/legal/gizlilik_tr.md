@@ -43,6 +43,7 @@ Bu metin, Sence'yi kullanırken hangi kişisel verilerini neden işlediğimizi, 
 
 - Fotoğraflar yüklenmeden önce telefonunda yeniden kodlanır; konum ve EXIF bilgilerinin silinmesi bu yolla sağlanır. Fotoğrafın içinde görünen bilgiler (yazı, adres, kişi) silinmez; paylaşmadan önce kontrol et.
 - Fotoğraflar yayından önce **Google Cloud Vision SafeSearch** (Avrupa uç noktası) ile otomatik denetlenir. Uygunsuz bulunan yayınlanmaz; sınırdaki bulanık ve "hassas" etiketli yayınlanır.
+- Soru, seçenek ve yorum metinleri, başka dilde okuyan kişiler için **Google Cloud Translation** ile otomatik çevrilir; sorunun dili soru sorulurken tespit edilir. Çeviri metne kimliğin eklenmeden yapılır ve sunucumuzda saklanır; içerik silinince çevirileri de silinir.
 - Puanlat fotoğraflarında insan yüzü telefonun kendi içinde (Apple Vision) aranır, yüz bulunan fotoğrafın yüklenmesi engellenir. Bu kontrolde yüz şablonu (biyometrik veri) oluşturulmaz ve sunucuya gönderilmez. Telefonunda Apple'ın hassas içerik analizi açıksa o da telefon içinde çalışır.
 - Yayınlanan soru fotoğrafları, paylaşım sayfası ve bildirim görselleri için **bağlantıyı bilen herkesin açabileceği** adreslerde tutulur. Bu adresler tahmin edilemez, ama gizli hesabın fotoğrafının adresi biriyle paylaşılırsa o kişi de açabilir.
 
@@ -61,7 +62,7 @@ Senden sağlık, din, siyasi görüş, biyometrik veri gibi özel nitelikli kiş
 
 Verilerini satmayız ve reklam için kullanmayız. Sence'yi çalıştırmak için şu hizmetleri kullanırız:
 
-- **Google Firebase / Google Cloud** (veritabanı, dosya depolama, sunucu fonksiyonları, kimlik doğrulama, Cloud Messaging) ve **Google Cloud Vision** (fotoğraf denetimi): bizim adımıza ve talimatımızla veri işleyen olarak.
+- **Google Firebase / Google Cloud** (veritabanı, dosya depolama, sunucu fonksiyonları, kimlik doğrulama, Cloud Messaging) **Google Cloud Vision** (fotoğraf denetimi) ve **Google Cloud Translation** (soru ve yorumların başka dilde okuyanlara otomatik çevirisi; çeviriler sunucumuzda saklanır): bizim adımıza ve talimatımızla veri işleyen olarak.
 - **Apple** (APNs ile bildirim iletimi; Apple ile Giriş) ve **Google** (Google ile Giriş): bağladığın hesap bakımından kendi gizlilik politikalarına tabi bağımsız veri sorumluları olarak.
 - **Yetkili makamlar:** yasal zorunluluk ya da bağlayıcı karar olduğunda, yalnızca istenen kapsamda.
 - Web sitemiz GitHub Pages'te barındırılır; orada kullanıcı verisi tutmayız. Paylaşılan soru sayfası, sorunun bilgisini Firebase sunucularımızdan alır.

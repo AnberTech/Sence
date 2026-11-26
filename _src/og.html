@@ -8,8 +8,8 @@
 @font-face{font-family:Geist;font-weight:800;src:url(../assets/fonts/geist-extrabold.woff)}
 @font-face{font-family:GM;font-weight:600;src:url(../assets/fonts/geist-mono-semibold.woff)}
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;overflow:hidden;background:#F4F5F8;font-family:Geist,"Hiragino Sans","PingFang SC","Apple SD Gothic Neo","Noto Sans CJK JP","Noto Sans CJK SC","Noto Sans CJK KR","Geeza Pro","Noto Sans Arabic","Kohinoor Devanagari","Noto Sans Devanagari",sans-serif;color:#121316;position:relative}
-.l{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+body{width:1200px;height:630px;overflow:hidden;background:#EEF0F5 url(../assets/img/zemin-acik.jpg) center/cover;font-family:Geist,"Hiragino Sans","PingFang SC","Apple SD Gothic Neo","Noto Sans CJK JP","Noto Sans CJK SC","Noto Sans CJK KR","Geeza Pro","Noto Sans Arabic","Kohinoor Devanagari","Noto Sans Devanagari",sans-serif;color:#121316;position:relative}
+.l{display:none}
 .l1{width:560px;height:560px;left:-200px;top:-240px;background:#67E8F9}
 .l2{width:520px;height:520px;right:-140px;top:100px;background:#A5B4FC}
 .l3{width:520px;height:520px;left:360px;bottom:-380px;background:#E9D5FF}
@@ -23,16 +23,16 @@ h1 span{display:block;white-space:nowrap}
 .cjk h1{letter-spacing:-.02em;line-height:1.1}
 .ar h1,.hi h1{letter-spacing:0;line-height:1.2}
 .dot{display:inline-block;width:.2em;height:.2em;margin-inline-start:.05em;border-radius:50%;background:linear-gradient(115deg,#06B6D4,#6366F1 52%,#A78BFA);box-shadow:0 .05em .22em -.03em rgba(99,102,241,.6)}
-.soon{align-self:flex-start;margin-top:34px;padding:11px 18px;border-radius:99px;background:rgba(255,255,255,.7);border:1px solid #fff;font-weight:600;font-size:21px;color:#5D6068}
+.soon{align-self:flex-start;margin-top:34px;padding:11px 18px;border-radius:99px;background:linear-gradient(160deg,rgba(255,255,255,.8),rgba(255,255,255,.5));border:1px solid rgba(255,255,255,.9);box-shadow:inset 0 1.5px 0 #fff;font-weight:600;font-size:21px;color:#4F525A}
 
-.card{position:absolute;right:92px;top:62px;width:360px;padding:9px;border-radius:32px;background:rgba(255,255,255,.7);border:1px solid #fff;
-  box-shadow:0 30px 70px -24px rgba(40,44,110,.35);transform:rotate(3deg);z-index:2}
+.card{position:absolute;right:92px;top:50px;width:360px;padding:9px;border-radius:32px;background:linear-gradient(160deg,rgba(255,255,255,.78),rgba(255,255,255,.45) 58%,rgba(255,255,255,.7));border:1px solid rgba(255,255,255,.85);
+  box-shadow:inset 0 2px 0 #fff,inset 0 0 28px rgba(255,255,255,.4),0 30px 70px -24px rgba(40,44,110,.4);transform:rotate(3deg);z-index:2;backdrop-filter:blur(20px)}
 .rtl .card{right:auto;left:92px;transform:rotate(-3deg)}
 .panel{padding:13px;border-radius:25px;border:1px solid rgba(18,19,22,.08)}
 .h{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px}
-.ph{margin-top:12px;border-radius:22px;overflow:hidden;height:268px;width:100%}
+.ph{margin-top:12px;border-radius:22px;overflow:hidden;height:250px;width:100%}
 .ph img{width:100%;height:100%;object-fit:cover}
-.q{font-size:20px;font-weight:600;margin:12px 4px 2px;letter-spacing:-.015em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.q{font-size:19px;font-weight:600;line-height:1.28;margin:12px 4px 2px;letter-spacing:-.015em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .strip{display:flex;gap:4px;height:60px;margin-top:9px;padding:4px;border-radius:20px;background:rgba(18,19,22,.06)}
 .strip span{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:16px;color:#fff;font-weight:700;font-size:18px;white-space:nowrap}
 .no{flex:38;background:#E62E4D;opacity:.78}.yes{flex:62;background:#00C48C}

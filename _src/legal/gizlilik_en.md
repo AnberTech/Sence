@@ -43,6 +43,7 @@ This policy explains which personal data we process when you use Sence, why, who
 
 - Photos are re-encoded on your phone before upload; this is how location and EXIF data are removed. Information visible in the picture itself (text, addresses, people) is not removed, so check before sharing.
 - Before publishing, photos are checked automatically with **Google Cloud Vision SafeSearch** (EU endpoint). Unacceptable photos are not published; borderline ones are published blurred with a "sensitive" label.
+- Question, option and comment texts are translated automatically with **Google Cloud Translation** for people who read them in another language; a question's language is detected when it is posted. The text is sent without your identity and the translation is stored on our servers; it is deleted together with the content.
 - For Rate questions, your phone looks for human faces on the device itself (Apple Vision) and blocks photos with faces. No face template (biometric data) is created or sent to our servers. If Apple's sensitive content analysis is turned on on your phone, it also runs on the device.
 - Published question photos are stored at addresses **anyone with the link can open**, so they can appear on share pages and in notifications. These addresses cannot be guessed, but if the address of a private account's photo is shared with someone, that person can open it.
 
@@ -61,7 +62,7 @@ We don't ask for sensitive data such as health, religion, political opinions or 
 
 We don't sell your data or use it for advertising. To run Sence we use:
 
-- **Google Firebase / Google Cloud** (database, file storage, server functions, authentication, Cloud Messaging) and **Google Cloud Vision** (photo checks): as processors acting on our behalf and instructions.
+- **Google Firebase / Google Cloud** (database, file storage, server functions, authentication, Cloud Messaging) **Google Cloud Vision** (photo checks) and **Google Cloud Translation** (automatic translation of questions and comments for readers in other languages; translations are stored on our servers): as processors acting on our behalf and instructions.
 - **Apple** (notification delivery via APNs; Sign in with Apple) and **Google** (Google Sign-In): as independent controllers under their own privacy policies for the account you link.
 - **Competent authorities:** when required by law or a binding order, and only to the extent required.
 - Our website is hosted on GitHub Pages; no user data is stored there. The shared question page fetches the question from our Firebase servers.

@@ -15,11 +15,15 @@ Site depo kökünden `python3 _src/build.py` ile üretilir. Üretilen dosyalar (
 | `../assets/sence-zipla.js` | Zıpla yükleme işareti. Sence_Local `tasarim/animasyon/uret_zipla.py` üretir; elle değiştirme, oradan kopyala |
 | `../assets/fonts/` | Geist + Geist Mono (OFL), Latin + Türkçe alt kümesi, woff. Kiril, Arap, Devanagari ve Doğu Asya yazıları cihazın sistem yazı tipine düşer (`style.css` başındaki `:lang()` satırları) |
 
-## Tasarım (2026-11-26)
+## Tasarım (2026-11-26, "Duru Kristal" cam)
 
-- Tek gösterişli an girişte: Yüz kalabalığı ve başlığın sonundaki nokta. Başlığın ikinci satırı `.` ya da `。` ile bitiyorsa o nokta logodaki holografik noktaya dönüşür ve açılışta bir kez Zıpla gibi sıçrar (dokununca bir daha). Başlığın boyu `fit_units()` ile her dilde sütuna sığacak şekilde ayarlanır.
-- Diğer bölümler sakin: Nasıl çalışır gerçek bir zaman çizgisi, özellikler düz liste, "Rahatça sor" her temada koyu obsidiyen bant, SSS iki sütun.
-- "Çok yakında" rozetleri tıklanır düğme gibi görünmez (cam rozet); `APP_STORE`/`PLAY` dolunca holografik indirme düğmesine döner.
+- Zemin uygulamadaki gibi: örnek fotoğrafların büyük bulanık hali (`assets/img/zemin-acik.jpg`, `zemin-koyu.jpg`; önceden bulanıklaştırılmış, ağır filtre yok). Her şey üstünde yüzen cam kartlar; cam tarifi `style.css` içinde tek yerde (`.glass` ve `.qcard`).
+- Girişte telefon çerçevesi yok: öndeki cam kartta oy verilir, arkasında iki kart (Seçtir ve Puanlat) yelpaze gibi durur, altında cam sekme çubuğu. Çevrede az sayıda Yüz; oy verilince Hayır/Evet diye ikiye ayrılırlar.
+- Başlığın ikinci satırı `.` ya da `。` ile bitiyorsa o nokta logodaki holografik noktaya dönüşür, açılışta bir kez zıplar (dokununca bir daha). Başlık boyu `fit_units()` ile her dilde sığar.
+- Üç şekil kartı aynı boyda (uygulamada da bütün kartlar aynı boy).
+- Örnek sorular gerçek hayattan (`q_hero`, `q_yesno`, `q_choice`, `q_rate`; fotoğraflar `ayakkabi_a`, `kutuphane`/`calisma`, `ayakkabi_b`).
+- Dil menüsü ana siteyle aynı bayraklarla (`assets/img/flags/<dil>.svg`, İspanyolca `es.png`).
+- "Çok yakında" rozetleri cam rozet; `APP_STORE`/`PLAY` dolunca holografik indirme düğmesine döner.
 - "Hareketi azalt" açıksa kalabalık durağan, nokta zıplamaz, geçişler yok.
 
 ## Yeni dil eklemek
