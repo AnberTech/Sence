@@ -1,6 +1,6 @@
 # Terms of Use
 
-**Version:** 2026-11-11 · **Effective:** [RELEASE DATE]
+**Version:** 2026-11-11 · **Effective:** 26 November 2026
 
 These terms govern your use of the Sence app and the web pages for shared Sence questions. By using Sence you accept these terms. How we handle your personal data is explained in the [Privacy Policy](../privacy/).
 

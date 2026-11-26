@@ -1,13 +1,12 @@
 # Privacy Policy
 
-**Version:** 2026-11-11 · **Effective:** [RELEASE DATE]
+**Version:** 2026-11-11 · **Effective:** 26 November 2026
 
 This policy explains which personal data we process when you use Sence, why, who we share it with, how long we keep it and what your rights are. It covers the EU General Data Protection Regulation (GDPR) and Türkiye's Personal Data Protection Law No. 6698 (KVKK).
 
 ## 1. Data controller
 
 **anberTech** · Email: **destek.anbertech@gmail.com** · Web: https://anbertech.github.io/Sence/
-[ADDRESS / LEGAL NAME — to be added before release]
 
 ## 2. In short
 

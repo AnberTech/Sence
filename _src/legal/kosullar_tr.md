@@ -1,6 +1,6 @@
 # Kullanım Koşulları
 
-**Sürüm:** 2026-11-11 · **Yürürlük:** [YAYIN TARİHİ]
+**Sürüm:** 2026-11-11 · **Yürürlük:** 26 Kasım 2026
 
 Bu koşullar Sence uygulamasını ve sence sorularının paylaşılan web sayfalarını kullanmanı düzenler. Sence'yi kullanarak bu koşulları kabul etmiş olursun. Kişisel verilerinin nasıl işlendiğini [Gizlilik Politikası ve KVKK Aydınlatma Metni](../gizlilik/) anlatır.
 

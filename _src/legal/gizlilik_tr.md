@@ -1,13 +1,12 @@
 # Gizlilik Politikası ve KVKK Aydınlatma Metni
 
-**Sürüm:** 2026-11-11 · **Yürürlük:** [YAYIN TARİHİ]
+**Sürüm:** 2026-11-11 · **Yürürlük:** 26 Kasım 2026
 
 Bu metin, Sence'yi kullanırken hangi kişisel verilerini neden işlediğimizi, kimlerle paylaştığımızı, ne kadar sakladığımızı ve haklarını anlatır. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) m.10 kapsamındaki aydınlatma metnidir; Avrupa Birliği'ndeki kullanıcılar için Genel Veri Koruma Tüzüğü (GDPR) açıklamalarını da içerir.
 
 ## 1. Veri sorumlusu
 
 **anberTech** · E-posta: **destek.anbertech@gmail.com** · Web: https://anbertech.github.io/Sence/
-[ADRES / TİCARİ UNVAN — yayından önce eklenecek]
 
 ## 2. Kısaca
 
