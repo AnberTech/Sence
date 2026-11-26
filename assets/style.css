@@ -373,3 +373,13 @@ p{margin:0}
 .doc{min-width:0;max-width:100%;overflow-wrap:anywhere}
 .doc .tbl{max-width:100%}
 @media (max-width:600px){.doc th,.doc td{padding:8px;font-size:12.5px}}
+/* Dil menüsü (2026-11-26, 16 dil): açılır liste */
+details.langs{position:relative;display:block;padding:0;background:none}
+details.langs>summary{list-style:none;cursor:pointer;padding:9px 12px;border-radius:14px;background:var(--cizgi);font-size:13px;font-weight:700;color:var(--ink)}
+details.langs>summary::-webkit-details-marker{display:none}
+details.langs>summary::after{content:" ▾";font-weight:400;color:var(--ink2)}
+.langmenu{position:absolute;inset-inline-end:0;top:calc(100% + 6px);z-index:50;display:grid;grid-template-columns:1fr 1fr;gap:2px;min-width:300px;padding:6px;border-radius:16px;background:var(--kutu);box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.langmenu a{display:block;padding:7px 10px;border-radius:10px;text-decoration:none;font-size:13px;color:var(--ink)}
+.langmenu a b{display:inline-block;min-width:2.2em;color:var(--ink2);font-weight:700}
+.langmenu a:hover{background:var(--cizgi)}
+.langmenu a[aria-current]{background:var(--cizgi);font-weight:700}

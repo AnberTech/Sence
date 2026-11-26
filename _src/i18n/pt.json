@@ -1,0 +1,251 @@
+{
+  "lang": "pt",
+  "locale": "pt_BR",
+  "dir": "ltr",
+  "flag": "pt",
+  "code": "PT",
+  "name": "Português (Brasil)",
+  "title": "Sence: Em dúvida? A gente decide. · Enquetes com a galera",
+  "meta_desc": "No Sence, pergunte com um apelido e deixe a galera votar. Enquetes com foto ou texto: Sim/Não, Escolha ou Nota. Em breve na App Store e no Google Play.",
+  "og_title": "Sence: Em dúvida? A gente decide.",
+  "og_desc": "Em dúvida? Pergunte e deixe a galera votar. Só com apelido, votos privados. Em breve na App Store e no Google Play.",
+  "skip": "Pular para o conteúdo",
+  "nav_how": "Como funciona",
+  "nav_faq": "Perguntas frequentes",
+  "nav_support": "Suporte",
+  "aria_theme": "Tema claro / escuro",
+  "aria_lang": "Idioma / Language",
+  "aria_home": "Página inicial do Sence",
+  "pill": "iPhone, iPad e Android · Em breve",
+  "h1_a": "Em dúvida?",
+  "h1_b": "A gente decide.",
+  "lead": "Pergunte sobre qualquer coisa que deixe você em dúvida e deixe a galera votar com um deslize. Isso ou aquilo, sim ou não, qual nota? Veja o que todo mundo acha em segundos.",
+  "checks": [
+    "Grátis",
+    "Só com apelido",
+    "Votos privados",
+    "Sem senhas"
+  ],
+  "store_soon": "Em breve na App Store",
+  "store_soon_small": "Em breve",
+  "see_how": "Como funciona?",
+  "demo_note": "Pergunta de exemplo · números ilustrativos",
+  "demo_hint": "Deslize na barra, solte para votar",
+  "demo_again": "De novo",
+  "demo_cancel": "Cancelado, nenhum voto registrado",
+  "yes": "Sim",
+  "no": "Não",
+  "avg": "méd.",
+  "you": "Você",
+  "bence": "votos",
+  "comments": "comentários",
+  "resences": "Resences",
+  "q_hero": "Devo comprar esse tênis?",
+  "q_yesno": "Bora ver um filme hoje à noite?",
+  "q_choice": "Onde devo estudar hoje?",
+  "q_rate": "Que nota você dá para minha nova mesa de estudos?",
+  "opt_a": "Biblioteca",
+  "opt_b": "Em casa",
+  "a11y_strip_yesno": "Barra de votação: Não ou Sim",
+  "a11y_strip_choice": "Barra de votação: opções",
+  "a11y_strip_rate": "Barra de notas, de 0 a 10",
+  "a11y_result": "Resultado",
+  "a11y_photo": "Foto da pergunta",
+  "tabs": {
+    "agenda": "Em alta",
+    "square": "Praça",
+    "decisions": "Decisões",
+    "me": "Eu",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Três jeitos de perguntar",
+  "shapes_p": "Cada pergunta é um cartão. Você sempre responde no mesmo lugar: na barra abaixo do cartão. Experimente.",
+  "shape_yesno": "Sim/Não",
+  "shape_yesno_p": "Uma pergunta, duas respostas. Deslize para a esquerda para não, para a direita para sim.",
+  "shape_choice": "Escolha",
+  "shape_choice_p": "De 2 a 4 opções, cada uma com uma foto ou poucas palavras. Deixe a galera escolher.",
+  "shape_rate": "Nota",
+  "shape_rate_p": "Uma nota de 0 a 10. O resultado mostra a distribuição das notas da galera e a média.",
+  "how_h2": "Como funciona",
+  "how_p": "Um minuto para perguntar, segundos para receber respostas.",
+  "how": [
+    {
+      "t": "Pergunte",
+      "p": "Adicione uma foto e escreva sua pergunta em até 99 caracteres. Escolha uma categoria e um prazo: 10 minutos, de 1 a 24 horas ou sem limite."
+    },
+    {
+      "t": "A galera vota",
+      "p": "Sua pergunta aparece em Em alta e na Praça dos seus seguidores. Todo mundo vota com um deslize. Ninguém vê quem votou em quê, só os números."
+    },
+    {
+      "t": "Tome sua decisão",
+      "p": "Quando o prazo termina, o resultado fica definido e a gente avisa você. Se quiser, conte para todo mundo o que escolheu no final."
+    }
+  ],
+  "inside_h2": "O que você encontra no app",
+  "inside_p": "Cinco abas, um cartão por vez. Deslize para cima para ver a próxima pergunta.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Em alta",
+      "p": "Perguntas de todo mundo, organizadas de acordo com seus interesses. O app abre aqui."
+    },
+    {
+      "i": "square",
+      "t": "Praça",
+      "p": "Perguntas e Resences de quem você segue. Depois de ver tudo, aparecem sugestões para você."
+    },
+    {
+      "i": "decisions",
+      "t": "Decisões",
+      "p": "Todas as perguntas em que você votou, com seus resultados."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Gostou de uma pergunta? Faça a mesma pergunta aos seus seguidores."
+    },
+    {
+      "i": "comment",
+      "t": "Comentários",
+      "p": "Comentários e respostas públicos. Quem faz a pergunta pode desativá-los."
+    },
+    {
+      "i": "bell",
+      "t": "Notificações",
+      "p": "Receba avisos quando sair um resultado, alguém comentar ou fizer um Resence da sua pergunta."
+    },
+    {
+      "i": "share",
+      "t": "Compartilhar",
+      "p": "Envie uma pergunta ou seu resultado para os amigos em uma imagem pronta para os Stories."
+    },
+    {
+      "i": "theme",
+      "t": "Claro e escuro",
+      "p": "Um tema claro e cristalino ou um escuro com tons suaves para a madrugada."
+    }
+  ],
+  "trust_h2": "Pergunte à vontade",
+  "trust_p": "Ninguém está no Sence para julgar você. Só para responder à sua pergunta.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Só com apelido",
+      "p": "Sem nome real, número de telefone ou senha. Escolha um apelido e pronto."
+    },
+    {
+      "i": "lock",
+      "t": "Votos privados",
+      "p": "Ninguém vê quem votou em quê. Até quem fez a pergunta só vê os números."
+    },
+    {
+      "i": "photo",
+      "t": "Fotos verificadas",
+      "p": "Toda foto é verificada antes de ser publicada. Os dados de localização são removidos ainda no seu celular."
+    },
+    {
+      "i": "shield",
+      "t": "Denunciar e bloquear",
+      "p": "Denuncie uma pergunta que incomode você e bloqueie alguém com um toque. Você também pode deixar sua conta privada."
+    },
+    {
+      "i": "age",
+      "t": "Só para maiores de 18 anos",
+      "p": "O Sence é uma comunidade para adultos. Expressões ofensivas são detectadas antes da publicação."
+    },
+    {
+      "i": "key",
+      "t": "Sua conta com você",
+      "p": "Vincule sua conta à Apple ou ao Google para não perdê-la ao trocar de celular. Você pode excluir sua conta pelo app."
+    }
+  ],
+  "faq_h2": "Perguntas frequentes",
+  "faq": [
+    {
+      "q": "O que é o Sence?",
+      "a": "Um app em que você usa um apelido para perguntar sobre o que deixa você em dúvida e a galera vota. Há três tipos de pergunta: Sim/Não, Escolha (2–4 opções) e Nota (0–10). “Sence” significa “o que você acha?” em turco."
+    },
+    {
+      "q": "É pago?",
+      "a": "Não. Baixar e usar o Sence é grátis."
+    },
+    {
+      "q": "Alguém pode ver quem votou em quê?",
+      "a": "Não. A identidade de quem vota nunca é exibida. Todo mundo, incluindo quem fez a pergunta, só vê as porcentagens e o número de votos."
+    },
+    {
+      "q": "Por que não tem senha?",
+      "a": "Sua conta é criada no seu celular; você só escolhe um apelido. Para não perder a conta ao trocar de celular, vincule-a à Apple ou ao Google em Configurações e use “Já tenho uma conta” no novo celular."
+    },
+    {
+      "q": "Por quanto tempo minha pergunta fica aberta?",
+      "a": "Você escolhe: 10 minutos, 1, 6, 12 ou 24 horas, ou sem limite. Quando o prazo termina, o resultado fica definido e você recebe uma notificação."
+    },
+    {
+      "q": "Em quais dispositivos funciona?",
+      "a": "O Sence chega em breve à App Store para iPhone e iPad (iOS 17.6 ou posterior) e ao Google Play para Android."
+    },
+    {
+      "q": "Quais idiomas estão disponíveis?",
+      "a": "Por enquanto, inglês e turco. Mais idiomas estão a caminho."
+    }
+  ],
+  "cta_h2": "Em dúvida? Deixe a galera votar.",
+  "cta_p": "O Sence chega em breve à App Store e ao Google Play. No dia do lançamento, você vai poder baixar o app por esta página.",
+  "footer_about": "Sence é um app da AnberTech.",
+  "footer_motto": "Apps simples. Funções claras.",
+  "footer_more": "Mais apps nossos",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "pt/support/",
+  "support_title": "Suporte Sence · Ajuda e contato",
+  "support_desc": "Ajuda com o Sence: recuperar ou excluir sua conta, denunciar e bloquear, apelidos e notificações. Escreva para destek.anbertech@gmail.com.",
+  "support_h1": "Suporte",
+  "support_lead": "Algo não está funcionando ou você tem uma ideia para compartilhar? Escreva para a gente e responderemos em breve.",
+  "support_mail_btn": "Enviar e-mail",
+  "support_mail_subject": "Suporte Sence",
+  "support_h2": "Dúvidas comuns",
+  "support_faq": [
+    {
+      "q": "Troquei de celular. Como recupero minha conta?",
+      "a": "Se você vinculou sua conta à Apple ou ao Google, toque em “Já tenho uma conta” na tela de boas-vindas e entre com a mesma conta. Sem esse vínculo, não é possível recuperar a conta antiga, por isso recomendamos fazer a vinculação em Configurações → Conta."
+    },
+    {
+      "q": "Como excluo minha conta?",
+      "a": "Vá em Configurações → Conta → Excluir conta e confirme em duas etapas. Seu apelido, suas perguntas, seus comentários e suas conexões com seguidores e pessoas que você segue são excluídos de forma permanente; seus votos continuam na contagem, sem identificar você. Seu apelido fica disponível para outras pessoas após 30 dias."
+    },
+    {
+      "q": "Como denuncio uma pergunta ou uma pessoa?",
+      "a": "Abra o menu “…” no canto superior direito do cartão e escolha Denunciar pergunta. Para denunciar ou bloquear uma pessoa, use o menu “…” no perfil dela. Você também pode manter um comentário pressionado para denunciá-lo."
+    },
+    {
+      "q": "Como desbloqueio alguém?",
+      "a": "Vá em Configurações → Contas bloqueadas e toque em Desbloquear. A pessoa não recebe uma notificação quando você a bloqueia."
+    },
+    {
+      "q": "Posso mudar meu apelido?",
+      "a": "Sim: Configurações → Meus dados → Apelido. Você pode mudar seu apelido uma vez a cada 30 dias."
+    },
+    {
+      "q": "Não estou recebendo notificações.",
+      "a": "Confira se as notificações estão ativadas em Ajustes do iPhone → Notificações → Sence. No app, escolha quais quer receber em Configurações → Notificações."
+    }
+  ],
+  "support_legal": "Você também pode enviar solicitações legais e pedidos de remoção de conteúdo para o mesmo endereço. Inclua o link da pergunta ou do perfil em questão.",
+  "back_home": "Página inicial do Sence",
+  "dur_chips": [
+    "10 min",
+    "1 h",
+    "6 h",
+    "12 h",
+    "24 h",
+    "∞"
+  ],
+  "closing_ask": "O que você escolheu? Toque",
+  "closing_picked": "@voce escolheu Sim",
+  "nick": "@raposaindecisa",
+  "legal_terms": "Termos de Uso",
+  "legal_privacy": "Política de Privacidade",
+  "legal_terms_desc": "Termos de Uso do Sence: limite de idade, regras, denúncias e exclusão de conta.",
+  "legal_privacy_desc": "Política de Privacidade do Sence: quais dados tratamos, por quê e seus direitos."
+}

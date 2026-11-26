@@ -1,0 +1,251 @@
+{
+  "lang": "pl",
+  "locale": "pl_PL",
+  "dir": "ltr",
+  "flag": "pl",
+  "code": "PL",
+  "name": "Polski",
+  "title": "Sence: Ty pytasz. Tłum decyduje. · Nie wiesz, co wybrać?",
+  "meta_desc": "W Sence pytasz pod nickiem, a tłum głosuje. To czy tamto, tak czy nie, ile punktów? Zobacz opinie w kilka sekund. Wkrótce w App Store i Google Play.",
+  "og_title": "Sence: Ty pytasz. Tłum decyduje.",
+  "og_desc": "Nie możesz się zdecydować? Zapytaj, tłum zagłosuje. Tylko nick, głosy pozostają prywatne. Wkrótce w App Store i Google Play.",
+  "skip": "Przejdź do treści",
+  "nav_how": "Jak to działa",
+  "nav_faq": "FAQ",
+  "nav_support": "Pomoc",
+  "aria_theme": "Jasny / ciemny motyw",
+  "aria_lang": "Język / Language",
+  "aria_home": "Strona główna Sence",
+  "pill": "iPhone, iPad i Android · Już wkrótce",
+  "h1_a": "Ty pytasz.",
+  "h1_b": "Tłum decyduje.",
+  "lead": "Zapytaj o wszystko, z czym masz dylemat, a tłum zagłosuje jednym przesunięciem. To czy tamto, tak czy nie, ile punktów? Sprawdź w kilka sekund, co myślą inni.",
+  "checks": [
+    "Za darmo",
+    "Tylko nick",
+    "Prywatne głosy",
+    "Bez haseł"
+  ],
+  "store_soon": "Wkrótce w App Store",
+  "store_soon_small": "Już wkrótce",
+  "see_how": "Jak to działa?",
+  "demo_note": "Przykładowe pytanie · liczby są poglądowe",
+  "demo_hint": "Przesuń po pasku, puść, aby zagłosować",
+  "demo_again": "Jeszcze raz",
+  "demo_cancel": "Anulowano, brak głosu",
+  "yes": "Tak",
+  "no": "Nie",
+  "avg": "śr.",
+  "you": "Ty",
+  "bence": "głosów",
+  "comments": "komentarzy",
+  "resences": "resence",
+  "q_hero": "Kupić te sneakersy?",
+  "q_yesno": "Wieczór filmowy dzisiaj?",
+  "q_choice": "Gdzie się dzisiaj uczyć?",
+  "q_rate": "Jak oceniasz moje nowe biurko?",
+  "opt_a": "Biblioteka",
+  "opt_b": "W domu",
+  "a11y_strip_yesno": "Pasek głosowania: Nie lub Tak",
+  "a11y_strip_choice": "Pasek głosowania: opcje",
+  "a11y_strip_rate": "Pasek oceny, od 0 do 10",
+  "a11y_result": "Wynik",
+  "a11y_photo": "Zdjęcie do pytania",
+  "tabs": {
+    "agenda": "Trendy",
+    "square": "Rynek",
+    "decisions": "Decyzje",
+    "me": "Ja",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Trzy sposoby na pytanie",
+  "shapes_p": "Każde pytanie to jedna karta. Odpowiadasz zawsze w tym samym miejscu: na pasku pod kartą. Spróbuj.",
+  "shape_yesno": "Tak/Nie",
+  "shape_yesno_p": "Jedno pytanie, dwie odpowiedzi. Przesuń w lewo na nie, w prawo na tak.",
+  "shape_choice": "Wybór",
+  "shape_choice_p": "Od 2 do 4 opcji — każda ze zdjęciem lub kilkoma słowami. Niech tłum wybierze.",
+  "shape_rate": "Ocena",
+  "shape_rate_p": "Skala od 0 do 10. Wynik pokazuje rozkład ocen tłumu wraz ze średnią.",
+  "how_h2": "Jak to działa",
+  "how_p": "Minuta na pytanie, kilka sekund na odpowiedzi.",
+  "how": [
+    {
+      "t": "Zapytaj",
+      "p": "Dodaj zdjęcie i napisz pytanie do 99 znaków. Wybierz kategorię i limit czasu: 10 minut, od 1 do 24 godzin lub bez limitu."
+    },
+    {
+      "t": "Tłum głosuje",
+      "p": "Twoje pytanie trafia do zakładki Trendy i na Rynek Twoich obserwujących. Każdy głosuje jednym przesunięciem. Nikt nie widzi, kto jak zagłosował — liczą się tylko liczby."
+    },
+    {
+      "t": "Podejmij decyzję",
+      "p": "Gdy czas minie, wynik się blokuje, a my damy Ci znać. Jeśli chcesz, zdradź wszystkim, na co ostatecznie padł wybór."
+    }
+  ],
+  "inside_h2": "Co znajdziesz w środku",
+  "inside_p": "Pięć zakładek, jedna karta naraz. Przesuń w górę po kolejne pytanie.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Trendy",
+      "p": "Pytania wszystkich użytkowników, ułożone pod Twoje zainteresowania. Tutaj otwiera się aplikacja."
+    },
+    {
+      "i": "square",
+      "t": "Rynek",
+      "p": "Pytania i Resence od osób, które obserwujesz, a gdy nadrobisz zaległości — propozycje dla Ciebie."
+    },
+    {
+      "i": "decisions",
+      "t": "Decyzje",
+      "p": "Wszystkie pytania z Twoim głosem i ich końcowe wyniki."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Podoba Ci się jakieś pytanie? Zadaj je ponownie swoim obserwującym."
+    },
+    {
+      "i": "comment",
+      "t": "Komentarze",
+      "p": "Publiczne komentarze i odpowiedzi. Autor pytania może je wyłączyć."
+    },
+    {
+      "i": "bell",
+      "t": "Powiadomienia",
+      "p": "Dowiesz się, gdy pojawi się wynik, ktoś skomentuje lub Twoje pytanie dostanie Resence."
+    },
+    {
+      "i": "share",
+      "t": "Udostępnij",
+      "p": "Wyślij znajomym pytanie lub jego wynik jako gotowe Story."
+    },
+    {
+      "i": "theme",
+      "t": "Jasny i ciemny",
+      "p": "Krystalicznie czysty jasny motyw albo przydymiony ciemny na późne wieczory."
+    }
+  ],
+  "trust_h2": "Pytaj bez skrępowania",
+  "trust_p": "W Sence nikt nie jest tu po to, żeby Cię oceniać. Po prostu odpowiada na Twoje pytanie.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Tylko nick",
+      "p": "Bez prawdziwego imienia, numeru telefonu ani hasła. Wybierasz nick i gotowe."
+    },
+    {
+      "i": "lock",
+      "t": "Prywatne głosy",
+      "p": "Nikt nie widzi, kto oddał jaki głos. Nawet autor pytania widzi wyłącznie liczby."
+    },
+    {
+      "i": "photo",
+      "t": "Sprawdzane zdjęcia",
+      "p": "Każde zdjęcie jest sprawdzane przed publikacją. Dane o lokalizacji usuwamy jeszcze na Twoim telefonie."
+    },
+    {
+      "i": "shield",
+      "t": "Zgłaszanie i blokowanie",
+      "p": "Zgłoś niepokojące pytanie i zablokuj kogoś jednym stuknięciem. Możesz też ustawić konto jako prywatne."
+    },
+    {
+      "i": "age",
+      "t": "Tylko 18+",
+      "p": "Sence to społeczność dla dorosłych. Wulgaryzmy i obraźliwy język są wyłapywane przed publikacją."
+    },
+    {
+      "i": "key",
+      "t": "Twoje konto zostaje z Tobą",
+      "p": "Połącz konto z Apple lub Google, aby zmiana telefonu nie oznaczała jego utraty. Konto możesz usunąć w aplikacji."
+    }
+  ],
+  "faq_h2": "Najczęściej zadawane pytania",
+  "faq": [
+    {
+      "q": "Czym jest Sence?",
+      "a": "To aplikacja, w której pod nickiem pytasz o rzeczy, na które nie możesz się zdecydować, a tłum głosuje. Masz trzy rodzaje pytań: Tak/Nie, Wybór (2–4 opcje) i Ocena (0–10). „Sence” oznacza po turecku „jak myślisz?”."
+    },
+    {
+      "q": "Czy to coś kosztuje?",
+      "a": "Nie. Pobranie i korzystanie z Sence jest całkowicie darmowe."
+    },
+    {
+      "q": "Czy ktoś widzi, kto jak zagłosował?",
+      "a": "Nie. Głosujący nie są nigdzie pokazywani. Wszyscy, łącznie z autorem pytania, widzą tylko procenty i liczbę głosów."
+    },
+    {
+      "q": "Dlaczego nie ma haseł?",
+      "a": "Twoje konto powstaje na Twoim telefonie — wybierasz tylko nick. Aby nie stracić go przy zmianie telefonu, połącz je z Apple lub Google w Ustawieniach, a na nowym urządzeniu wybierz „Mam już konto”."
+    },
+    {
+      "q": "Jak długo moje pytanie pozostaje otwarte?",
+      "a": "To Ty wybierasz: 10 minut, 1, 6, 12 albo 24 godziny lub w ogóle bez limitu. Gdy czas minie, wynik się blokuje, a Ty dostajesz powiadomienie."
+    },
+    {
+      "q": "Na jakich urządzeniach działa?",
+      "a": "Sence pojawi się już wkrótce w App Store na iPhone i iPad (iOS 17.6 lub nowszy) oraz w Google Play na Android."
+    },
+    {
+      "q": "Jakie języki są obsługiwane?",
+      "a": "Na razie angielski i turecki. Kolejne języki są już w drodze."
+    }
+  ],
+  "cta_h2": "Nie możesz się zdecydować? Niech tłum zagłosuje.",
+  "cta_p": "Sence pojawi się w App Store i Google Play już wkrótce. W dniu premiery pobierzesz aplikację prosto z tej strony.",
+  "footer_about": "Sence to aplikacja stworzona przez AnberTech.",
+  "footer_motto": "Proste aplikacje. Jasne zadania.",
+  "footer_more": "Więcej naszych aplikacji",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "pl/support/",
+  "support_title": "Sence Pomoc · Wsparcie i kontakt",
+  "support_desc": "Pomoc dla Sence: odzyskiwanie i usuwanie konta, zgłaszanie i blokowanie, nicki oraz powiadomienia. Napisz na destek.anbertech@gmail.com.",
+  "support_h1": "Pomoc",
+  "support_lead": "Coś nie działa albo masz pomysł, którym chcesz się podzielić? Napisz do nas, wkrótce się odezwiemy.",
+  "support_mail_btn": "Wyślij e-mail",
+  "support_mail_subject": "Sence – pomoc",
+  "support_h2": "Częste pytania",
+  "support_faq": [
+    {
+      "q": "Mam nowy telefon. Jak odzyskać swoje konto?",
+      "a": "Jeśli Twoje konto jest połączone z Apple lub Google, stuknij „Mam już konto” na ekranie powitalnym i zaloguj się tym samym kontem. Bez połączenia nie da się odzyskać starego konta, dlatego zalecamy podpięcie go w Ustawienia → Konto."
+    },
+    {
+      "q": "Jak usunąć swoje konto?",
+      "a": "Wejdź w Ustawienia → Konto → Usuń konto i potwierdź w dwóch krokach. Twój nick, pytania, komentarze i obserwowane osoby zostaną trwale usunięte; Twoje głosy pozostaną w statystykach, bez Twojej tożsamości. Nick stanie się dostępny dla innych po 30 dniach."
+    },
+    {
+      "q": "Jak zgłosić pytanie lub osobę?",
+      "a": "Otwórz menu „…” w prawym górnym rogu karty i wybierz „Zgłoś pytanie”. Aby zgłosić lub zablokować osobę, użyj menu „…” na jej profilu. Możesz też przytrzymać komentarz, żeby go zgłosić."
+    },
+    {
+      "q": "Jak kogoś odblokować?",
+      "a": "Przejdź do Ustawienia → Zablokowane konta i stuknij „Odblokuj”. Zablokowana osoba nie otrzymuje o tym powiadomienia."
+    },
+    {
+      "q": "Czy mogę zmienić swój nick?",
+      "a": "Tak: Ustawienia → Moje dane → Nick. Możesz go zmieniać raz na 30 dni."
+    },
+    {
+      "q": "Nie dostaję powiadomień.",
+      "a": "Upewnij się, że powiadomienia są włączone w Ustawienia iPhone → Powiadomienia → Sence. W samej aplikacji wybierz, które z nich chcesz otrzymywać, w Ustawienia → Powiadomienia."
+    }
+  ],
+  "support_legal": "Wnioski prawne oraz prośby o usunięcie treści możesz kierować na ten sam adres. Dołącz proszę link do danego pytania lub profilu.",
+  "back_home": "Strona główna Sence",
+  "dur_chips": [
+    "10 min",
+    "1 h",
+    "6 h",
+    "12 h",
+    "24 h",
+    "∞"
+  ],
+  "closing_ask": "Na co padł wybór? Stuknij",
+  "closing_picked": "@ty wybiera Tak",
+  "nick": "@niepewnylis",
+  "legal_terms": "Warunki korzystania",
+  "legal_privacy": "Polityka prywatności",
+  "legal_terms_desc": "Warunki korzystania z Sence: limit wieku, zasady, zgłaszanie i usuwanie konta.",
+  "legal_privacy_desc": "Polityka prywatności Sence: jakie dane przetwarzamy, dlaczego oraz jakie masz prawa."
+}

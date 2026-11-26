@@ -16,8 +16,11 @@ SRC = os.path.join(ROOT, '_src')
 BASE = 'https://anbertech.github.io/Sence/'
 HOME = 'https://anbertech.github.io/'
 EMAIL = 'destek.anbertech@gmail.com'
-LANGS = ('tr', 'en')                      # ilk dil kökte yayınlanır
-PATH = {'tr': '', 'en': 'en/'}
+# İlk dil kökte yayınlanır. 2026-11-26: uygulamayla aynı 16 dil; i18n/<dil>.json olanlar yayınlanır.
+_SIRA = ('tr', 'en', 'de', 'fr', 'it', 'nl', 'pl', 'es', 'pt', 'ru', 'ar', 'ja', 'ko', 'zh-Hans', 'hi', 'id')
+LANGS = tuple(l for l in _SIRA if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'i18n', f'{l}.json')))
+PATH = {l: ('' if l == 'tr' else f'{l}/') for l in LANGS}
+LEGAL_LANGS = ('tr', 'en')                 # hukuki metinler yalnız TR/EN; diğer diller İngilizcesine bağlanır
 APP_STORE = None                          # yayına çıkınca: 'https://apps.apple.com/app/id…' (rozetler kendiliğinden bağlanır)
 APP_ID = None                             # yayına çıkınca: '67…' (Safari akıllı uygulama şeridi)
 PLAY = None                               # yayına çıkınca: 'https://play.google.com/store/apps/details?id=…'
@@ -228,22 +231,27 @@ def slug(x, page):
         return PATH[x]
     if page == 'support':
         return T[x]['support_slug']
-    return LEGAL[page][x]
+    return LEGAL[page].get(x, LEGAL[page]['en'])
+
+
+def page_langs(page):
+    return LEGAL_LANGS if page in ('terms', 'privacy') else LANGS
 
 
 def lang_switch(l, page):
-    """page: 'home' | 'support' | 'terms' | 'privacy'"""
+    """page: 'home' | 'support' | 'terms' | 'privacy'. 16 dil: açılır liste (details), JS gerekmez."""
     out = []
-    for x in LANGS:
+    for x in page_langs(page):
         href = BASE + slug(x, page)
         cur = ' aria-current="page"' if x == l else ''
-        out.append(f'<a href="{href}" hreflang="{x}" lang="{x}"{cur}>{T[x]["code"]}</a>')
-    return f'<nav class="langs" aria-label="{e(T[l]["aria_lang"])}">{"".join(out)}</nav>'
+        out.append(f'<a href="{href}" hreflang="{x}" lang="{x}"{cur}><b>{T[x]["code"]}</b> {e(T[x]["name"])}</a>')
+    return (f'<details class="langs"><summary aria-label="{e(T[l]["aria_lang"])}">{T[l]["code"]}</summary>'
+            f'<nav class="langmenu" aria-label="{e(T[l]["aria_lang"])}">{"".join(out)}</nav></details>')
 
 
 def alternates(page):
     rows = []
-    for x in LANGS:
+    for x in page_langs(page):
         href = BASE + slug(x, page)
         rows.append(f'<link rel="alternate" hreflang="{x}" href="{href}">')
     xd = BASE + slug('en', page)
@@ -431,7 +439,8 @@ def step_visual(t, i):
 
 
 def pct(t, n):
-    return f'%{n}' if t['lang'] == 'tr' else f'{n}%'
+    if t['lang'] == 'tr': return f'%{n}'
+    return f'{n}\u202f%' if t['lang'] in ('fr', 'de') else f'{n}%'
 
 
 def support(l):
@@ -447,7 +456,7 @@ def support(l):
 <h2>{e(t["support_h2"])}</h2>
 <div class="faq">{faq}</div>
 <p class="legal">{e(t["support_legal"])}</p>
-<p class="legal"><a href="{prefix(rel)}{LEGAL["terms"][l]}">{e(t["legal_terms"])}</a> · <a href="{prefix(rel)}{LEGAL["privacy"][l]}">{e(t["legal_privacy"])}</a></p>
+<p class="legal"><a href="{prefix(rel)}{slug(l, "terms")}">{e(t["legal_terms"])}</a> · <a href="{prefix(rel)}{slug(l, "privacy")}">{e(t["legal_privacy"])}</a></p>
 <p><a class="back" href="{prefix(rel)}{PATH[l]}">← {e(t["back_home"])}</a></p>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "FAQPage", "inLanguage": l, "mainEntity": [
@@ -516,9 +525,9 @@ def legal(l, kind):
 def sitemap():
     rows = []
     for kind in ('home', 'support', 'terms', 'privacy'):
-        alts = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{x}" href="{BASE + slug(x, kind)}" />' for x in LANGS)
+        alts = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{x}" href="{BASE + slug(x, kind)}" />' for x in page_langs(kind))
         alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE + slug("en", kind)}" />'
-        for l in LANGS:
+        for l in page_langs(kind):
             loc = BASE + slug(l, kind)
             pr = '1.0' if kind == 'home' else ('0.5' if kind == 'support' else '0.3')
             rows.append(f'  <url><loc>{loc}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority>{alts}\n  </url>')
@@ -531,7 +540,7 @@ def llms():
     faq = '\n'.join(f'- {x["q"]} {x["a"]}' for x in en['faq'])
     txt = f'''# Sence
 
-> Sence ("what do you think?" in Turkish) is a mobile app by AnberTech for decisions you can't make alone: you ask a question under a nickname and the community votes. Store name: "Sence: Can't Decide? We Can." (Turkish: "{tr["og_title"]}"). Status: coming soon to the App Store for iPhone and iPad (iOS 17.6+) and to Google Play for Android. Languages: Turkish and English. Free. Adults only (18+).
+> Sence ("what do you think?" in Turkish) is a mobile app by AnberTech for decisions you can't make alone: you ask a question under a nickname and the community votes. Store name: "Sence: Can't Decide? We Can." (Turkish: "{tr["og_title"]}"). Status: coming soon to the App Store for iPhone and iPad (iOS 17.6+) and to Google Play for Android. Languages: Turkish, English, German, French, Italian, Dutch, Polish, Spanish, Portuguese, Russian, Arabic, Japanese, Korean, Chinese, Hindi, Indonesian. Free. Adults only (18+).
 
 ## What it does
 
@@ -565,8 +574,9 @@ if __name__ == '__main__':
     for l in LANGS:
         home(l)
         support(l)
-        legal(l, 'terms')
-        legal(l, 'privacy')
+        if l in LEGAL_LANGS:
+            legal(l, 'terms')
+            legal(l, 'privacy')
     sitemap()
     llms()
     print('tamam:', ', '.join(PATH[l] or '/' for l in LANGS), '+ destek, koşullar, gizlilik, sitemap.xml, llms.txt')

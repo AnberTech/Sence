@@ -1,6 +1,6 @@
 # Sence
 
-> Sence ("what do you think?" in Turkish) is a mobile app by AnberTech for decisions you can't make alone: you ask a question under a nickname and the community votes. Store name: "Sence: Can't Decide? We Can." (Turkish: "Sence: Sen Sor, Karar Bizde"). Status: coming soon to the App Store for iPhone and iPad (iOS 17.6+) and to Google Play for Android. Languages: Turkish and English. Free. Adults only (18+).
+> Sence ("what do you think?" in Turkish) is a mobile app by AnberTech for decisions you can't make alone: you ask a question under a nickname and the community votes. Store name: "Sence: Can't Decide? We Can." (Turkish: "Sence: Sen Sor, Karar Bizde"). Status: coming soon to the App Store for iPhone and iPad (iOS 17.6+) and to Google Play for Android. Languages: Turkish, English, German, French, Italian, Dutch, Polish, Spanish, Portuguese, Russian, Arabic, Japanese, Korean, Chinese, Hindi, Indonesian. Free. Adults only (18+).
 
 ## What it does
 

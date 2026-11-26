@@ -3,21 +3,609 @@
   <url><loc>https://anbertech.github.io/Sence/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
   </url>
   <url><loc>https://anbertech.github.io/Sence/en/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/de/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/fr/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/it/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/nl/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/pl/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/es/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/pt/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ru/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ar/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ja/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ko/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/zh-Hans/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/hi/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/id/</loc><lastmod>2026-11-26</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/" />
   </url>
   <url><loc>https://anbertech.github.io/Sence/destek/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
   </url>
   <url><loc>https://anbertech.github.io/Sence/en/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/de/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/fr/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/it/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/nl/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/pl/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/es/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/pt/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ru/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ar/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ja/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/ko/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/zh-Hans/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/hi/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
+  </url>
+  <url><loc>https://anbertech.github.io/Sence/id/support/</loc><lastmod>2026-11-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://anbertech.github.io/Sence/destek/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anbertech.github.io/Sence/en/support/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://anbertech.github.io/Sence/de/support/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anbertech.github.io/Sence/fr/support/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://anbertech.github.io/Sence/it/support/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://anbertech.github.io/Sence/nl/support/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://anbertech.github.io/Sence/pl/support/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anbertech.github.io/Sence/es/support/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://anbertech.github.io/Sence/pt/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anbertech.github.io/Sence/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://anbertech.github.io/Sence/ar/support/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://anbertech.github.io/Sence/ja/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://anbertech.github.io/Sence/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anbertech.github.io/Sence/zh-Hans/support/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://anbertech.github.io/Sence/hi/support/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://anbertech.github.io/Sence/id/support/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anbertech.github.io/Sence/en/support/" />
   </url>
   <url><loc>https://anbertech.github.io/Sence/kosullar/</loc><lastmod>2026-11-26</lastmod><priority>0.3</priority>

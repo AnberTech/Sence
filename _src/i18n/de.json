@@ -1,0 +1,251 @@
+{
+  "lang": "de",
+  "locale": "de_DE",
+  "dir": "ltr",
+  "flag": "de",
+  "code": "DE",
+  "name": "Deutsch",
+  "title": "Sence: Unentschlossen? Wir entscheiden. · Abstimmen",
+  "meta_desc": "Frag mit Spitznamen, lass die Community abstimmen und entscheide leichter. Mit Foto oder Text. Bald im App Store und bei Google Play.",
+  "og_title": "Sence: Unentschlossen? Wir entscheiden.",
+  "og_desc": "Du kannst dich nicht entscheiden? Frag, die Community stimmt ab. Nur mit Spitznamen, Stimmen bleiben privat. Bald im App Store und bei Google Play.",
+  "skip": "Zum Inhalt springen",
+  "nav_how": "So funktioniert’s",
+  "nav_faq": "FAQ",
+  "nav_support": "Support",
+  "aria_theme": "Helles / dunkles Design",
+  "aria_lang": "Sprache / Language",
+  "aria_home": "Sence-Startseite",
+  "pill": "iPhone, iPad und Android · Bald verfügbar",
+  "h1_a": "Unentschlossen?",
+  "h1_b": "Wir entscheiden.",
+  "lead": "Frag alles, wobei du dich nicht entscheiden kannst, und lass die Community mit einem Wisch abstimmen. Dies oder das, ja oder nein, wie viele Punkte? Sieh in Sekunden, was alle denken.",
+  "checks": [
+    "Kostenlos",
+    "Nur mit Spitznamen",
+    "Private Stimmen",
+    "Ohne Passwort"
+  ],
+  "store_soon": "Bald im App Store",
+  "store_soon_small": "Bald verfügbar",
+  "see_how": "Wie funktioniert’s?",
+  "demo_note": "Beispielfrage · Zahlen dienen zur Veranschaulichung",
+  "demo_hint": "Auf der Leiste wischen, zum Abstimmen loslassen",
+  "demo_again": "Nochmal",
+  "demo_cancel": "Abgebrochen, keine Stimme abgegeben",
+  "yes": "Ja",
+  "no": "Nein",
+  "avg": "Ø",
+  "you": "Du",
+  "bence": "Stimmen",
+  "comments": "Kommentare",
+  "resences": "Resence",
+  "q_hero": "Soll ich diese Sneaker kaufen?",
+  "q_yesno": "Heute Abend ins Kino?",
+  "q_choice": "Wo soll ich heute lernen?",
+  "q_rate": "Wie findest du meinen neuen Arbeitsplatz?",
+  "opt_a": "Bibliothek",
+  "opt_b": "Zu Hause",
+  "a11y_strip_yesno": "Abstimmungsleiste: Nein oder Ja",
+  "a11y_strip_choice": "Abstimmungsleiste: Optionen",
+  "a11y_strip_rate": "Bewertungsleiste, 0 bis 10",
+  "a11y_result": "Ergebnis",
+  "a11y_photo": "Foto zur Frage",
+  "tabs": {
+    "agenda": "Trends",
+    "square": "Forum",
+    "decisions": "Abgestimmt",
+    "me": "Ich",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Drei Arten zu fragen",
+  "shapes_p": "Jede Frage hat eine eigene Karte. Du antwortest immer an derselben Stelle: auf der Leiste unter der Karte. Probier’s aus.",
+  "shape_yesno": "Ja/Nein",
+  "shape_yesno_p": "Eine Frage, zwei Antworten. Wische nach links für Nein, nach rechts für Ja.",
+  "shape_choice": "Wahl",
+  "shape_choice_p": "2 bis 4 Optionen, jeweils ein Foto oder ein paar Worte. Lass die Community eine auswählen.",
+  "shape_rate": "Skala",
+  "shape_rate_p": "Eine Bewertung von 0 bis 10. Das Ergebnis zeigt, wie sich die Bewertungen der Community verteilen, samt Durchschnitt.",
+  "how_h2": "So funktioniert’s",
+  "how_p": "Eine Minute zum Fragen, wenige Sekunden bis zu den ersten Antworten.",
+  "how": [
+    {
+      "t": "Stell deine Frage",
+      "p": "Füge ein Foto hinzu und schreibe deine Frage mit höchstens 99 Zeichen. Wähle eine Kategorie und eine Laufzeit: 10 Minuten, 1 bis 24 Stunden oder unbegrenzt."
+    },
+    {
+      "t": "Die Community stimmt ab",
+      "p": "Deine Frage erscheint in Trends und im Forum deiner Follower. Alle stimmen mit einem Wisch ab. Niemand sieht, wer wofür gestimmt hat, nur die Zahlen."
+    },
+    {
+      "t": "Triff deine Entscheidung",
+      "p": "Wenn die Zeit abgelaufen ist, steht das Ergebnis fest und wir benachrichtigen dich. Wenn du magst, erzähl allen, wofür du dich am Ende entschieden hast."
+    }
+  ],
+  "inside_h2": "Das erwartet dich in der App",
+  "inside_p": "Fünf Tabs, immer eine Karte im Blick. Wische nach oben zur nächsten Frage.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Trends",
+      "p": "Fragen von allen, nach deinen Interessen sortiert. Hier startet die App."
+    },
+    {
+      "i": "square",
+      "t": "Forum",
+      "p": "Fragen und Resence-Beiträge von Leuten, denen du folgst. Wenn du alles gesehen hast, bekommst du Vorschläge."
+    },
+    {
+      "i": "decisions",
+      "t": "Abgestimmt",
+      "p": "Alle Fragen, bei denen du abgestimmt hast, samt Ergebnissen."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Dir gefällt eine Frage? Stell sie deinen eigenen Followern noch einmal."
+    },
+    {
+      "i": "comment",
+      "t": "Kommentare",
+      "p": "Öffentliche Kommentare und Antworten. Wer die Frage stellt, kann Kommentare ausschalten."
+    },
+    {
+      "i": "bell",
+      "t": "Benachrichtigungen",
+      "p": "Erfahre, wenn ein Ergebnis feststeht, jemand kommentiert oder deine Frage per Resence teilt."
+    },
+    {
+      "i": "share",
+      "t": "Teilen",
+      "p": "Schicke Freunden eine Frage oder ihr Ergebnis als fertige Story."
+    },
+    {
+      "i": "theme",
+      "t": "Hell und dunkel",
+      "p": "Ein glasklares helles Design oder ein rauchig dunkles für späte Stunden."
+    }
+  ],
+  "trust_h2": "Frag ganz entspannt",
+  "trust_p": "Auf Sence ist niemand da, um über dich zu urteilen. Alle beantworten einfach deine Frage.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Nur mit Spitznamen",
+      "p": "Kein echter Name, keine Telefonnummer, kein Passwort. Wähle einen Spitznamen und leg los."
+    },
+    {
+      "i": "lock",
+      "t": "Private Stimmen",
+      "p": "Niemand sieht, wer für welche Antwort gestimmt hat. Selbst wer die Frage stellt, sieht nur die Zahlen."
+    },
+    {
+      "i": "photo",
+      "t": "Geprüfte Fotos",
+      "p": "Jedes Foto wird geprüft, bevor es veröffentlicht wird. Standortdaten werden schon auf deinem Handy entfernt."
+    },
+    {
+      "i": "shield",
+      "t": "Melden und blockieren",
+      "p": "Melde Fragen, die dich stören, und blockiere Personen mit einem Tippen. Du kannst dein Konto auch auf privat stellen."
+    },
+    {
+      "i": "age",
+      "t": "Nur ab 18",
+      "p": "Sence ist eine Community für Erwachsene. Beleidigende Ausdrücke werden vor dem Veröffentlichen erkannt."
+    },
+    {
+      "i": "key",
+      "t": "Dein Konto bleibt bei dir",
+      "p": "Verknüpfe dein Konto mit Apple oder Google, damit es beim Handywechsel nicht verloren geht. Du kannst dein Konto in der App löschen."
+    }
+  ],
+  "faq_h2": "Häufig gestellte Fragen",
+  "faq": [
+    {
+      "q": "Was ist Sence?",
+      "a": "Eine App, in der du unter einem Spitznamen Fragen zu Dingen stellst, bei denen du unentschlossen bist. Die Community stimmt ab. Es gibt drei Frageformen: Ja/Nein, Wahl (2–4 Optionen) und Skala (0–10). “Sence” ist Türkisch und bedeutet “Was denkst du?”."
+    },
+    {
+      "q": "Kostet Sence etwas?",
+      "a": "Nein. Du kannst Sence kostenlos herunterladen und nutzen."
+    },
+    {
+      "q": "Kann jemand sehen, wer wofür gestimmt hat?",
+      "a": "Nein. Wer abgestimmt hat, wird nirgends angezeigt. Alle sehen nur Prozentwerte und die Anzahl der Stimmen, auch die Person, die die Frage gestellt hat."
+    },
+    {
+      "q": "Warum gibt es keine Passwörter?",
+      "a": "Dein Konto wird auf deinem Handy erstellt; du wählst nur einen Spitznamen. Damit du es beim Handywechsel nicht verlierst, verknüpfe es in den Einstellungen mit Apple oder Google. Wähle dann auf dem neuen Handy “Ich habe bereits ein Konto”."
+    },
+    {
+      "q": "Wie lange bleibt meine Frage offen?",
+      "a": "Du entscheidest: 10 Minuten, 1, 6, 12 oder 24 Stunden oder ganz ohne Zeitlimit. Wenn die Zeit abgelaufen ist, steht das Ergebnis fest und du bekommst eine Benachrichtigung."
+    },
+    {
+      "q": "Auf welchen Geräten läuft Sence?",
+      "a": "Sence gibt es schon bald im App Store für iPhone und iPad (ab iOS 17.6) und bei Google Play für Android."
+    },
+    {
+      "q": "Welche Sprachen werden unterstützt?",
+      "a": "Aktuell Englisch und Türkisch. Weitere Sprachen sind unterwegs."
+    }
+  ],
+  "cta_h2": "Du kannst dich nicht entscheiden? Lass die Community abstimmen.",
+  "cta_p": "Sence gibt es schon bald im App Store und bei Google Play. Sobald die App erscheint, kannst du sie über diese Seite herunterladen.",
+  "footer_about": "Sence ist eine App von AnberTech.",
+  "footer_motto": "Einfache Apps. Klare Aufgaben.",
+  "footer_more": "Weitere Apps von uns",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "de/support/",
+  "support_title": "Sence Support · Hilfe und Kontakt",
+  "support_desc": "Hilfe zu Sence: Konto wiederherstellen oder löschen, melden und blockieren, Spitznamen und Benachrichtigungen. Schreib an destek.anbertech@gmail.com.",
+  "support_h1": "Support",
+  "support_lead": "Etwas funktioniert nicht oder du hast eine Idee? Schreib uns, wir melden uns so bald wie möglich.",
+  "support_mail_btn": "E-Mail senden",
+  "support_mail_subject": "Sence Support",
+  "support_h2": "Häufige Fragen",
+  "support_faq": [
+    {
+      "q": "Ich habe ein neues Handy. Wie bekomme ich mein Konto zurück?",
+      "a": "Wenn du dein Konto mit Apple oder Google verknüpft hast, tippe auf dem Willkommensbildschirm auf “Ich habe bereits ein Konto” und melde dich mit demselben Konto an. Ohne Verknüpfung lässt sich dein altes Konto nicht wiederherstellen. Deshalb empfehlen wir dir, es unter Einstellungen → Konto zu verknüpfen."
+    },
+    {
+      "q": "Wie lösche ich mein Konto?",
+      "a": "Einstellungen → Konto → Konto löschen, dann in zwei Schritten bestätigen. Dein Spitzname, deine Fragen, Kommentare und Folgebeziehungen werden dauerhaft gelöscht; deine Stimmen bleiben ohne Bezug zu deiner Identität in den Ergebnissen enthalten. Nach 30 Tagen können andere deinen Spitznamen wieder verwenden."
+    },
+    {
+      "q": "Wie melde ich eine Frage oder eine Person?",
+      "a": "Öffne das “…”-Menü oben rechts auf der Karte und wähle Frage melden. Um eine Person zu melden oder zu blockieren, nutze das “…”-Menü auf ihrem Profil. Du kannst auch einen Kommentar gedrückt halten, um ihn zu melden."
+    },
+    {
+      "q": "Wie hebe ich eine Blockierung auf?",
+      "a": "Gehe zu Einstellungen → Blockierte Konten und tippe auf Blockierung aufheben. Wenn du jemanden blockierst, bekommt die Person keine Benachrichtigung."
+    },
+    {
+      "q": "Kann ich meinen Spitznamen ändern?",
+      "a": "Ja: Einstellungen → Meine Infos → Spitzname. Du kannst ihn alle 30 Tage ändern."
+    },
+    {
+      "q": "Ich bekomme keine Benachrichtigungen.",
+      "a": "Prüfe in den iPhone-Einstellungen → Mitteilungen → Sence, ob Mitteilungen aktiviert sind. Welche Benachrichtigungen du erhalten möchtest, wählst du in der App unter Einstellungen → Benachrichtigungen."
+    }
+  ],
+  "support_legal": "Auch rechtliche Anfragen und Anträge auf Entfernung von Inhalten kannst du an dieselbe Adresse senden. Füge bitte einen Link zur betreffenden Frage oder zum Profil hinzu.",
+  "back_home": "Sence-Startseite",
+  "dur_chips": [
+    "10 Min.",
+    "1 Std.",
+    "6 Std.",
+    "12 Std.",
+    "24 Std.",
+    "∞"
+  ],
+  "closing_ask": "Was hast du gewählt? Tippe",
+  "closing_picked": "@du hat Ja gewählt",
+  "nick": "@unentschlossenerfuchs",
+  "legal_terms": "Nutzungsbedingungen",
+  "legal_privacy": "Datenschutzerklärung",
+  "legal_terms_desc": "Sence-Nutzungsbedingungen: Altersgrenze, Regeln, Meldungen und Kontolöschung.",
+  "legal_privacy_desc": "Sence-Datenschutzerklärung: Welche Daten wir verarbeiten, warum und welche Rechte du hast."
+}

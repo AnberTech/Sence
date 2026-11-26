@@ -1,0 +1,251 @@
+{
+  "lang": "nl",
+  "locale": "nl_NL",
+  "dir": "ltr",
+  "flag": "nl",
+  "code": "NL",
+  "name": "Nederlands",
+  "title": "Sence: Twijfel je? Wij kiezen. · Vraag, iedereen stemt",
+  "meta_desc": "Stel je vraag op Sence en laat iedereen stemmen. Ja/Nee, Kies of Score, met foto of tekst. Binnenkort in de App Store en Google Play.",
+  "og_title": "Sence: Twijfel je? Wij kiezen.",
+  "og_desc": "Kun je niet kiezen? Stel je vraag, iedereen stemt. Alleen een bijnaam, stemmen blijven privé. Binnenkort in de App Store en Google Play.",
+  "skip": "Ga naar de inhoud",
+  "nav_how": "Zo werkt het",
+  "nav_faq": "Veelgestelde vragen",
+  "nav_support": "Ondersteuning",
+  "aria_theme": "Licht / donker thema",
+  "aria_lang": "Taal / Language",
+  "aria_home": "Sence startpagina",
+  "pill": "iPhone, iPad en Android · Binnenkort",
+  "h1_a": "Twijfel je?",
+  "h1_b": "Wij kiezen.",
+  "lead": "Stel je vraag over alles waar je over twijfelt en laat iedereen met één veeg stemmen. Dit of dat, ja of nee, hoeveel punten? Ontdek binnen een paar seconden wat iedereen vindt.",
+  "checks": [
+    "Gratis",
+    "Alleen een bijnaam",
+    "Stemmen blijven privé",
+    "Geen wachtwoorden"
+  ],
+  "store_soon": "Binnenkort in de App Store",
+  "store_soon_small": "Binnenkort",
+  "see_how": "Hoe werkt het?",
+  "demo_note": "Voorbeeldvraag · cijfers ter illustratie",
+  "demo_hint": "Sleep over de balk, laat los om te stemmen",
+  "demo_again": "Opnieuw",
+  "demo_cancel": "Geannuleerd, geen stem uitgebracht",
+  "yes": "Ja",
+  "no": "Nee",
+  "avg": "gem.",
+  "you": "Jij",
+  "bence": "stemmen",
+  "comments": "reacties",
+  "resences": "Resences",
+  "q_hero": "Zal ik deze sneakers kopen?",
+  "q_yesno": "Vanavond een filmavond?",
+  "q_choice": "Waar zal ik vandaag studeren?",
+  "q_rate": "Welk cijfer geef je mijn nieuwe werkplek?",
+  "opt_a": "Bibliotheek",
+  "opt_b": "Thuis",
+  "a11y_strip_yesno": "Stembalk: Nee of Ja",
+  "a11y_strip_choice": "Stembalk: opties",
+  "a11y_strip_rate": "Scorebalk, 0 tot 10",
+  "a11y_result": "Uitslag",
+  "a11y_photo": "Foto bij de vraag",
+  "tabs": {
+    "agenda": "Ontdek",
+    "square": "Plein",
+    "decisions": "Keuzes",
+    "me": "Ik",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Drie manieren om iets te vragen",
+  "shapes_p": "Elke vraag staat op één kaart. Je antwoordt altijd op dezelfde plek: via de balk onder de kaart. Probeer het eens.",
+  "shape_yesno": "Ja/Nee",
+  "shape_yesno_p": "Eén vraag, twee antwoorden. Veeg naar links voor nee, naar rechts voor ja.",
+  "shape_choice": "Kies",
+  "shape_choice_p": "2 tot 4 opties, elk met een foto of een paar woorden. Laat iedereen kiezen.",
+  "shape_rate": "Score",
+  "shape_rate_p": "Een cijfer van 0 tot 10. De uitslag laat zien hoe de scores verdeeld zijn, met het gemiddelde erbij.",
+  "how_h2": "Zo werkt het",
+  "how_p": "Een minuut om te vragen, een paar seconden voor antwoorden.",
+  "how": [
+    {
+      "t": "Stel je vraag",
+      "p": "Voeg een foto toe en schrijf je vraag in maximaal 99 tekens. Kies een categorie en een tijdslimiet: 10 minuten, 1 tot 24 uur, of onbeperkt."
+    },
+    {
+      "t": "Iedereen stemt",
+      "p": "Je vraag verschijnt in Ontdek en op het Plein van je volgers. Iedereen stemt met één veeg. Niemand ziet wie waarop heeft gestemd, alleen de cijfers."
+    },
+    {
+      "t": "Maak je keuze",
+      "p": "Als de tijd om is, staat de uitslag vast en krijg je een melding. Als je wilt, kun je iedereen vertellen wat je uiteindelijk hebt gekozen."
+    }
+  ],
+  "inside_h2": "Dit vind je in de app",
+  "inside_p": "Vijf tabbladen, één kaart tegelijk. Veeg omhoog voor de volgende vraag.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Ontdek",
+      "p": "Vragen van iedereen, gesorteerd op jouw interesses. Hier opent de app."
+    },
+    {
+      "i": "square",
+      "t": "Plein",
+      "p": "Vragen en Resences van mensen die je volgt. Ben je helemaal bij? Dan krijg je suggesties."
+    },
+    {
+      "i": "decisions",
+      "t": "Keuzes",
+      "p": "Alle vragen waarop je hebt gestemd, met de uitslag erbij."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Leuke vraag gezien? Stel die opnieuw aan je eigen volgers."
+    },
+    {
+      "i": "comment",
+      "t": "Reacties",
+      "p": "Openbare reacties en antwoorden. De vraagsteller kan reacties uitschakelen."
+    },
+    {
+      "i": "bell",
+      "t": "Meldingen",
+      "p": "Krijg een melding als de uitslag er is, iemand reageert of je vraag via Resence deelt."
+    },
+    {
+      "i": "share",
+      "t": "Delen",
+      "p": "Stuur een vraag of de uitslag naar vrienden als een kant-en-klare Story."
+    },
+    {
+      "i": "theme",
+      "t": "Licht en donker",
+      "p": "Een kristalhelder licht thema, of een donker thema met rokerige tinten voor de late uurtjes."
+    }
+  ],
+  "trust_h2": "Vraag maar raak",
+  "trust_p": "Niemand op Sence is er om je te veroordelen. Ze beantwoorden gewoon je vraag.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Alleen een bijnaam",
+      "p": "Geen echte naam, telefoonnummer of wachtwoord nodig. Kies een bijnaam en je kunt beginnen."
+    },
+    {
+      "i": "lock",
+      "t": "Stemmen blijven privé",
+      "p": "Niemand ziet wie waarop heeft gestemd. Zelfs de vraagsteller ziet alleen de cijfers."
+    },
+    {
+      "i": "photo",
+      "t": "Gecontroleerde foto's",
+      "p": "Elke foto wordt gecontroleerd voordat die online komt. Locatiegegevens worden al op je telefoon verwijderd."
+    },
+    {
+      "i": "shield",
+      "t": "Melden en blokkeren",
+      "p": "Meld een vraag waar je last van hebt en blokkeer iemand met één tik. Je kunt je account ook privé maken."
+    },
+    {
+      "i": "age",
+      "t": "Alleen 18+",
+      "p": "Sence is een community voor volwassenen. Grof taalgebruik wordt herkend voordat het wordt geplaatst."
+    },
+    {
+      "i": "key",
+      "t": "Je account blijft van jou",
+      "p": "Koppel je account aan Apple of Google, zodat je het niet kwijtraakt als je een nieuwe telefoon krijgt. Je kunt je account in de app verwijderen."
+    }
+  ],
+  "faq_h2": "Veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Wat is Sence?",
+      "a": "Een app waarin je onder een bijnaam vragen stelt over dingen waarover je twijfelt, en iedereen laat stemmen. Er zijn drie soorten vragen: Ja/Nee, Kies (2–4 opties) en Score (0–10). “Sence” is Turks voor “wat vind jij?”."
+    },
+    {
+      "q": "Kost het iets?",
+      "a": "Nee. Sence is gratis te downloaden en te gebruiken."
+    },
+    {
+      "q": "Kan iemand zien wie waarop heeft gestemd?",
+      "a": "Nee. De identiteit van stemmers wordt nergens getoond. Iedereen, ook de vraagsteller, ziet alleen percentages en het aantal stemmen."
+    },
+    {
+      "q": "Waarom zijn er geen wachtwoorden?",
+      "a": "Je account wordt op je telefoon aangemaakt; je kiest alleen een bijnaam. Koppel je account via Instellingen aan Apple of Google, zodat je het niet kwijtraakt als je van telefoon wisselt. Gebruik daarna “Ik heb al een account” op je nieuwe telefoon."
+    },
+    {
+      "q": "Hoelang blijft mijn vraag open?",
+      "a": "Dat kies je zelf: 10 minuten, 1, 6, 12 of 24 uur, of helemaal zonder tijdslimiet. Als de tijd om is, staat de uitslag vast en krijg je een melding."
+    },
+    {
+      "q": "Op welke apparaten werkt het?",
+      "a": "Sence verschijnt binnenkort in de App Store voor iPhone en iPad (iOS 17.6 of nieuwer) en op Google Play voor Android."
+    },
+    {
+      "q": "Welke talen worden ondersteund?",
+      "a": "Voorlopig Engels en Turks. Meer talen zijn onderweg."
+    }
+  ],
+  "cta_h2": "Kun je niet kiezen? Laat iedereen stemmen.",
+  "cta_p": "Sence verschijnt binnenkort in de App Store en op Google Play. Vanaf de dag van de lancering kun je de app via deze pagina downloaden.",
+  "footer_about": "Sence is een app van AnberTech.",
+  "footer_motto": "Eenvoudige apps. Duidelijke functies.",
+  "footer_more": "Meer apps van ons",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "nl/support/",
+  "support_title": "Sence Ondersteuning · Hulp en contact",
+  "support_desc": "Hulp bij Sence: je account herstellen of verwijderen, melden en blokkeren, bijnamen en meldingen. Mail naar destek.anbertech@gmail.com.",
+  "support_h1": "Ondersteuning",
+  "support_lead": "Werkt er iets niet, of heb je een idee? Mail ons en we reageren zo snel mogelijk.",
+  "support_mail_btn": "Stuur een e-mail",
+  "support_mail_subject": "Sence ondersteuning",
+  "support_h2": "Veelgestelde vragen",
+  "support_faq": [
+    {
+      "q": "Ik heb een nieuwe telefoon. Hoe krijg ik mijn account terug?",
+      "a": "Als je je account aan Apple of Google hebt gekoppeld, tik je op het welkomstscherm op “Ik heb al een account” en log je in met hetzelfde account. Zonder koppeling kun je je oude account niet herstellen. Daarom raden we aan het te koppelen via Instellingen → Account."
+    },
+    {
+      "q": "Hoe verwijder ik mijn account?",
+      "a": "Ga naar Instellingen → Account → Account verwijderen en bevestig dit in twee stappen. Je bijnaam, vragen, reacties en volgrelaties worden definitief verwijderd; je stemmen blijven zonder je identiteit meetellen. Na 30 dagen is je bijnaam weer beschikbaar voor anderen."
+    },
+    {
+      "q": "Hoe meld ik een vraag of persoon?",
+      "a": "Open het menu “…” rechtsboven op de kaart en kies Vraag melden. Gebruik het menu “…” op iemands profiel om die persoon te melden of te blokkeren. Je kunt ook een reactie ingedrukt houden om die te melden."
+    },
+    {
+      "q": "Hoe deblokkeer ik iemand?",
+      "a": "Ga naar Instellingen → Geblokkeerde accounts en tik op Deblokkeren. De persoon krijgt geen melding als je die blokkeert."
+    },
+    {
+      "q": "Kan ik mijn bijnaam wijzigen?",
+      "a": "Ja: Instellingen → Mijn gegevens → Bijnaam. Je kunt je bijnaam eens per 30 dagen wijzigen."
+    },
+    {
+      "q": "Ik krijg geen meldingen.",
+      "a": "Controleer of meldingen aanstaan via Instellingen → Meldingen → Sence op je iPhone. Kies in de app welke meldingen je wilt ontvangen via Instellingen → Meldingen."
+    }
+  ],
+  "support_legal": "Ook voor juridische verzoeken en verzoeken om inhoud te verwijderen kun je naar dit adres mailen. Voeg een link toe naar de betreffende vraag of het profiel.",
+  "back_home": "Sence startpagina",
+  "dur_chips": [
+    "10 min",
+    "1 uur",
+    "6 uur",
+    "12 uur",
+    "24 uur",
+    "∞"
+  ],
+  "closing_ask": "Wat heb je gekozen? Tik",
+  "closing_picked": "@jij koos Ja",
+  "nick": "@twijfelvos",
+  "legal_terms": "Gebruiksvoorwaarden",
+  "legal_privacy": "Privacybeleid",
+  "legal_terms_desc": "Sence Gebruiksvoorwaarden: leeftijdsgrens, regels, melden en je account verwijderen.",
+  "legal_privacy_desc": "Sence Privacybeleid: welke gegevens we verwerken, waarom en wat je rechten zijn."
+}

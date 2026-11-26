@@ -1,0 +1,251 @@
+{
+  "lang": "fr",
+  "locale": "fr_FR",
+  "dir": "ltr",
+  "flag": "fr",
+  "code": "FR",
+  "name": "Français",
+  "title": "Sence : Tu hésites ? On décide pour toi. · Demande, on vote",
+  "meta_desc": "Sur Sence, pose ta question sous pseudo : oui/non, choix ou note, en photo ou texte. Votes en quelques secondes. Bientôt sur l'App Store et Google Play.",
+  "og_title": "Sence : Tu hésites ? On décide pour toi.",
+  "og_desc": "Tu hésites ? Pose ta question, la communauté vote. Sous pseudo, votes privés. Bientôt sur l'App Store et Google Play.",
+  "skip": "Aller au contenu",
+  "nav_how": "Comment ça marche",
+  "nav_faq": "FAQ",
+  "nav_support": "Support",
+  "aria_theme": "Thème clair / sombre",
+  "aria_lang": "Langue / Language",
+  "aria_home": "Accueil Sence",
+  "pill": "iPhone, iPad et Android · Bientôt disponible",
+  "h1_a": "Tu hésites ?",
+  "h1_b": "On décide pour toi.",
+  "lead": "Pose ta question dès que tu hésites et laisse la communauté voter d'un seul geste. Ceci ou cela, oui ou non, quelle note ? Découvre ce que tout le monde en pense en quelques secondes.",
+  "checks": [
+    "Gratuit",
+    "Sous pseudo",
+    "Votes privés",
+    "Sans mot de passe"
+  ],
+  "store_soon": "Bientôt sur l'App Store",
+  "store_soon_small": "Bientôt",
+  "see_how": "Comment ça marche ?",
+  "demo_note": "Question d'exemple · chiffres indicatifs",
+  "demo_hint": "Glisse sur la barre, relâche pour voter",
+  "demo_again": "Encore",
+  "demo_cancel": "Annulé, aucun vote",
+  "yes": "Oui",
+  "no": "Non",
+  "avg": "moy.",
+  "you": "Toi",
+  "bence": "votes",
+  "comments": "commentaires",
+  "resences": "resences",
+  "q_hero": "Je prends ces baskets ?",
+  "q_yesno": "Soirée ciné ce soir ?",
+  "q_choice": "Où étudier aujourd'hui ?",
+  "q_rate": "Quelle note pour mon nouveau bureau ?",
+  "opt_a": "Bibliothèque",
+  "opt_b": "À la maison",
+  "a11y_strip_yesno": "Barre de vote : Non ou Oui",
+  "a11y_strip_choice": "Barre de vote : options",
+  "a11y_strip_rate": "Barre de note, de 0 à 10",
+  "a11y_result": "Résultat",
+  "a11y_photo": "Photo de la question",
+  "tabs": {
+    "agenda": "Tendances",
+    "square": "Place",
+    "decisions": "Décisions",
+    "me": "Moi",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Trois façons de demander",
+  "shapes_p": "Chaque question est une carte. Tu réponds toujours au même endroit : sur la barre sous la carte. Essaie.",
+  "shape_yesno": "Oui/Non",
+  "shape_yesno_p": "Une question, deux réponses. Glisse à gauche pour non, à droite pour oui.",
+  "shape_choice": "Choix",
+  "shape_choice_p": "De 2 à 4 options, avec une photo ou quelques mots. Laisse la communauté trancher.",
+  "shape_rate": "Note",
+  "shape_rate_p": "Une note de 0 à 10. Le résultat affiche la répartition des notes et la moyenne.",
+  "how_h2": "Comment ça marche",
+  "how_p": "Une minute pour demander, quelques secondes pour avoir des réponses.",
+  "how": [
+    {
+      "t": "Demande",
+      "p": "Ajoute une photo et écris ta question en 99 caractères max. Choisis une catégorie et une durée : 10 minutes, de 1 à 24 heures, ou sans limite."
+    },
+    {
+      "t": "Tout le monde vote",
+      "p": "Ta question arrive dans Tendances et sur la Place de tes abonnés. Tout le monde vote d'un seul geste. Personne ne voit qui a voté quoi, seulement les chiffres."
+    },
+    {
+      "t": "Fais ton choix",
+      "p": "Une fois le temps écoulé, le résultat est figé et on te prévient. Si tu veux, dis à tout le monde ce que tu as choisi au final."
+    }
+  ],
+  "inside_h2": "Ce qui t'attend",
+  "inside_p": "Cinq onglets, une carte à la fois. Glisse vers le haut pour la question suivante.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Tendances",
+      "p": "Les questions de tout le monde, classées selon tes centres d'intérêt. L'app s'ouvre ici."
+    },
+    {
+      "i": "square",
+      "t": "Place",
+      "p": "Les questions et les Resence des personnes que tu suis, puis des suggestions une fois que tu es à jour."
+    },
+    {
+      "i": "decisions",
+      "t": "Décisions",
+      "p": "Toutes les questions sur lesquelles tu as voté, avec leur résultat."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Une question te plaît ? Repose-la à tes propres abonnés."
+    },
+    {
+      "i": "comment",
+      "t": "Commentaires",
+      "p": "Commentaires publics et réponses. L'auteur peut les désactiver."
+    },
+    {
+      "i": "bell",
+      "t": "Notifications",
+      "p": "Reçois une alerte quand un résultat tombe, qu'on commente ou qu'on fait un Resence de ta question."
+    },
+    {
+      "i": "share",
+      "t": "Partager",
+      "p": "Envoie une question ou son résultat à tes amis sous forme de Story prête à l'emploi."
+    },
+    {
+      "i": "theme",
+      "t": "Clair et sombre",
+      "p": "Un thème clair limpide, ou un thème sombre feutré pour tard le soir."
+    }
+  ],
+  "trust_h2": "Demande librement",
+  "trust_p": "Sur Sence, personne n'est là pour te juger. On répond juste à ta question.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Sous pseudo uniquement",
+      "p": "Pas de vrai nom, de numéro de téléphone ni de mot de passe. Choisis un pseudo et c'est parti."
+    },
+    {
+      "i": "lock",
+      "t": "Votes privés",
+      "p": "Personne ne voit qui a voté quoi. Même l'auteur de la question ne voit que les chiffres."
+    },
+    {
+      "i": "photo",
+      "t": "Photos vérifiées",
+      "p": "Chaque photo est vérifiée avant d'être publiée. Les données de localisation sont supprimées directement sur ton téléphone."
+    },
+    {
+      "i": "shield",
+      "t": "Signaler et bloquer",
+      "p": "Signale une question qui te dérange et bloque quelqu'un en un geste. Tu peux aussi passer ton compte en privé."
+    },
+    {
+      "i": "age",
+      "t": "18 ans et plus",
+      "p": "Sence est une communauté réservée aux adultes. Les propos grossiers sont bloqués avant publication."
+    },
+    {
+      "i": "key",
+      "t": "Ton compte en sécurité",
+      "p": "Associe Apple ou Google pour ne pas perdre ton compte si tu changes de téléphone. Tu peux le supprimer depuis l'app."
+    }
+  ],
+  "faq_h2": "Questions fréquentes",
+  "faq": [
+    {
+      "q": "C'est quoi Sence ?",
+      "a": "Une app où tu poses tes questions sous pseudo quand tu hésites, et la communauté vote. Il y a trois formats : Oui/Non, Choix (2 à 4 options) et Note (0 à 10). « Sence » signifie « qu'en penses-tu ? » en turc."
+    },
+    {
+      "q": "C'est payant ?",
+      "a": "Non. Sence est gratuit à télécharger et à utiliser."
+    },
+    {
+      "q": "Quelqu'un peut-il voir qui a voté quoi ?",
+      "a": "Non. L'identité des votants n'est affichée nulle part. Tout le monde, y compris l'auteur de la question, ne voit que les pourcentages et le nombre de votes."
+    },
+    {
+      "q": "Pourquoi n'y a-t-il pas de mot de passe ?",
+      "a": "Ton compte est créé sur ton téléphone : tu choisis simplement un pseudo. Pour ne pas le perdre en changeant d'appareil, associe-le à Apple ou Google dans Réglages, puis utilise « J'ai déjà un compte » sur le nouveau téléphone."
+    },
+    {
+      "q": "Combien de temps ma question reste-t-elle ouverte ?",
+      "a": "C'est toi qui choisis : 10 minutes, 1, 6, 12 ou 24 heures, ou sans limite. Une fois le temps écoulé, le résultat est figé et tu reçois une notification."
+    },
+    {
+      "q": "Sur quels appareils ça fonctionne ?",
+      "a": "Sence arrive très bientôt sur l'App Store pour iPhone et iPad (iOS 17.6 ou ultérieur) et sur Google Play pour Android."
+    },
+    {
+      "q": "Quelles langues sont disponibles ?",
+      "a": "L'anglais et le turc pour le moment. D'autres langues sont en chemin."
+    }
+  ],
+  "cta_h2": "Tu hésites ? Laisse la communauté voter.",
+  "cta_p": "Sence arrive très bientôt sur l'App Store et Google Play. Tu pourras le télécharger depuis cette page dès le jour du lancement.",
+  "footer_about": "Sence est une application d'AnberTech.",
+  "footer_motto": "Des apps simples. Un but clair.",
+  "footer_more": "Nos autres apps",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "fr/support/",
+  "support_title": "Support Sence · Aide et contact",
+  "support_desc": "Aide pour Sence : récupérer ou supprimer ton compte, signaler et bloquer, pseudo et notifications. Écris à destek.anbertech@gmail.com.",
+  "support_h1": "Support",
+  "support_lead": "Quelque chose ne fonctionne pas ou tu as une idée à partager ? Écris-nous, on te répond vite.",
+  "support_mail_btn": "Envoyer un e-mail",
+  "support_mail_subject": "Support Sence",
+  "support_h2": "Questions courantes",
+  "support_faq": [
+    {
+      "q": "J'ai changé de téléphone. Comment récupérer mon compte ?",
+      "a": "Si tu as associé ton compte à Apple ou Google, touche « J'ai déjà un compte » sur l'écran d'accueil et connecte-toi avec le même compte. Sans association, l'ancien compte ne peut pas être récupéré : on te recommande donc de l'associer dans Réglages → Compte."
+    },
+    {
+      "q": "Comment supprimer mon compte ?",
+      "a": "Va dans Réglages → Compte → Supprimer le compte, puis confirme en deux étapes. Ton pseudo, tes questions, tes commentaires et tes abonnements sont supprimés définitivement ; tes votes restent dans les totaux, de façon anonyme. Ton pseudo redevient disponible au bout de 30 jours."
+    },
+    {
+      "q": "Comment signaler une question ou une personne ?",
+      "a": "Ouvre le menu « … » en haut à droite de la carte et choisis Signaler la question. Pour signaler ou bloquer quelqu'un, utilise le menu « … » sur son profil. Tu peux aussi appuyer longuement sur un commentaire pour le signaler."
+    },
+    {
+      "q": "Comment débloquer quelqu'un ?",
+      "a": "Va dans Réglages → Comptes bloqués et touche Débloquer. La personne n'est pas prévenue quand tu la bloques."
+    },
+    {
+      "q": "Puis-je changer de pseudo ?",
+      "a": "Oui : Réglages → Mes infos → Pseudo. Tu peux le changer une fois tous les 30 jours."
+    },
+    {
+      "q": "Je ne reçois pas les notifications.",
+      "a": "Vérifie que les notifications sont activées dans Réglages de l'iPhone → Notifications → Sence. Dans l'app, choisis celles que tu veux recevoir sous Réglages → Notifications."
+    }
+  ],
+  "support_legal": "Les demandes légales et demandes de retrait de contenu peuvent être envoyées à la même adresse. Merci d'inclure le lien vers la question ou le profil concerné.",
+  "back_home": "Accueil Sence",
+  "dur_chips": [
+    "10 min",
+    "1 h",
+    "6 h",
+    "12 h",
+    "24 h",
+    "∞"
+  ],
+  "closing_ask": "Qu'as-tu choisi ? Touche",
+  "closing_picked": "@toi a choisi Oui",
+  "nick": "@renardhesitant",
+  "legal_terms": "Conditions d'utilisation",
+  "legal_privacy": "Politique de confidentialité",
+  "legal_terms_desc": "Conditions d'utilisation de Sence : limite d'âge, règles, signalement et suppression de compte.",
+  "legal_privacy_desc": "Politique de confidentialité de Sence : quelles données nous traitons, pourquoi, et tes droits."
+}

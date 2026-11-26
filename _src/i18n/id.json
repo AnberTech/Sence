@@ -1,0 +1,251 @@
+{
+  "lang": "id",
+  "locale": "id_ID",
+  "dir": "ltr",
+  "flag": "id",
+  "code": "ID",
+  "name": "Bahasa Indonesia",
+  "title": "Sence: Bingung? Biar kami putuskan. · Aplikasi voting",
+  "meta_desc": "Tanya pakai nama panggilan, biarkan semua memberi suara. Pilih, Ya/Tidak, atau Nilai lewat foto atau teks. Segera di App Store dan Google Play.",
+  "og_title": "Sence: Bingung? Biar kami putuskan.",
+  "og_desc": "Bingung memilih? Tanya, biarkan semua memberi suara. Pakai nama panggilan, pilihanmu rahasia. Segera di App Store dan Google Play.",
+  "skip": "Langsung ke konten",
+  "nav_how": "Cara kerja",
+  "nav_faq": "FAQ",
+  "nav_support": "Bantuan",
+  "aria_theme": "Tema terang / gelap",
+  "aria_lang": "Bahasa / Dil",
+  "aria_home": "Beranda Sence",
+  "pill": "iPhone, iPad dan Android · Segera hadir",
+  "h1_a": "Bingung?",
+  "h1_b": "Biar kami putuskan.",
+  "lead": "Tanyakan apa pun yang bikin kamu bingung dan biarkan semua memberi suara dengan sekali geser. Ini atau itu, ya atau tidak, berapa nilainya? Lihat pendapat semua orang dalam hitungan detik.",
+  "checks": [
+    "Gratis",
+    "Cukup nama panggilan",
+    "Pilihanmu rahasia",
+    "Tanpa kata sandi"
+  ],
+  "store_soon": "Segera hadir di App Store",
+  "store_soon_small": "Segera hadir",
+  "see_how": "Bagaimana cara kerjanya?",
+  "demo_note": "Contoh pertanyaan · angka hanya ilustrasi",
+  "demo_hint": "Geser pada bilah, lepaskan untuk memberi suara",
+  "demo_again": "Lagi",
+  "demo_cancel": "Dibatalkan, suara tidak diberikan",
+  "yes": "Ya",
+  "no": "Tidak",
+  "avg": "rata-rata",
+  "you": "Kamu",
+  "bence": "suara",
+  "comments": "komentar",
+  "resences": "Resence",
+  "q_hero": "Beli sepatu ini nggak, ya?",
+  "q_yesno": "Nonton film malam ini?",
+  "q_choice": "Hari ini enaknya belajar di mana?",
+  "q_rate": "Berapa nilai meja belajarku yang baru?",
+  "opt_a": "Perpustakaan",
+  "opt_b": "Di rumah",
+  "a11y_strip_yesno": "Bilah suara: Tidak atau Ya",
+  "a11y_strip_choice": "Bilah suara: pilihan",
+  "a11y_strip_rate": "Bilah nilai, 0 sampai 10",
+  "a11y_result": "Hasil",
+  "a11y_photo": "Foto pertanyaan",
+  "tabs": {
+    "agenda": "Populer",
+    "square": "Alun-alun",
+    "decisions": "Keputusan",
+    "me": "Aku",
+    "ask": "Sence?"
+  },
+  "shapes_h2": "Tiga cara bertanya",
+  "shapes_p": "Satu pertanyaan, satu kartu. Jawabnya selalu di tempat yang sama: bilah di bawah kartu. Yuk, coba.",
+  "shape_yesno": "Ya/Tidak",
+  "shape_yesno_p": "Satu pertanyaan, dua jawaban. Geser ke kiri untuk tidak, ke kanan untuk ya.",
+  "shape_choice": "Pilih",
+  "shape_choice_p": "2 sampai 4 pilihan, masing-masing berupa foto atau tulisan singkat. Biarkan semua memilih satu.",
+  "shape_rate": "Nilai",
+  "shape_rate_p": "Beri nilai dari 0 sampai 10. Hasilnya menampilkan sebaran nilai dari semua orang beserta rata-ratanya.",
+  "how_h2": "Cara kerja",
+  "how_p": "Semenit untuk bertanya, beberapa detik untuk mendapat jawaban.",
+  "how": [
+    {
+      "t": "Tanya",
+      "p": "Tambahkan foto dan tulis pertanyaanmu maksimal 99 karakter. Pilih kategori dan batas waktu: 10 menit, 1 sampai 24 jam, atau tanpa batas."
+    },
+    {
+      "t": "Semua memberi suara",
+      "p": "Pertanyaanmu muncul di Populer dan di Alun-alun pengikutmu. Semua memberi suara dengan sekali geser. Tidak ada yang bisa melihat siapa memilih apa, hanya angkanya."
+    },
+    {
+      "t": "Tentukan pilihanmu",
+      "p": "Saat waktunya habis, hasil dikunci dan kami memberi tahu kamu. Kalau mau, ceritakan juga apa yang akhirnya kamu pilih."
+    }
+  ],
+  "inside_h2": "Apa saja isinya",
+  "inside_p": "Lima tab, satu kartu setiap kali. Geser ke atas untuk pertanyaan berikutnya.",
+  "inside": [
+    {
+      "i": "agenda",
+      "t": "Populer",
+      "p": "Pertanyaan dari semua orang, diurutkan sesuai minatmu. Di sinilah aplikasi pertama kali terbuka."
+    },
+    {
+      "i": "square",
+      "t": "Alun-alun",
+      "p": "Pertanyaan dan Resence dari orang yang kamu ikuti, lalu rekomendasi setelah semuanya kamu lihat."
+    },
+    {
+      "i": "decisions",
+      "t": "Keputusan",
+      "p": "Semua pertanyaan yang pernah kamu beri suara, lengkap dengan hasilnya."
+    },
+    {
+      "i": "resence",
+      "t": "Resence",
+      "p": "Suka sebuah pertanyaan? Tanyakan lagi ke pengikutmu sendiri."
+    },
+    {
+      "i": "comment",
+      "t": "Komentar",
+      "p": "Komentar dan balasan yang bisa dilihat semua orang. Pembuat pertanyaan bisa menonaktifkannya."
+    },
+    {
+      "i": "bell",
+      "t": "Notifikasi",
+      "p": "Dapat kabar saat hasil keluar, ada komentar, atau seseorang membagikan ulang pertanyaanmu lewat Resence."
+    },
+    {
+      "i": "share",
+      "t": "Bagikan",
+      "p": "Kirim pertanyaan atau hasilnya ke teman sebagai Story siap pakai."
+    },
+    {
+      "i": "theme",
+      "t": "Terang dan gelap",
+      "p": "Tema terang yang jernih, atau tema gelap bernuansa redup untuk malam hari."
+    }
+  ],
+  "trust_h2": "Bebas bertanya",
+  "trust_p": "Di Sence, tidak ada yang datang untuk menghakimimu. Mereka hanya menjawab pertanyaanmu.",
+  "trust": [
+    {
+      "i": "mask",
+      "t": "Cukup nama panggilan",
+      "p": "Tanpa nama asli, nomor telepon, atau kata sandi. Pilih nama panggilan, lalu mulai."
+    },
+    {
+      "i": "lock",
+      "t": "Pilihanmu rahasia",
+      "p": "Tidak ada yang bisa melihat siapa memilih jawaban apa. Bahkan pembuat pertanyaan hanya melihat angkanya."
+    },
+    {
+      "i": "photo",
+      "t": "Foto diperiksa",
+      "p": "Setiap foto diperiksa sebelum ditampilkan. Data lokasi dihapus saat foto masih di ponselmu."
+    },
+    {
+      "i": "shield",
+      "t": "Laporkan dan blokir",
+      "p": "Laporkan pertanyaan yang mengganggu dan blokir seseorang dengan sekali ketuk. Kamu juga bisa menjadikan akunmu privat."
+    },
+    {
+      "i": "age",
+      "t": "Khusus 18+",
+      "p": "Sence adalah komunitas untuk orang dewasa. Bahasa kasar terdeteksi sebelum diposting."
+    },
+    {
+      "i": "key",
+      "t": "Akunmu tetap aman",
+      "p": "Hubungkan ke Apple atau Google agar akunmu tidak hilang saat ganti ponsel. Kamu bisa menghapus akun lewat aplikasi."
+    }
+  ],
+  "faq_h2": "Pertanyaan yang sering diajukan",
+  "faq": [
+    {
+      "q": "Apa itu Sence?",
+      "a": "Aplikasi untuk bertanya tentang hal yang bikin kamu bingung memilih, memakai nama panggilan, lalu membiarkan semua memberi suara. Ada tiga jenis pertanyaan: Ya/Tidak, Pilih (2–4 pilihan) dan Nilai (0–10). “Sence” berarti “menurutmu?” dalam bahasa Turki."
+    },
+    {
+      "q": "Apakah berbayar?",
+      "a": "Tidak. Sence gratis untuk diunduh dan digunakan."
+    },
+    {
+      "q": "Apakah orang lain bisa melihat siapa memilih apa?",
+      "a": "Tidak. Identitas pemberi suara tidak pernah ditampilkan di mana pun. Semua orang, termasuk pembuat pertanyaan, hanya melihat persentase dan jumlah suara."
+    },
+    {
+      "q": "Kenapa tidak ada kata sandi?",
+      "a": "Akun dibuat di ponselmu; kamu cukup memilih nama panggilan. Agar akunmu tidak hilang saat ganti ponsel, hubungkan ke Apple atau Google di Pengaturan, lalu gunakan “Aku sudah punya akun” di ponsel baru."
+    },
+    {
+      "q": "Berapa lama pertanyaanku terbuka?",
+      "a": "Kamu yang pilih: 10 menit, 1, 6, 12 atau 24 jam, atau tanpa batas waktu. Saat waktunya habis, hasil dikunci dan kamu mendapat notifikasi."
+    },
+    {
+      "q": "Bisa digunakan di perangkat apa saja?",
+      "a": "Sence segera hadir di App Store untuk iPhone dan iPad (iOS 17.6 atau lebih baru) dan di Google Play untuk Android."
+    },
+    {
+      "q": "Bahasa apa saja yang tersedia?",
+      "a": "Untuk sekarang, bahasa Inggris dan Turki. Bahasa lainnya akan menyusul."
+    }
+  ],
+  "cta_h2": "Bingung memilih? Biar semua memberi suara.",
+  "cta_p": "Sence segera hadir di App Store dan Google Play. Kamu bisa mengunduhnya dari halaman ini pada hari peluncuran.",
+  "footer_about": "Sence adalah aplikasi dari AnberTech.",
+  "footer_motto": "Aplikasi sederhana. Fungsi yang jelas.",
+  "footer_more": "Aplikasi kami lainnya",
+  "rights": "© 2026 AnberTech",
+  "support_slug": "id/support/",
+  "support_title": "Bantuan Sence · Bantuan dan kontak",
+  "support_desc": "Bantuan Sence: pemulihan dan penghapusan akun, pelaporan dan pemblokiran, nama panggilan serta notifikasi. Hubungi destek.anbertech@gmail.com.",
+  "support_h1": "Bantuan",
+  "support_lead": "Ada masalah, atau punya ide untuk dibagikan? Tulis ke kami dan kami akan segera membalas.",
+  "support_mail_btn": "Kirim email",
+  "support_mail_subject": "Bantuan Sence",
+  "support_h2": "Pertanyaan umum",
+  "support_faq": [
+    {
+      "q": "Aku ganti ponsel. Bagaimana cara memulihkan akunku?",
+      "a": "Kalau akunmu sudah terhubung ke Apple atau Google, ketuk “Aku sudah punya akun” di layar sambutan dan masuk dengan akun yang sama. Tanpa terhubung, akun lama tidak bisa dipulihkan, jadi kami sarankan menghubungkannya di Pengaturan → Akun."
+    },
+    {
+      "q": "Bagaimana cara menghapus akunku?",
+      "a": "Buka Pengaturan → Akun → Hapus akun, lalu konfirmasi dalam dua langkah. Nama panggilan, pertanyaan, komentar, dan hubungan pengikutmu dihapus permanen; suaramu tetap masuk dalam hitungan, tanpa identitasmu. Nama panggilanmu bisa dipakai orang lain setelah 30 hari."
+    },
+    {
+      "q": "Bagaimana cara melaporkan pertanyaan atau seseorang?",
+      "a": "Buka menu “…” di kanan atas kartu dan pilih Laporkan pertanyaan. Untuk melaporkan atau memblokir seseorang, gunakan menu “…” di profilnya. Kamu juga bisa menekan lama komentar untuk melaporkannya."
+    },
+    {
+      "q": "Bagaimana cara membuka blokir seseorang?",
+      "a": "Buka Pengaturan → Akun yang diblokir dan ketuk Buka blokir. Orang tersebut tidak mendapat notifikasi saat kamu memblokirnya."
+    },
+    {
+      "q": "Bisa ganti nama panggilan?",
+      "a": "Bisa: Pengaturan → Info saya → Nama panggilan. Kamu bisa menggantinya sekali setiap 30 hari."
+    },
+    {
+      "q": "Aku tidak mendapat notifikasi.",
+      "a": "Pastikan notifikasi aktif di Pengaturan iPhone → Notifikasi → Sence. Di aplikasi, pilih notifikasi yang kamu inginkan lewat Pengaturan → Notifikasi."
+    }
+  ],
+  "support_legal": "Permintaan terkait hukum dan penghapusan konten juga bisa dikirim ke alamat yang sama. Sertakan tautan pertanyaan atau profil yang dimaksud.",
+  "back_home": "Beranda Sence",
+  "dur_chips": [
+    "10 mnt",
+    "1 jam",
+    "6 jam",
+    "12 jam",
+    "24 jam",
+    "∞"
+  ],
+  "closing_ask": "Apa pilihanmu? Ketuk",
+  "closing_picked": "@kamu memilih Ya",
+  "nick": "@rubahbingung",
+  "legal_terms": "Ketentuan Penggunaan",
+  "legal_privacy": "Kebijakan Privasi",
+  "legal_terms_desc": "Ketentuan Penggunaan Sence: batas usia, aturan, pelaporan dan penghapusan akun.",
+  "legal_privacy_desc": "Kebijakan Privasi Sence: data yang kami proses, alasannya, dan hakmu."
+}
