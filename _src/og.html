@@ -1,5 +1,6 @@
 <!doctype html>
-<!-- Paylaşım görseli kaynağı (1200×630). Kullanım: og.html?l=tr  ya da  ?l=en ; README'deki komutla assets/img/og-<dil>.jpg üretilir. -->
+<!-- Paylaşım görseli kaynağı (1200×630). Kullanım: og.html?l=<dil> — metinler i18n/<dil>.json'dan okunur.
+     README'deki komutla her dil için assets/img/og-<dil>.jpg üretilir (Chrome'a --allow-file-access-from-files verilir). -->
 <html><head><meta charset="utf-8">
 <style>
 @font-face{font-family:Geist;font-weight:600;src:url(../assets/fonts/geist-semibold.woff)}
@@ -7,50 +8,99 @@
 @font-face{font-family:Geist;font-weight:800;src:url(../assets/fonts/geist-extrabold.woff)}
 @font-face{font-family:GM;font-weight:600;src:url(../assets/fonts/geist-mono-semibold.woff)}
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;overflow:hidden;background:#F4F5F8;font-family:Geist;color:#121316;position:relative}
-.l{position:absolute;border-radius:50%;filter:blur(90px);opacity:.6}
-.l1{width:560px;height:560px;left:-180px;top:-220px;background:#67E8F9}
-.l2{width:520px;height:520px;right:-120px;top:120px;background:#A5B4FC}
-.l3{width:520px;height:520px;left:340px;bottom:-360px;background:#E9D5FF}
-.copy{position:absolute;left:76px;top:86px;width:600px}
-.brand{display:flex;align-items:center;gap:8px;font-size:46px;font-weight:800;letter-spacing:-.05em}
-.brand svg{height:46px}
-h1{font-size:92px;line-height:.98;font-weight:800;letter-spacing:-.045em;margin-top:44px}
-h1 em{font-style:normal;background:linear-gradient(115deg,#06B6D4,#6366F1 52%,#A78BFA);-webkit-background-clip:text;color:transparent}
-.soon{display:inline-flex;align-items:center;gap:10px;margin-top:40px;padding:12px 20px;border-radius:18px;color:#fff;font-weight:700;font-size:22px;
-  background:linear-gradient(115deg,#0E7490,#4338CA 52%,#6D28D9)}
-.soon svg{width:20px;height:24px}
-.card{position:absolute;right:70px;top:58px;width:380px;padding:9px;border-radius:32px;background:rgba(255,255,255,.66);border:1px solid #fff;
-  box-shadow:0 30px 70px -24px rgba(40,44,110,.35);transform:rotate(3deg)}
+body{width:1200px;height:630px;overflow:hidden;background:#F4F5F8;font-family:Geist,"Hiragino Sans","PingFang SC","Apple SD Gothic Neo","Noto Sans CJK JP","Noto Sans CJK SC","Noto Sans CJK KR","Geeza Pro","Noto Sans Arabic","Kohinoor Devanagari","Noto Sans Devanagari",sans-serif;color:#121316;position:relative}
+.l{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.l1{width:560px;height:560px;left:-200px;top:-240px;background:#67E8F9}
+.l2{width:520px;height:520px;right:-140px;top:100px;background:#A5B4FC}
+.l3{width:520px;height:520px;left:360px;bottom:-380px;background:#E9D5FF}
+.copy{position:absolute;left:72px;top:64px;width:600px;bottom:64px;display:flex;flex-direction:column}
+.rtl .copy{left:auto;right:72px}
+.brand{display:flex;align-items:center;gap:7px;font-size:44px;font-weight:800;letter-spacing:-.055em;direction:ltr}
+.rtl .brand{align-self:flex-start}
+.brand svg{height:43px}
+h1{font-weight:800;letter-spacing:-.055em;line-height:.95;margin-top:auto;font-size:var(--fs)}
+h1 span{display:block;white-space:nowrap}
+.cjk h1{letter-spacing:-.02em;line-height:1.1}
+.ar h1,.hi h1{letter-spacing:0;line-height:1.2}
+.dot{display:inline-block;width:.2em;height:.2em;margin-inline-start:.05em;border-radius:50%;background:linear-gradient(115deg,#06B6D4,#6366F1 52%,#A78BFA);box-shadow:0 .05em .22em -.03em rgba(99,102,241,.6)}
+.soon{align-self:flex-start;margin-top:34px;padding:11px 18px;border-radius:99px;background:rgba(255,255,255,.7);border:1px solid #fff;font-weight:600;font-size:21px;color:#5D6068}
+
+.card{position:absolute;right:92px;top:62px;width:360px;padding:9px;border-radius:32px;background:rgba(255,255,255,.7);border:1px solid #fff;
+  box-shadow:0 30px 70px -24px rgba(40,44,110,.35);transform:rotate(3deg);z-index:2}
+.rtl .card{right:auto;left:92px;transform:rotate(-3deg)}
 .panel{padding:13px;border-radius:25px;border:1px solid rgba(18,19,22,.08)}
 .h{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px}
-.ava{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#FBBF24,#F472B6,#FB7185);position:relative}
-.ava:before,.ava:after{content:"";position:absolute;top:13px;width:4px;height:8px;border-radius:3px;background:#121316}
-.ava:before{left:10px}.ava:after{right:10px}
-.ph{margin-top:12px;aspect-ratio:1;border-radius:22px;overflow:hidden;height:300px;width:100%}
+.ph{margin-top:12px;border-radius:22px;overflow:hidden;height:268px;width:100%}
 .ph img{width:100%;height:100%;object-fit:cover}
-.q{font-size:21px;font-weight:600;margin:12px 4px 2px;letter-spacing:-.015em}
-.strip{display:flex;gap:4px;height:62px;margin-top:9px;padding:4px;border-radius:20px;background:rgba(18,19,22,.06)}
-.strip span{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:16px;color:#fff;font-weight:700;font-size:19px}
-.no{flex:38;background:#E62E4D;opacity:.75}.yes{flex:62;background:#00C48C}
+.q{font-size:20px;font-weight:600;margin:12px 4px 2px;letter-spacing:-.015em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.strip{display:flex;gap:4px;height:60px;margin-top:9px;padding:4px;border-radius:20px;background:rgba(18,19,22,.06)}
+.strip span{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:16px;color:#fff;font-weight:700;font-size:18px;white-space:nowrap}
+.no{flex:38;background:#E62E4D;opacity:.78}.yes{flex:62;background:#00C48C}
 .strip b{font-family:GM;font-weight:600}
+.face{position:absolute;border-radius:50%;z-index:1}
+.face::before{content:"";position:absolute;left:14%;top:8%;width:36%;height:24%;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(1.5px)}
+.face i{position:absolute;top:44%;width:9.6%;height:16.7%;border-radius:50%;background:#121316}
+.face i:first-child{left:34.6%}.face i:last-child{right:34.6%}
+.face{box-shadow:0 6px 14px -6px rgba(27,28,58,.35)}
 </style></head><body>
 <i class="l l1"></i><i class="l l2"></i><i class="l l3"></i>
+<div id="faces"></div>
 <div class="copy">
   <div class="brand">sence<svg viewBox="283 202 458 617"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06B6D4"/><stop offset=".5" stop-color="#6366F1"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs><g transform="translate(265.76 215.04) scale(0.81807)"><path fill="#121316" d="M212 232Q212 315 234.0 357.5Q256 400 310 425Q346 442 363.5 455.0Q381 468 387.0 482.5Q393 497 393 517Q393 549 372.0 569.0Q351 589 311 589Q223 589 212 493L34 501Q40 566 73.5 617.0Q107 668 166.5 697.0Q226 726 311 726Q397 726 454.0 698.5Q511 671 539.5 623.5Q568 576 568 517Q568 473 556.0 443.5Q544 414 517.0 391.0Q490 368 445 343Q409 323 395.0 300.5Q381 278 381 232Z"/></g><circle cx="507.09" cy="283.35" r="70.97" fill="url(#g)"/></svg></div>
   <h1 id="h1"></h1>
-  <div class="soon"><span id="soon"></span></div>
+  <div class="soon" id="soon"></div>
 </div>
 <div class="card"><div class="panel">
-  <div class="h"><span class="ava"></span><span id="nick"></span></div>
+  <div class="h"><svg width="32" height="32" viewBox="0 0 1024 1024"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBBF24"/><stop offset=".5" stop-color="#F472B6"/><stop offset="1" stop-color="#FB7185"/></linearGradient></defs><circle cx="512" cy="512" r="490" fill="url(#a)"/><ellipse cx="342" cy="250" rx="170" ry="100" fill="#fff" fill-opacity=".45"/><ellipse cx="364" cy="538" rx="46" ry="78" fill="#121316"/><ellipse cx="660" cy="538" rx="46" ry="78" fill="#121316"/></svg><span id="nick"></span></div>
   <div class="ph"><img src="../assets/img/ayakkabi_a.webp"></div>
   <div class="q" id="q"></div>
 </div>
-<div class="strip"><span class="no"><span id="no"></span> <b id="pn"></b></span><span class="yes">✓ <span id="yes"></span> <b id="py"></b></span></div></div>
+<div class="strip" id="strip"><span class="no"><span id="no"></span> <b id="pn"></b></span><span class="yes">✓ <span id="yes"></span> <b id="py"></b></span></div></div>
 <script>
-var en = new URLSearchParams(location.search).get("l") === "en";
-var T = en ? {h1:"Can't decide?<br><em>We can.</em>",soon:"Coming soon to the App Store and Google Play",nick:"@undecidedfox",q:"Should I buy these sneakers?",no:"No",yes:"Yes",pn:"38%",py:"62%"}
-           : {h1:"Sen sor,<br><em>karar bizde.</em>",soon:"Yakında App Store ve Google Play'de",nick:"@kararsizceylan",q:"Bu ayakkabıyı alayım mı?",no:"Hayır",yes:"Evet",pn:"%38",py:"%62"};
-for (var k in T) document.getElementById(k).innerHTML = T[k];
+(function () {
+  var l = new URLSearchParams(location.search).get("l") || "tr";
+  function pct(n) { return l === "tr" ? "%" + n : (l === "fr" || l === "de") ? n + " %" : n + "%"; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  // build.py fit_units ile aynı kaba genişlik hesabı
+  function units(s) {
+    var w = 0;
+    for (var ch of s) {
+      if (/[ᄀ-ᇿ⺀-꓏가-힣豈-﫿︰-﹏＀-｠￠-￦]/.test(ch)) w += 1;
+      else if (" .,;:!?¿¡'’ilIjtfr|।".indexOf(ch) >= 0) w += .32;
+      else if ("mwMWÆŒ".indexOf(ch) >= 0) w += .86;
+      else if (ch !== ch.toLowerCase()) w += .68;
+      else w += .58;
+    }
+    return w;
+  }
+  fetch("i18n/" + l + ".json").then(function (r) { return r.json(); }).then(function (t) {
+    document.documentElement.lang = l; document.querySelector(".copy").dir = t.dir; document.querySelector(".card").dir = t.dir; if (t.dir === "rtl") document.body.classList.add("rtl");
+    if (/^(ja|ko|zh)/.test(l)) document.body.classList.add("cjk");
+    if (l === "ar" || l === "hi") document.body.classList.add(l);
+    var b = t.h1_b, dot = "";
+    if (/[.。]$/.test(b)) { b = b.slice(0, -1); dot = '<i class="dot"></i>'; }
+    var fs = Math.min(104, 600 * 0.96 / Math.max(units(t.h1_a), units(b) + 0.3));
+    var h = document.getElementById("h1"); h.style.setProperty("--fs", fs + "px");
+    h.innerHTML = "<span>" + esc(t.h1_a) + "</span><span>" + esc(b) + dot + "</span>";
+    document.getElementById("soon").textContent = t.pill;
+    document.getElementById("nick").textContent = t.nick;
+    document.getElementById("q").textContent = t.q_hero;
+    document.getElementById("no").textContent = t.no; document.getElementById("yes").textContent = t.yes;
+    document.getElementById("pn").textContent = pct(38); document.getElementById("py").textContent = pct(62);
+    // kartın çevresinde küçük bir kalabalık (sabit yerler: her dilde aynı görünsün)
+    var P = [["#22D3EE","#7C83FF","#C084FC"],["#F472B6","#A78BFA","#38BDF8"],["#34D399","#2DD4BF","#38BDF8"],["#FBBF24","#F472B6","#FB7185"],
+             ["#818CF8","#E879F9","#F472B6"],["#4ADE80","#FACC15","#FB923C"],["#60A5FA","#22D3EE","#34D399"],["#A78BFA","#818CF8","#60A5FA"],
+             ["#2DD4BF","#A78BFA","#E879F9"],["#FB7185","#C084FC","#60A5FA"]];
+    var F = [[702,52,46,0],[1128,22,38,1],[688,488,54,2],[1124,520,60,3],[1150,250,34,4],[1146,402,26,9],[1100,612,30,7],[648,600,26,8]];
+    var rtl = t.dir === "rtl", out = "";
+    F.forEach(function (f) {
+      var x = rtl ? 1200 - f[0] - f[2] : f[0], c = P[f[3]];
+      out += '<span class="face" style="left:' + x + 'px;top:' + f[1] + 'px;width:' + f[2] + 'px;height:' + f[2] + 'px' +
+             ';background:linear-gradient(135deg,' + c[0] + ',' + c[1] + ' 50%,' + c[2] + ')"><i></i><i></i></span>';
+    });
+    document.getElementById("faces").innerHTML = out;
+    document.title = "ok";
+  });
+})();
 </script>
 </body></html>

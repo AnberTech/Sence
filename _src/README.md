@@ -8,11 +8,19 @@ Site depo kökünden `python3 _src/build.py` ile üretilir. Üretilen dosyalar (
 |---|---|
 | `build.py` | Sayfaları, `sitemap.xml` ve `llms.txt` dosyasını üretir; dil dosyalarını denetler. İkonlar, ters soru işareti ve "Yüz" avatarları burada çizilir |
 | `i18n/<dil>.json` | Bütün metinler. Kaynak `tr.json`; her dil aynı anahtarlara ve liste uzunluklarına sahip olmalı (betik farkta durur) |
-| `og.html` | Paylaşım görselleri `assets/img/og-tr.jpg`, `og-en.jpg` için kaynak |
+| `og.html` | Paylaşım görselleri `assets/img/og-<dil>.jpg` için kaynak (16 dil; metinleri `i18n/<dil>.json`'dan okur) |
 | `../assets/style.css` | Bütün stil: "Duru Kristal" (açık cam / koyu Dumanlı Obsidiyen), Buzul holografik vurgu. Renkler iOS `Tema/Renkler.swift` ile aynı |
-| `../assets/app.js` | Tema düğmesi, görünme, geri sayımlar ve kartlardaki deneme oylaması (Evet/Hayır, Seçtir, Puanlat şeridi + puan dalgası) |
+| `../assets/app.js` | Tema düğmesi, üst bar, dil menüsü, geri sayımlar ve kartlardaki deneme oylaması (Evet/Hayır, Seçtir, Puanlat şeridi + puan dalgası). Oy verilince kart `sence:vote`, "Bir daha"da `sence:reset` olayı yayar |
+| `../assets/kalabalik.js` | Yalnız ana sayfada: girişteki "Yüz" kalabalığı (canvas). Gözler imleci izler, göz kırpar; telefondaki kartta oy verilince kalabalık Hayır/Evet diye ikiye ayrılır, ziyaretçinin yüzü de seçtiği tarafa katılır. Paletler `Sence_Local/tasarim/avatar/uret_avatar.py` ile aynı 33 renk |
 | `../assets/sence-zipla.js` | Zıpla yükleme işareti. Sence_Local `tasarim/animasyon/uret_zipla.py` üretir; elle değiştirme, oradan kopyala |
-| `../assets/fonts/` | Geist + Geist Mono (OFL), Latin + Türkçe alt kümesi, woff |
+| `../assets/fonts/` | Geist + Geist Mono (OFL), Latin + Türkçe alt kümesi, woff. Kiril, Arap, Devanagari ve Doğu Asya yazıları cihazın sistem yazı tipine düşer (`style.css` başındaki `:lang()` satırları) |
+
+## Tasarım (2026-11-26)
+
+- Tek gösterişli an girişte: Yüz kalabalığı ve başlığın sonundaki nokta. Başlığın ikinci satırı `.` ya da `。` ile bitiyorsa o nokta logodaki holografik noktaya dönüşür ve açılışta bir kez Zıpla gibi sıçrar (dokununca bir daha). Başlığın boyu `fit_units()` ile her dilde sütuna sığacak şekilde ayarlanır.
+- Diğer bölümler sakin: Nasıl çalışır gerçek bir zaman çizgisi, özellikler düz liste, "Rahatça sor" her temada koyu obsidiyen bant, SSS iki sütun.
+- "Çok yakında" rozetleri tıklanır düğme gibi görünmez (cam rozet); `APP_STORE`/`PLAY` dolunca holografik indirme düğmesine döner.
+- "Hareketi azalt" açıksa kalabalık durağan, nokta zıplamaz, geçişler yok.
 
 ## Yeni dil eklemek
 
@@ -28,9 +36,11 @@ Stil ya da betik değişince `build.py` içindeki `VER` bir artırılır (taray�
 
 ## Paylaşım görseli
 
+Her dil için (depo kökünden):
 ```
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
-  --window-size=1200,630 --virtual-time-budget=3000 --screenshot=/tmp/og.png "file://$PWD/_src/og.html?l=tr"
-sips -s format jpeg -s formatOptions 86 /tmp/og.png --out assets/img/og-tr.jpg
+for l in tr en de fr it nl pl es pt ru ar ja ko zh-Hans hi id; do
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --allow-file-access-from-files \
+    --window-size=1200,630 --virtual-time-budget=3000 --screenshot=/tmp/og.png "file://$PWD/_src/og.html?l=$l"
+  sips -s format jpeg -s formatOptions 86 /tmp/og.png --out assets/img/og-$l.jpg
+done
 ```
-(`?l=en` ile `og-en.jpg`.)

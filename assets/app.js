@@ -1,41 +1,86 @@
-/* Sence sitesi: tema, görünme, sayaçlar ve kartlardaki deneme oylaması.
+/* Sence sitesi: tema, üst bar, dil menüsü, sayaçlar ve kartlardaki deneme oylaması.
    Kartlardaki kurallar uygulamadakiyle aynı: yatay = cevap; şeritte parmak gezer, bırakmak ya da dokunmak oy,
-   80 px dikey çekip bırakmak iptal; sonuç oydan 0,36 sn sonra yaylanır (Puanlat: bırakılan puan 0,3 sn sonra kesinleşir). */
+   80 px dikey çekip bırakmak iptal; sonuç oydan 0,36 sn sonra yaylanır (Puanlat: bırakılan puan 0,3 sn sonra kesinleşir).
+   Oy verilince kart "sence:vote" olayı yayar (girişteki kalabalık bunu dinler); "Bir daha" ile "sence:reset". */
 (function () {
   "use strict";
   var doc = document.documentElement, body = document.body;
-  var TR = (doc.lang || "tr").indexOf("tr") === 0;
+  var lang = doc.lang || "tr";
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var T = { avg: body.dataset.avg || "ort.", you: body.dataset.you || "Sen" };
-  function pct(n) { return TR ? "%" + n : n + "%"; }
-  function dec(x) { var s = x.toFixed(1); return TR ? s.replace(".", ",") : s; }
+
+  /* ---- sayı biçimi: build.py'deki pct() ile aynı kurallar ---- */
+  var COMMA = /^(tr|de|fr|it|nl|pl|es|pt|ru|id)/.test(lang);
+  function pct(n) {
+    if (lang.indexOf("tr") === 0) return "%" + n;
+    if (/^(fr|de)/.test(lang)) return n + " %";
+    return n + "%";
+  }
+  function dec(x) { var s = x.toFixed(1); return COMMA ? s.replace(".", ",") : s; }
   function buzz(p) { try { if (navigator.vibrate) navigator.vibrate(p); } catch (_) {} }
 
   /* ---- tema ---- */
   var zipla = [];
+  var meta = document.querySelector('meta[name="theme-color"]');
   function theme() { return doc.dataset.theme === "dark" ? "dark" : "light"; }
   function mountZipla() {
     zipla.forEach(function (z) { z.inst && z.inst.destroy(); z.el.innerHTML = ""; });
     zipla.forEach(function (z) {
-      if (window.SenceZipla) z.inst = SenceZipla.mount(z.el, { size: 120, delay: 0, theme: theme(), label: "Sence" });
+      if (window.SenceZipla) z.inst = SenceZipla.mount(z.el, { size: 140, delay: 0, theme: theme(), label: "Sence" });
     });
   }
   document.querySelectorAll("[data-zipla]").forEach(function (el) { zipla.push({ el: el }); });
   var tb = document.querySelector(".themebtn");
-  if (tb) tb.addEventListener("click", function () {
-    var t = theme() === "dark" ? "light" : "dark";
-    doc.dataset.theme = t;
-    try { localStorage.setItem("sence-tema", t); } catch (_) {}
-    mountZipla();
-  });
-  mountZipla();
+  if (tb) {
+    tb.setAttribute("aria-pressed", theme() === "dark" ? "true" : "false");
+    tb.addEventListener("click", function () {
+      var t = theme() === "dark" ? "light" : "dark";
+      doc.dataset.theme = t;
+      tb.setAttribute("aria-pressed", t === "dark" ? "true" : "false");
+      if (meta) meta.content = t === "dark" ? "#0E0F13" : "#F4F5F8";
+      try { localStorage.setItem("sence-tema", t); } catch (_) {}
+      mountZipla();
+      document.dispatchEvent(new CustomEvent("sence:theme", { detail: t }));
+    });
+  }
+  // Zıpla'yı yalnız ekrana gelince başlat (sayfanın sonunda; boşuna çalışmasın)
+  if ("IntersectionObserver" in window && zipla.length) {
+    var zio = new IntersectionObserver(function (es) {
+      if (es.some(function (e) { return e.isIntersecting; })) { mountZipla(); zio.disconnect(); }
+    }, { rootMargin: "200px" });
+    zipla.forEach(function (z) { zio.observe(z.el); });
+  } else mountZipla();
 
-  /* ---- görünme ---- */
+  /* ---- üst bar: kaydırınca cama döner ---- */
+  var top = document.querySelector(".top");
+  function stuck() { if (top) top.classList.toggle("stuck", window.scrollY > 8); }
+  stuck();
+  window.addEventListener("scroll", stuck, { passive: true });
+
+  /* ---- dil menüsü: dışarı dokununca ve Esc ile kapanır ---- */
+  var langs = document.querySelector("details.langs");
+  if (langs) {
+    document.addEventListener("click", function (ev) { if (langs.open && !langs.contains(ev.target)) langs.open = false; });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && langs.open) { langs.open = false; langs.querySelector("summary").focus(); }
+    });
+  }
+
+  /* ---- başlıktaki holografik nokta: dokununca bir daha zıplar ---- */
+  var dot = document.querySelector(".display .dot");
+  if (dot && !reduce) {
+    dot.addEventListener("click", function () {
+      if (!dot.getAnimations) return;
+      dot.getAnimations({ subtree: true }).forEach(function (a) { a.currentTime = 600; a.play(); });   // 600 = bekleme süresi
+    });
+  }
+
+  /* ---- görünme (yalnız zaman çizgisi) ---- */
   var rv = document.querySelectorAll(".rv");
   if ("IntersectionObserver" in window && !reduce) {
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px" });
+    }, { rootMargin: "0px 0px -12% 0px" });
     rv.forEach(function (el) { io.observe(el); });
   } else rv.forEach(function (el) { el.classList.add("in"); });
 
@@ -46,7 +91,7 @@
     return (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (x < 10 ? "0" : "") + x;
   }
   function tick() { timers.forEach(function (t) { t.el.textContent = fmt(Math.max(0, t.s)); t.s--; }); }
-  tick(); setInterval(tick, 1000);
+  if (timers.length) { tick(); setInterval(tick, 1000); }
 
   /* ---- yüzdeler: toplamı 100 olacak şekilde yuvarla ---- */
   function percents(c) {
@@ -58,6 +103,7 @@
     return fl;
   }
   var CHECK = '<svg class="ic tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.6l4.4 4.4L19 7.4"/></svg>';
+  function emit(card, name, detail) { card.dispatchEvent(new CustomEvent(name, { bubbles: true, detail: detail })); }
 
   /* ---- kartlar ---- */
   document.querySelectorAll("[data-demo]").forEach(function (card) {
@@ -65,7 +111,7 @@
     var strip = card.querySelector(".strip"), again = card.querySelector(".again");
     var countEl = card.querySelector("[data-count]"), count0 = countEl ? +countEl.textContent : 0;
     var voted = false;
-    if (card.classList.contains("hero-card") && !reduce) setTimeout(function () { if (!card.classList.contains("used")) card.classList.add("hint-run"); }, 400);
+    if (card.classList.contains("hero-card") && !reduce) setTimeout(function () { if (!card.classList.contains("used")) card.classList.add("hint-run"); }, 1600);
 
     function finish() {
       voted = true;
@@ -75,7 +121,7 @@
       setTimeout(function () { if (again) again.hidden = false; }, 700);
     }
 
-    if (kind === "rate") return rateCard(card, strip, crowd, finish, function () { return voted; }, reset);
+    if (kind === "rate") return rateCard(card, strip, crowd, finish);
 
     var slices = [].slice.call(strip.querySelectorAll(".sl"));
     var tiles = [].slice.call(card.querySelectorAll(".tiles figure"));
@@ -87,9 +133,15 @@
       slices.forEach(function (s, k) { s.classList.toggle("on", k === i); });
       tiles.forEach(function (f, k) { f.classList.toggle("lit", k === i); });
     }
+    // parmağın altındaki dilim (sağdan sola dillerde de doğru: dilimlerin gerçek konumuna bakar)
     function idxAt(x) {
-      for (var i = 0; i < slices.length; i++) { var r = slices[i].getBoundingClientRect(); if (x < r.right + 2) return i; }
-      return slices.length - 1;
+      var best = 0, bd = Infinity;
+      slices.forEach(function (s, i) {
+        var r = s.getBoundingClientRect();
+        var d = x < r.left ? r.left - x : x > r.right ? x - r.right : 0;
+        if (d < bd) { bd = d; best = i; }
+      });
+      return best;
     }
     function vote(i) {
       if (voted) return;
@@ -110,6 +162,7 @@
           if (tiles[k]) tiles[k].querySelector(".tp").textContent = pct(p[k]);
         });
         if (p[i] < 20) buzz([18, 60, 18]); else buzz(12);   // azınlık anı: çift titreşim
+        emit(card, "sence:vote", { kind: kind, mine: i, percents: p, sides: slices.map(function (s) { var r = s.getBoundingClientRect(); return (r.left + r.right) / 2; }) });
         setTimeout(fit, reduce ? 0 : 600);
       }, reduce ? 0 : 360);
     }
@@ -125,8 +178,10 @@
       slices.forEach(function (s) {
         s.classList.remove("mine", "on", "thin"); s.style.flexGrow = ""; s.removeAttribute("aria-pressed");
         var t = s.querySelector(".tick"); if (t) t.remove();
+        s.querySelector(".pct").textContent = "";
       });
       tiles.forEach(function (f) { f.classList.remove("mine", "lit"); });
+      emit(card, "sence:reset", { kind: kind });
     }
     if (again) again.addEventListener("click", reset);
 
@@ -153,13 +208,13 @@
     }
     strip.addEventListener("pointerup", function (ev) { end(ev, true); });
     strip.addEventListener("pointercancel", function (ev) { end(ev, false); });
-    // klavye (Enter/Boşluk): butonun click olayı, fareden gelen tıklamayı pointerup zaten işledi
+    // klavye (Enter/Boşluk): butonun click olayı; fareden gelen tıklamayı pointerup zaten işledi
     slices.forEach(function (s, i) { s.addEventListener("click", function (ev) { if (ev.detail === 0) vote(i); }); });
   });
 
   /* ---- Puanlat ---- */
   var gid = 0;
-  function rateCard(card, strip, crowd, finish, isVoted) {
+  function rateCard(card, strip, crowd, finish) {
     var track = strip.querySelector(".track"), knob = strip.querySelector(".knob"), svg = strip.querySelector(".wave");
     var again = card.querySelector(".again"), countEl = card.querySelector("[data-count]"), count0 = countEl ? +countEl.textContent : 0;
     var val = 0, active = false, startY = 0, timer = null, voted = false;
@@ -177,6 +232,7 @@
         voted = true; finish(); card.classList.add("voted");
         draw(val);
         buzz(12);
+        emit(card, "sence:vote", { kind: "rate", mine: val });
       }, reduce ? 0 : 300);
     }
     function draw(mine) {
@@ -193,7 +249,7 @@
              (p2[0] - (p3[0] - p1[0]) / 6) + "," + (p2[1] - (p3[1] - p1[1]) / 6) + " " + p2[0] + "," + p2[1];
       }
       var id = "wg" + (++gid), ax = padX + avg * (w - 2 * padX) / 10, mx = X(mine), my = Y(c[mine]);
-            svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+      svg.setAttribute("viewBox", "0 0 " + w + " " + h);
       svg.innerHTML =
         '<defs><linearGradient id="' + id + '" x1="0" x2="1"><stop offset="0" style="stop-color:var(--h1)"/><stop offset=".5" style="stop-color:var(--h2)"/><stop offset="1" style="stop-color:var(--h3)"/></linearGradient></defs>' +
         '<path class="fl" fill="url(#' + id + ')" d="' + d + ' L' + X(10) + ',' + (h - bot) + ' L' + X(0) + ',' + (h - bot) + 'Z"/>' +
@@ -216,6 +272,7 @@
       voted = false; card.classList.remove("voted"); svg.innerHTML = ""; set(0);
       if (again) again.hidden = true;
       if (countEl) countEl.textContent = count0;
+      emit(card, "sence:reset", { kind: "rate" });
     }
     if (again) again.addEventListener("click", reset);
     set(0);

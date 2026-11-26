@@ -24,7 +24,7 @@ LEGAL_LANGS = ('tr', 'en')                 # hukuki metinler yalnız TR/EN; diğ
 APP_STORE = None                          # yayına çıkınca: 'https://apps.apple.com/app/id…' (rozetler kendiliğinden bağlanır)
 APP_ID = None                             # yayına çıkınca: '67…' (Safari akıllı uygulama şeridi)
 PLAY = None                               # yayına çıkınca: 'https://play.google.com/store/apps/details?id=…'
-VER = '3'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
+VER = '4'                                 # css/js önbellek sürümü; stil ya da betik değişince artır
 TODAY = datetime.date.today().isoformat()
 P = ['']                                  # o an üretilen sayfanın köke göre öneki (kart görselleri için)
 
@@ -179,7 +179,7 @@ def card_hero(t):
     return (f'<article class="qcard hero-card" {demo_attrs(t, "yesno", {"c": [69, 113]})}>'
             f'<div class="panel">{head(t, t["nick"], 3, "21597")}'
             f'<figure class="photo"><img src="{P[0]}assets/img/ayakkabi_a.webp" alt="{e(t["a11y_photo"])}" width="720" height="720" fetchpriority="high"></figure>'
-            f'<h3 class="qtext">{e(t["q_hero"])}</h3>{social(t, 8, 3, 182)}</div>'
+            f'<p class="qtext">{e(t["q_hero"])}</p>{social(t, 8, 3, 182)}</div>'
             f'<div class="hint" aria-hidden="true"><span>{e(t["demo_hint"])}</span></div>'
             f'{strip_yesno(t)}<span class="ghost" aria-hidden="true"></span>'
             f'<button type="button" class="again" hidden>{ic("again")}<span>{e(t["demo_again"])}</span></button></article>')
@@ -188,7 +188,7 @@ def card_hero(t):
 def card_yesno(t):
     return (f'<article class="qcard" {demo_attrs(t, "yesno", {"c": [28, 68]})}>'
             f'<div class="panel">{head(t, "@gecekusu", 0, "2710")}'
-            f'<div class="textbox"><h3 class="qtext">{e(t["q_yesno"])}</h3></div>{social(t, 4, 1, 96)}</div>'
+            f'<div class="textbox"><p class="qtext">{e(t["q_yesno"])}</p></div>{social(t, 4, 1, 96)}</div>'
             f'{strip_yesno(t)}<button type="button" class="again" hidden>{ic("again")}<span>{e(t["demo_again"])}</span></button></article>')
 
 
@@ -197,7 +197,7 @@ def card_choice(t):
             f'<div class="panel">{head(t, "@masakurdu", 6, "9873")}'
             f'<div class="tiles"><figure><img src="{P[0]}assets/img/kutuphane.webp" alt="{e(t["opt_a"])}" width="720" height="720" loading="lazy"><b>A</b></figure>'
             f'<figure><img src="{P[0]}assets/img/calisma.webp" alt="{e(t["opt_b"])}" width="720" height="720" loading="lazy"><b>B</b></figure></div>'
-            f'<h3 class="qtext">{e(t["q_choice"])}</h3>{social(t, 12, 2, 127)}</div>'
+            f'<p class="qtext">{e(t["q_choice"])}</p>{social(t, 12, 2, 127)}</div>'
             f'{strip_choice(t, [t["opt_a"], t["opt_b"]])}<button type="button" class="again" hidden>{ic("again")}<span>{e(t["demo_again"])}</span></button></article>')
 
 
@@ -205,7 +205,7 @@ def card_rate(t):
     return (f'<article class="qcard" {demo_attrs(t, "rate", {"c": [0, 0, 1, 2, 3, 6, 11, 19, 25, 15, 8]})}>'
             f'<div class="panel">{head(t, "@kosedeki", 5, "15820")}'
             f'<figure class="photo"><img src="{P[0]}assets/img/calisma.webp" alt="{e(t["a11y_photo"])}" width="720" height="720" loading="lazy"></figure>'
-            f'<h3 class="qtext">{e(t["q_rate"])}</h3>{social(t, 6, 0, 90)}</div>'
+            f'<p class="qtext">{e(t["q_rate"])}</p>{social(t, 6, 0, 90)}</div>'
             f'{strip_rate(t)}<button type="button" class="again" hidden>{ic("again")}<span>{e(t["demo_again"])}</span></button></article>')
 
 
@@ -283,9 +283,12 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
     p = prefix(rel)
     url = BASE + rel
     smart = f'\n<meta name="apple-itunes-app" content="app-id={APP_ID}">' if APP_ID else ''
+    crowd = f'\n<script src="{p}assets/kalabalik.js?v={VER}" defer></script>' if page_kind == 'home' else ''
+    sup = p + t['support_slug']
+    terms, priv = p + slug(l, 'terms'), p + slug(l, 'privacy')
     return f'''<!doctype html>
 <!-- Üretilen dosya: _src/build.py ile oluşturulur, elle düzenleme. -->
-<html lang="{l}" dir="{t["dir"]}" data-theme="light">
+<html lang="{l}" dir="{t["dir"]}" data-theme="light" data-page="{page_kind}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -293,8 +296,8 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
 {alternates(page_kind)}
-<meta name="theme-color" content="#F4F5F8" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0E0F13" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F5F8">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" type="image/png" sizes="64x64" href="{p}assets/img/favicon.png">
 <link rel="apple-touch-icon" href="{p}assets/img/apple-touch-icon.png">{smart}
 <meta property="og:type" content="website">
@@ -306,15 +309,16 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
 <meta property="og:image" content="{BASE}assets/img/og-{l}.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(og_title or title)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(og_title or title)}">
 <meta name="twitter:description" content="{e(og_desc or desc)}">
 <meta name="twitter:image" content="{BASE}assets/img/og-{l}.jpg">
 <link rel="preload" href="{p}assets/fonts/geist-extrabold.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="{p}assets/fonts/geist-medium.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="{p}assets/fonts/geist-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{p}assets/style.css?v={VER}">
-<script>try{{var s=localStorage.getItem("sence-tema");if(s==="dark"||s==="light")document.documentElement.dataset.theme=s}}catch(_){{}}document.documentElement.classList.add("js")</script>
-<script data-goatcounter="https://anbertech.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>(function(d){{try{{var s=localStorage.getItem("sence-tema");if(s==="dark"||s==="light")d.dataset.theme=s}}catch(_){{}}d.classList.add("js");var m=document.querySelector('meta[name="theme-color"]');if(m&&d.dataset.theme==="dark")m.content="#0E0F13"}})(document.documentElement)</script>
+<script data-goatcounter="https://anbertech.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
 <body data-avg="{e(t["avg"])}" data-you="{e(t["you"])}">
@@ -322,18 +326,21 @@ def page(l, rel, title, desc, body, ld, page_kind, og_title=None, og_desc=None):
 <div class="amb" aria-hidden="true"><i></i><i></i><i></i></div>
 <header class="top"><div class="wrap bar">
 {logo(t, p + PATH[l])}
-<nav class="nav"><a href="{p}{PATH[l]}#nasil">{e(t["nav_how"])}</a><a href="{p}{PATH[l]}#sss">{e(t["nav_faq"])}</a><a href="{p}{t["support_slug"]}">{e(t["nav_support"])}</a></nav>
+<nav class="nav"><a href="{p}{PATH[l]}#nasil">{e(t["nav_how"])}</a><a href="{p}{PATH[l]}#sss">{e(t["nav_faq"])}</a><a href="{sup}">{e(t["nav_support"])}</a></nav>
 <div class="tools">{lang_switch(l, page_kind)}<button type="button" class="themebtn" aria-label="{e(t["aria_theme"])}">{ic("sun", "ic sun")}{ic("moon", "ic moon")}</button></div>
 </div></header>
 <main id="main">
 {body}
 </main>
 <footer class="foot"><div class="wrap">
-<div class="f1">{logo(t, p + PATH[l], "brand small")}</div>
-<p class="f3">{e(t["rights"])}</p>
+<div class="fmain">
+<div class="fbrand">{logo(t, p + PATH[l], "brand big")}<p>{e(t["footer_about"])}</p><p class="motto">{e(t["footer_motto"])}</p></div>
+<nav class="flinks"><a href="{sup}">{e(t["nav_support"])}</a><a href="{terms}">{e(t["legal_terms"])}</a><a href="{priv}">{e(t["legal_privacy"])}</a><a href="{HOME}">{e(t["footer_more"])}</a><a href="mailto:{EMAIL}">{EMAIL}</a></nav>
+</div>
+<div class="fbase"><p>{e(t["rights"])}</p></div>
 </div></footer>
 <script src="{p}assets/sence-zipla.js?v={VER}"></script>
-<script src="{p}assets/app.js?v={VER}"></script>
+<script src="{p}assets/app.js?v={VER}"></script>{crowd}
 </body>
 </html>
 '''
@@ -343,23 +350,57 @@ def org_ld():
     return {"@type": "Organization", "@id": HOME + "#org", "name": "AnberTech", "url": HOME, "email": EMAIL}
 
 
+def fit_units(text):
+    """Başlığın kabaca kaç "em" genişlikte olduğu (Geist ExtraBold). CSS bunu font boyunu sütuna sığdırmak için kullanır."""
+    import unicodedata
+    w = 0.0
+    for ch in text:
+        if unicodedata.east_asian_width(ch) in ('W', 'F'):
+            w += 1.0
+        elif ch in ' .,;:!?¿¡\'’ilIjtfr|।':
+            w += 0.32
+        elif ch in 'mwMWÆŒ':
+            w += 0.86
+        elif ch.isupper():
+            w += 0.68
+        else:
+            w += 0.58
+    return w
+
+
+def h1_html(t):
+    """İkinci satırın sonundaki nokta, logodaki holografik noktaya dönüşür (yalnız . ve 。)."""
+    b = t['h1_b']
+    dot = ''
+    if b.endswith('.') or b.endswith('。'):
+        b, dot = b[:-1], '<span class="dot" aria-hidden="true"></span><span class="sr">.</span>'
+    units = max(fit_units(t['h1_a']), fit_units(b) + 0.3)
+    return (f'<h1 class="display" style="--fit:{units:.2f}"><span class="l1">{e(t["h1_a"])}</span> '
+            f'<span class="l2">{e(b)}{dot}</span></h1>')
+
+
 def home(l):
     t = T[l]
     rel = PATH[l]
     P[0] = prefix(rel)
     checks = ''.join(f'<li>{ic("check")}{e(c)}</li>' for c in t['checks'])
     how = ''.join(
-        f'<li class="step rv"><span class="num mono">0{i + 1}</span><h3>{e(s["t"])}</h3><p>{e(s["p"])}</p>{step_visual(t, i)}</li>'
+        f'<li class="step rv"><span class="node" aria-hidden="true"><b>{i + 1}</b></span><div class="sbody"><h3>{e(s["t"])}</h3><p>{e(s["p"])}</p></div>{step_visual(t, i)}</li>'
         for i, s in enumerate(t['how']))
-    inside = ''.join(f'<li class="tile rv"><span class="ti">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['inside'])
-    trust = ''.join(f'<li class="tile rv"><span class="ti">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['trust'])
-    faq = ''.join(f'<details class="qa rv"><summary>{e(x["q"])}<span>{ic("plus")}</span></summary><p>{e(x["a"])}</p></details>' for x in t['faq'])
-    body = f'''<section class="hero"><div class="wrap grid">
+    inside = ''.join(f'<li class="feat rv"><span class="fi">{ic(x["i"])}</span><div><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></div></li>' for x in t['inside'])
+    trust = ''.join(f'<li class="tr rv"><span class="fi">{ic(x["i"])}</span><h3>{e(x["t"])}</h3><p>{e(x["p"])}</p></li>' for x in t['trust'])
+    faq = ''.join(f'<details class="qa"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['faq'])
+    shapes = ''.join(
+        f'<figure class="shape rv s-{k}">{card}<figcaption><span class="sic">{shape_icon(k)}</span><div><h3>{e(t["shape_" + k])}</h3><p>{e(t["shape_" + k + "_p"])}</p></div></figcaption></figure>'
+        for k, card in (('yesno', card_yesno(t)), ('choice', card_choice(t)), ('rate', card_rate(t))))
+    body = f'''<section class="hero">
+<canvas class="crowd" aria-hidden="true"></canvas>
+<div class="wrap grid">
 <div class="copy">
-<span class="pill">{e(t["pill"])}</span>
-<h1>{e(t["h1_a"])}<br><em>{e(t["h1_b"])}</em></h1>
+<p class="pill">{e(t["pill"])}</p>
+{h1_html(t)}
 <p class="lead">{e(t["lead"])}</p>
-<div class="ctas">{store_button(t)}<a class="ghostbtn" href="#nasil">{e(t["see_how"])}{ic("down")}</a></div>
+<div class="ctas">{store_button(t)}<a class="ghostbtn" href="#nasil">{e(t["see_how"])}</a></div>
 <ul class="checks">{checks}</ul>
 </div>
 <div class="device">
@@ -372,38 +413,33 @@ def home(l):
 </div>
 </div></section>
 
-<section class="sec" id="sekiller"><div class="wrap">
-<div class="sh rv"><h2>{e(t["shapes_h2"])}</h2><p>{e(t["shapes_p"])}</p></div>
-<div class="shapes">
-<div class="shape rv"><div class="st"><span class="sic yn">{shape_icon("yesno")}</span><div><h3>{e(t["shape_yesno"])}</h3><p>{e(t["shape_yesno_p"])}</p></div></div>{card_yesno(t)}</div>
-<div class="shape rv"><div class="st"><span class="sic">{shape_icon("choice")}</span><div><h3>{e(t["shape_choice"])}</h3><p>{e(t["shape_choice_p"])}</p></div></div>{card_choice(t)}</div>
-<div class="shape rv"><div class="st"><span class="sic">{shape_icon("rate")}</span><div><h3>{e(t["shape_rate"])}</h3><p>{e(t["shape_rate_p"])}</p></div></div>{card_rate(t)}</div>
-</div>
-<p class="note c">{e(t["demo_note"])}</p>
+<section class="sec shapes-sec" id="sekiller"><div class="wrap">
+<header class="sh rv"><h2>{e(t["shapes_h2"])}</h2><p>{e(t["shapes_p"])}</p></header>
+<div class="shapes">{shapes}</div>
+<p class="note">{e(t["demo_note"])}</p>
 </div></section>
 
-<section class="sec" id="nasil"><div class="wrap">
-<div class="sh rv"><h2>{e(t["how_h2"])}</h2><p>{e(t["how_p"])}</p></div>
-<ol class="steps">{how}</ol>
+<section class="sec how-sec" id="nasil"><div class="wrap">
+<header class="sh rv"><h2>{e(t["how_h2"])}</h2><p>{e(t["how_p"])}</p></header>
+<ol class="steps rv">{how}</ol>
 </div></section>
 
-<section class="sec" id="icinde"><div class="wrap">
-<div class="sh rv"><h2>{e(t["inside_h2"])}</h2><p>{e(t["inside_p"])}</p></div>
-<div class="barshow rv">{tabbar(t)}</div>
-<ul class="tiles4">{inside}</ul>
+<section class="sec inside-sec" id="icinde"><div class="wrap split">
+<header class="sh rv"><h2>{e(t["inside_h2"])}</h2><p>{e(t["inside_p"])}</p><div class="dock">{tabbar(t)}</div></header>
+<ul class="feats">{inside}</ul>
 </div></section>
 
-<section class="sec" id="guven"><div class="wrap">
-<div class="sh rv"><h2>{e(t["trust_h2"])}</h2><p>{e(t["trust_p"])}</p></div>
-<ul class="tiles3">{trust}</ul>
+<section class="band" id="guven"><div class="bandbg" aria-hidden="true">{mark("mark giant")}</div><div class="wrap">
+<header class="sh rv"><h2>{e(t["trust_h2"])}</h2><p>{e(t["trust_p"])}</p></header>
+<ul class="trusts">{trust}</ul>
 </div></section>
 
-<section class="sec" id="sss"><div class="wrap narrow">
-<div class="sh rv"><h2>{e(t["faq_h2"])}</h2></div>
+<section class="sec faq-sec" id="sss"><div class="wrap split">
+<header class="sh rv"><h2>{e(t["faq_h2"])}</h2><p><a class="lnk" href="{P[0]}{t["support_slug"]}">{e(t["nav_support"])}</a></p></header>
 <div class="faq">{faq}</div>
 </div></section>
 
-<section class="sec"><div class="wrap">
+<section class="finale"><div class="wrap">
 <div class="cta rv"><div class="zipla" data-zipla></div><h2>{e(t["cta_h2"])}</h2><p>{e(t["cta_p"])}</p><div class="stores">{store_button(t, "big")}</div></div>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [
@@ -412,6 +448,7 @@ def home(l):
         {"@type": "MobileApplication", "@id": BASE + "#app", "name": "Sence", "alternateName": T['tr']['og_title'] if l == 'tr' else t['og_title'],
          "url": BASE + rel, "description": t['meta_desc'], "operatingSystem": "iOS 17.6+, Android", "applicationCategory": "SocialNetworkingApplication",
          "inLanguage": list(LANGS), "image": BASE + "assets/img/icon-512.png", "publisher": {"@id": HOME + "#org"},
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "contentRating": "18+",
          **({"downloadUrl": [x for x in (APP_STORE, PLAY) if x]} if (APP_STORE or PLAY) else {})},
         {"@type": "FAQPage", "inLanguage": l, "mainEntity": [
             {"@type": "Question", "name": x['q'], "acceptedAnswer": {"@type": "Answer", "text": x['a']}} for x in t['faq']]},
@@ -434,8 +471,10 @@ def step_visual(t, i):
     if i == 1:
         return (f'<div class="sv mini" aria-hidden="true"><span class="mno">{e(t["no"])} <b class="mono">{pct(t, 38)}</b></span>'
                 f'<span class="myes">{e(t["yes"])} <b class="mono">{pct(t, 62)}</b></span></div>')
+    # Kapanış (uygulamadaki son hali, 2026-11-25): şerit değişmez, soranın avatarı seçtiği dilimin üstüne iğne gibi oturur.
     return (f'<div class="sv closing" aria-hidden="true"><span class="cap">{e(t["closing_ask"])}</span>'
-            f'<span class="picked">{ic("check")}{e(t["closing_picked"])}</span></div>')
+            f'<div class="mini pinned"><span class="mno">{e(t["no"])} <b class="mono">{pct(t, 38)}</b></span>'
+            f'<span class="myes">{e(t["yes"])} <b class="mono">{pct(t, 62)}</b><i class="pin">{avatar(3)}</i></span></div></div>')
 
 
 def pct(t, n):
@@ -448,7 +487,7 @@ def support(l):
     rel = t['support_slug']
     from urllib.parse import quote
     mail = f'mailto:{EMAIL}?subject={quote(t["support_mail_subject"])}'
-    faq = ''.join(f'<details class="qa"><summary>{e(x["q"])}<span>{ic("plus")}</span></summary><p>{e(x["a"])}</p></details>' for x in t['support_faq'])
+    faq = ''.join(f'<details class="qa"><summary><span class="q">{e(x["q"])}</span><span class="pm" aria-hidden="true"><i></i><i></i></span></summary><div class="a"><p>{e(x["a"])}</p></div></details>' for x in t['support_faq'])
     body = f'''<section class="page"><div class="wrap narrow">
 <h1>{e(t["support_h1"])}</h1>
 <p class="lead">{e(t["support_lead"])}</p>
@@ -456,8 +495,8 @@ def support(l):
 <h2>{e(t["support_h2"])}</h2>
 <div class="faq">{faq}</div>
 <p class="legal">{e(t["support_legal"])}</p>
-<p class="legal"><a href="{prefix(rel)}{slug(l, "terms")}">{e(t["legal_terms"])}</a> · <a href="{prefix(rel)}{slug(l, "privacy")}">{e(t["legal_privacy"])}</a></p>
-<p><a class="back" href="{prefix(rel)}{PATH[l]}">← {e(t["back_home"])}</a></p>
+<p class="legal"><a href="{prefix(rel)}{slug(l, "terms")}">{e(t["legal_terms"])}</a><a href="{prefix(rel)}{slug(l, "privacy")}">{e(t["legal_privacy"])}</a></p>
+<p><a class="back" href="{prefix(rel)}{PATH[l]}">{e(t["back_home"])}</a></p>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "FAQPage", "inLanguage": l, "mainEntity": [
         {"@type": "Question", "name": x['q'], "acceptedAnswer": {"@type": "Answer", "text": x['a']}} for x in t['support_faq']]}]}
@@ -516,7 +555,7 @@ def legal(l, kind):
     title = text.splitlines()[0].lstrip('# ').strip()
     body = f'''<section class="page"><div class="wrap narrow doc">
 {md(text)}
-<p><a class="back" href="{prefix(rel)}{PATH[l]}">← {e(t["back_home"])}</a></p>
+<p><a class="back" href="{prefix(rel)}{PATH[l]}">{e(t["back_home"])}</a></p>
 </div></section>'''
     ld = {"@context": "https://schema.org", "@graph": [org_ld(), {"@type": "WebPage", "name": title, "inLanguage": l, "url": BASE + rel}]}
     write(rel + 'index.html', page(l, rel, f'{title} · Sence', t[f'legal_{kind}_desc'], body, ld, kind))
